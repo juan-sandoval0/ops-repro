@@ -1,80 +1,70 @@
 {
   "bundle_id": "bundle_cluster_14",
   "cluster_id": 14,
-  "error_type": "planning_timeout",
-  "error_message": "Motion planning failed to find valid path",
-  "failure_run_id": "run_00040",
+  "error_type": "collision_detected",
+  "error_message": "Collision detected during trajectory execution",
+  "failure_run_id": "run_00045",
   "initial_state": {
     "detected_objects": [
-      "cup",
-      "plate",
-      "towel",
-      "fork"
+      "cup"
     ],
     "robot_state": {
       "joint_positions": [
-        -2.032,
-        2.567,
-        1.758,
-        1.411,
-        -2.779,
-        -0.662,
-        -2.173
+        -1.785,
+        1.559,
+        -3.045,
+        -2.249,
+        2.043,
+        -1.145,
+        -2.265
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.092,
-          0.131,
-          -0.315
+          0.305,
+          0.36,
+          -0.063
         ],
         "orientation": [
-          -0.824,
-          -0.887,
-          -0.192,
-          -0.086
+          -0.063,
+          0.338,
+          0.483,
+          0.665
         ]
       }
     },
-    "timestep": 47
+    "timestep": 36
   },
   "action_sequence": [
     {
-      "type": "visual_scan"
+      "type": "close_gripper"
     },
     {
-      "type": "grasp_object",
-      "object": "box",
-      "force": 7.5
-    },
-    {
-      "type": "move_to_position",
+      "type": "execute_trajectory",
       "target": [
-        -0.356,
-        -0.184,
-        0.273
+        -0.207,
+        0.396,
+        0.446
       ]
     },
     {
       "type": "close_gripper"
     },
     {
-      "type": "move_to_position",
-      "target": [
-        -0.123,
-        0.016,
-        0.424
-      ]
+      "type": "close_gripper"
     },
     {
-      "type": "plan_trajectory"
+      "type": "release_object"
+    },
+    {
+      "type": "release_object"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Motion planning failed to find valid path",
-  "created_at": "2025-10-27T13:58:41.852576",
+  "actual_outcome": "Failure at step 6: Collision detected during trajectory execution",
+  "created_at": "2025-10-27T14:08:18.515668",
   "source_failures": [
-    "run_00040"
+    "run_00045"
   ],
-  "difficulty": "medium"
+  "difficulty": "hard"
 }

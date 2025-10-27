@@ -1,76 +1,76 @@
 {
   "bundle_id": "bundle_cluster_10",
   "cluster_id": 10,
-  "error_type": "object_not_found",
-  "error_message": "Could not locate unknown in scene",
+  "error_type": "position_drift",
+  "error_message": "Position drift detected: 2.59mm",
   "failure_run_id": "run_00028",
   "initial_state": {
     "detected_objects": [
-      "plate",
-      "knife"
+      "banana",
+      "knife",
+      "fork",
+      "apple"
     ],
     "robot_state": {
       "joint_positions": [
-        1.272,
-        -1.623,
-        2.692,
-        1.611,
-        -0.069,
-        0.814,
-        -1.755
+        -0.818,
+        -0.545,
+        -0.129,
+        0.331,
+        -1.199,
+        -0.235,
+        -2.965
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.145,
-          -0.243,
-          -0.102
+          -0.226,
+          -0.079,
+          -0.283
         ],
         "orientation": [
-          -0.125,
-          -0.112,
-          -0.048,
-          -0.55
+          -0.632,
+          -0.426,
+          -0.243,
+          0.297
         ]
       }
     },
-    "timestep": 48
+    "timestep": 45
   },
   "action_sequence": [
     {
       "type": "visual_scan"
     },
     {
-      "type": "plan_trajectory"
+      "type": "close_gripper"
     },
     {
-      "type": "open_gripper"
-    },
-    {
-      "type": "execute_trajectory",
-      "target": [
-        0.338,
-        -0.434,
-        -0.226
-      ]
+      "type": "grasp_object",
+      "object": "bottle",
+      "force": 11.3
     },
     {
       "type": "move_to_position",
       "target": [
-        0.407,
-        -0.488,
-        -0.016
+        0.132,
+        -0.037,
+        -0.35
       ]
     },
     {
       "type": "visual_scan"
+    },
+    {
+      "type": "close_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Could not locate unknown in scene",
-  "created_at": "2025-10-27T13:58:41.851979",
+  "actual_outcome": "Failure at step 6: Position drift detected: 2.59mm",
+  "created_at": "2025-10-27T14:08:18.514272",
   "source_failures": [
-    "run_00028"
+    "run_00028",
+    "run_00078"
   ],
   "difficulty": "medium"
 }

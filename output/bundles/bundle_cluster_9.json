@@ -1,81 +1,76 @@
 {
   "bundle_id": "bundle_cluster_9",
   "cluster_id": 9,
-  "error_type": "force_threshold_exceeded",
-  "error_message": "Force exceeded threshold: 36.7N",
-  "failure_run_id": "run_00024",
+  "error_type": "grasp_failure",
+  "error_message": "Failed to grasp unknown",
+  "failure_run_id": "run_00027",
   "initial_state": {
     "detected_objects": [
-      "plate",
-      "banana",
-      "bottle"
+      "book",
+      "bottle",
+      "box",
+      "plate"
     ],
     "robot_state": {
       "joint_positions": [
-        0.914,
-        2.773,
-        -2.931,
-        -0.708,
-        1.364,
-        0.268,
-        -3.074
+        0.669,
+        -2.612,
+        2.958,
+        -1.738,
+        -0.273,
+        0.853,
+        -2.131
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.426,
-          0.339,
-          0.141
+          0.007,
+          -0.275,
+          -0.225
         ],
         "orientation": [
-          -0.244,
-          0.999,
-          0.939,
-          0.154
+          -0.766,
+          -0.494,
+          -0.317,
+          0.003
         ]
       }
     },
-    "timestep": 36
+    "timestep": 42
   },
   "action_sequence": [
     {
-      "type": "grasp_object",
-      "object": "apple",
-      "force": 7.7
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": 73.8
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.29,
+        -0.372,
+        -0.479
+      ]
     },
     {
       "type": "release_object"
     },
     {
-      "type": "execute_trajectory",
-      "target": [
-        -0.447,
-        -0.209,
-        -0.084
-      ]
-    },
-    {
-      "type": "execute_trajectory",
-      "target": [
-        -0.239,
-        -0.058,
-        0.31
-      ]
-    },
-    {
       "type": "grasp_object",
-      "object": "banana",
-      "force": 5.4
+      "object": "plate",
+      "force": 12.5
     },
     {
       "type": "open_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Force exceeded threshold: 36.7N",
-  "created_at": "2025-10-27T13:58:41.851826",
+  "actual_outcome": "Failure at step 6: Failed to grasp unknown",
+  "created_at": "2025-10-27T14:08:18.513902",
   "source_failures": [
-    "run_00024"
+    "run_00027"
   ],
   "difficulty": "medium"
 }

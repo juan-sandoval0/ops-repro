@@ -1,73 +1,80 @@
 {
   "bundle_id": "bundle_cluster_4",
   "cluster_id": 4,
-  "error_type": "timeout",
-  "error_message": "Action release_object exceeded timeout (30s)",
-  "failure_run_id": "run_00013",
+  "error_type": "motor_overheating",
+  "error_message": "Motor 5 temperature exceeded 73\u00b0C",
+  "failure_run_id": "run_00010",
   "initial_state": {
     "detected_objects": [
-      "plate",
-      "can"
+      "apple",
+      "cup",
+      "bottle",
+      "fork"
     ],
     "robot_state": {
       "joint_positions": [
-        -0.618,
-        -0.688,
-        -1.909,
-        1.69,
-        0.984,
-        -2.975,
-        0.726
+        2.15,
+        1.46,
+        2.542,
+        0.881,
+        -1.075,
+        1.049,
+        -1.562
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.12,
-          -0.422,
-          0.114
+          -0.417,
+          -0.399,
+          0.306
         ],
         "orientation": [
-          0.439,
-          0.327,
-          -0.077,
-          0.221
+          -0.515,
+          -0.01,
+          0.182,
+          0.331
         ]
       }
     },
-    "timestep": 30
+    "timestep": 45
   },
   "action_sequence": [
     {
       "type": "grasp_object",
-      "object": "book",
-      "force": 7.9
+      "object": "can",
+      "force": 15.7
     },
     {
-      "type": "visual_scan"
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "move_to_position",
+      "type": "execute_trajectory",
       "target": [
-        0.195,
-        -0.059,
-        -0.143
+        -0.333,
+        -0.341,
+        0.18
       ]
     },
     {
       "type": "release_object"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        0.37,
+        0.168,
+        -0.458
+      ]
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Action release_object exceeded timeout (30s)",
-  "created_at": "2025-10-27T13:58:41.851096",
+  "actual_outcome": "Failure at step 6: Motor 5 temperature exceeded 73\u00b0C",
+  "created_at": "2025-10-27T14:08:18.512350",
   "source_failures": [
-    "run_00013"
+    "run_00010"
   ],
-  "difficulty": "medium"
+  "difficulty": "hard"
 }

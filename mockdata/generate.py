@@ -15,19 +15,32 @@ import argparse
 class RobotLogGenerator:
     """Generates mock robot run logs with various failure modes."""
 
-    # Common error types in robotics systems
-    ERROR_TYPES = [
-        "gripper_slip",
-        "object_not_found",
-        "collision_detected",
-        "timeout",
-        "joint_limit_exceeded",
-        "force_threshold_exceeded",
-        "vision_failure",
-        "grasp_failure",
-        "planning_timeout",
-        "execution_error",
-    ]
+    # Error types with weighted probabilities (higher = more common)
+    ERROR_TYPES_WEIGHTS = {
+        # Original error types
+        "gripper_slip": 0.08,
+        "object_not_found": 0.06,
+        "collision_detected": 0.05,
+        "timeout": 0.07,
+        "joint_limit_exceeded": 0.04,
+        "force_threshold_exceeded": 0.05,
+        "vision_failure": 0.09,
+        "grasp_failure": 0.08,
+        "planning_timeout": 0.06,
+        "execution_error": 0.07,
+
+        # New error types
+        "sensor_malfunction": 0.03,
+        "calibration_error": 0.02,
+        "network_failure": 0.01,
+        "motor_overheating": 0.04,
+        "position_drift": 0.05,
+        "vacuum_loss": 0.06,
+        "path_deviation": 0.05,
+        "singularity_detected": 0.02,
+        "workspace_violation": 0.04,
+        "emergency_stop": 0.03,
+    }
 
     # Action primitives
     ACTIONS = [
@@ -89,6 +102,7 @@ class RobotLogGenerator:
     def generate_error(self, error_type: str, context: Dict[str, Any]) -> Dict[str, Any]:
         """Generate a mock error with context."""
         error_messages = {
+            # Original error types
             "gripper_slip": f"Object {context.get('object', 'unknown')} slipped from gripper",
             "object_not_found": f"Could not locate {context.get('object', 'target')} in scene",
             "collision_detected": "Collision detected during trajectory execution",
@@ -99,6 +113,18 @@ class RobotLogGenerator:
             "grasp_failure": f"Failed to grasp {context.get('object', 'object')}",
             "planning_timeout": "Motion planning failed to find valid path",
             "execution_error": "Trajectory execution deviated from plan",
+
+            # New error types
+            "sensor_malfunction": f"Sensor {random.choice(['IMU', 'force', 'proximity', 'encoder'])} malfunction detected",
+            "calibration_error": "Robot calibration out of tolerance",
+            "network_failure": "Lost connection to control server",
+            "motor_overheating": f"Motor {random.randint(1, 7)} temperature exceeded {random.randint(70, 90)}°C",
+            "position_drift": f"Position drift detected: {round(random.uniform(0.5, 5.0), 2)}mm",
+            "vacuum_loss": "Vacuum gripper pressure loss detected",
+            "path_deviation": f"Path deviation exceeded {round(random.uniform(1, 10), 1)}mm threshold",
+            "singularity_detected": "Robot approaching kinematic singularity",
+            "workspace_violation": "Target position outside workspace limits",
+            "emergency_stop": "Emergency stop triggered by safety system",
         }
 
         return {
@@ -122,7 +148,10 @@ class RobotLogGenerator:
         if random.random() < failure_prob:
             failed = True
             failure_timestep = random.randint(run_length // 2, run_length - 1)
-            error_type = random.choice(self.ERROR_TYPES)
+            # Use weighted selection for error types
+            error_types = list(self.ERROR_TYPES_WEIGHTS.keys())
+            weights = list(self.ERROR_TYPES_WEIGHTS.values())
+            error_type = random.choices(error_types, weights=weights, k=1)[0]
 
         for timestep in range(run_length):
             timestamp = base_time + timedelta(milliseconds=100 * timestep)

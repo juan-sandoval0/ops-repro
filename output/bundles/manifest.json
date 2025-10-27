@@ -1,109 +1,193 @@
 {
-  "created_at": "2025-10-27T13:58:41.853023",
-  "total_bundles": 15,
+  "created_at": "2025-10-27T14:08:18.517769",
+  "total_bundles": 27,
   "bundles": [
     {
       "bundle_id": "bundle_cluster_0",
       "error_type": "vision_failure",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_1",
-      "error_type": "execution_error",
+      "error_type": "calibration_error",
       "difficulty": "hard",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_2",
-      "error_type": "execution_error",
+      "error_type": "gripper_slip",
       "difficulty": "medium",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_3",
-      "error_type": "joint_limit_exceeded",
+      "error_type": "calibration_error",
       "difficulty": "medium",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_4",
-      "error_type": "timeout",
-      "difficulty": "medium",
+      "error_type": "motor_overheating",
+      "difficulty": "hard",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_5",
-      "error_type": "joint_limit_exceeded",
+      "error_type": "execution_error",
       "difficulty": "hard",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_6",
-      "error_type": "grasp_failure",
+      "error_type": "motor_overheating",
       "difficulty": "medium",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_7",
-      "error_type": "execution_error",
-      "difficulty": "medium",
+      "error_type": "gripper_slip",
+      "difficulty": "hard",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_8",
-      "error_type": "timeout",
-      "difficulty": "medium",
+      "error_type": "emergency_stop",
+      "difficulty": "hard",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_9",
-      "error_type": "force_threshold_exceeded",
+      "error_type": "grasp_failure",
       "difficulty": "medium",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_10",
-      "error_type": "object_not_found",
+      "error_type": "position_drift",
       "difficulty": "medium",
       "num_actions": 6,
-      "source_failures_count": 1
+      "source_failures_count": 2
     },
     {
       "bundle_id": "bundle_cluster_11",
-      "error_type": "timeout",
-      "difficulty": "hard",
+      "error_type": "planning_timeout",
+      "difficulty": "medium",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_12",
-      "error_type": "planning_timeout",
-      "difficulty": "hard",
+      "error_type": "motor_overheating",
+      "difficulty": "medium",
       "num_actions": 6,
       "source_failures_count": 1
     },
     {
       "bundle_id": "bundle_cluster_13",
-      "error_type": "vision_failure",
+      "error_type": "collision_detected",
       "difficulty": "hard",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_14",
+      "error_type": "collision_detected",
+      "difficulty": "hard",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_15",
+      "error_type": "force_threshold_exceeded",
+      "difficulty": "medium",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_16",
+      "error_type": "timeout",
+      "difficulty": "medium",
       "num_actions": 6,
       "source_failures_count": 2
     },
     {
-      "bundle_id": "bundle_cluster_14",
-      "error_type": "planning_timeout",
+      "bundle_id": "bundle_cluster_17",
+      "error_type": "sensor_malfunction",
       "difficulty": "medium",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_18",
+      "error_type": "vacuum_loss",
+      "difficulty": "medium",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_19",
+      "error_type": "gripper_slip",
+      "difficulty": "hard",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_20",
+      "error_type": "vision_failure",
+      "difficulty": "hard",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_21",
+      "error_type": "gripper_slip",
+      "difficulty": "medium",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_22",
+      "error_type": "object_not_found",
+      "difficulty": "hard",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_23",
+      "error_type": "sensor_malfunction",
+      "difficulty": "medium",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_24",
+      "error_type": "emergency_stop",
+      "difficulty": "hard",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_25",
+      "error_type": "collision_detected",
+      "difficulty": "hard",
+      "num_actions": 6,
+      "source_failures_count": 1
+    },
+    {
+      "bundle_id": "bundle_cluster_26",
+      "error_type": "timeout",
+      "difficulty": "hard",
       "num_actions": 6,
       "source_failures_count": 1
     }

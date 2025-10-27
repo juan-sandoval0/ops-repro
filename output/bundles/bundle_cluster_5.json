@@ -1,71 +1,74 @@
 {
   "bundle_id": "bundle_cluster_5",
   "cluster_id": 5,
-  "error_type": "joint_limit_exceeded",
-  "error_message": "Joint 1 exceeded limit",
-  "failure_run_id": "run_00015",
+  "error_type": "execution_error",
+  "error_message": "Trajectory execution deviated from plan",
+  "failure_run_id": "run_00012",
   "initial_state": {
     "detected_objects": [
-      "knife",
-      "cup"
+      "apple",
+      "cup",
+      "knife"
     ],
     "robot_state": {
       "joint_positions": [
-        2.513,
-        -1.619,
-        2.494,
-        1.823,
-        -0.133,
-        1.876,
-        -2.721
+        2.273,
+        -2.605,
+        2.154,
+        0.594,
+        0.386,
+        -2.408,
+        -2.287
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.032,
-          -0.228,
-          0.184
+          0.054,
+          0.052,
+          0.262
         ],
         "orientation": [
-          -0.016,
-          -0.791,
-          -0.527,
-          -0.029
+          -0.76,
+          0.622,
+          0.572,
+          0.276
         ]
       }
     },
-    "timestep": 40
+    "timestep": 34
   },
   "action_sequence": [
     {
       "type": "visual_scan"
     },
     {
-      "type": "open_gripper"
+      "type": "move_to_position",
+      "target": [
+        0.185,
+        -0.42,
+        0.147
+      ]
     },
     {
-      "type": "visual_scan"
-    },
-    {
-      "type": "release_object"
+      "type": "grasp_object",
+      "object": "banana",
+      "force": 10.1
     },
     {
       "type": "close_gripper"
     },
     {
-      "type": "move_to_position",
-      "target": [
-        0.388,
-        -0.428,
-        0.275
-      ]
+      "type": "close_gripper"
+    },
+    {
+      "type": "release_object"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Joint 1 exceeded limit",
-  "created_at": "2025-10-27T13:58:41.851242",
+  "actual_outcome": "Failure at step 6: Trajectory execution deviated from plan",
+  "created_at": "2025-10-27T14:08:18.512626",
   "source_failures": [
-    "run_00015"
+    "run_00012"
   ],
   "difficulty": "hard"
 }
