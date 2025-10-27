@@ -3,68 +3,78 @@
   "cluster_id": 14,
   "error_type": "collision_detected",
   "error_message": "Collision detected during trajectory execution",
-  "failure_run_id": "run_00045",
+  "failure_run_id": "run_00044",
   "initial_state": {
     "detected_objects": [
-      "cup"
+      "can",
+      "fork",
+      "book",
+      "apple"
     ],
     "robot_state": {
       "joint_positions": [
-        -1.785,
-        1.559,
-        -3.045,
-        -2.249,
-        2.043,
-        -1.145,
-        -2.265
+        -0.794,
+        0.135,
+        -1.236,
+        -2.118,
+        -1.978,
+        -0.224,
+        -0.69
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.305,
-          0.36,
-          -0.063
+          -0.032,
+          -0.134,
+          -0.065
         ],
         "orientation": [
-          -0.063,
-          0.338,
-          0.483,
-          0.665
+          0.536,
+          -0.413,
+          0.938,
+          0.163
         ]
       }
     },
-    "timestep": 36
+    "timestep": 41
   },
   "action_sequence": [
     {
-      "type": "close_gripper"
-    },
-    {
       "type": "execute_trajectory",
       "target": [
-        -0.207,
-        0.396,
-        0.446
+        -0.116,
+        -0.358,
+        -0.335
       ]
     },
     {
-      "type": "close_gripper"
+      "type": "rotate_wrist",
+      "angle": -59.6
     },
     {
-      "type": "close_gripper"
+      "type": "rotate_wrist",
+      "angle": 21.1
     },
     {
-      "type": "release_object"
+      "type": "open_gripper"
     },
     {
-      "type": "release_object"
+      "type": "move_to_position",
+      "target": [
+        -0.445,
+        0.029,
+        -0.019
+      ]
+    },
+    {
+      "type": "visual_scan"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
   "actual_outcome": "Failure at step 6: Collision detected during trajectory execution",
-  "created_at": "2025-10-27T14:08:18.515668",
+  "created_at": "2025-10-27T14:15:20.533273",
   "source_failures": [
-    "run_00045"
+    "run_00044"
   ],
   "difficulty": "hard"
 }

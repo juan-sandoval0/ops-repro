@@ -1,0 +1,78 @@
+{
+  "bundle_id": "bundle_cluster_45",
+  "cluster_id": 45,
+  "error_type": "path_deviation",
+  "error_message": "Path deviation exceeded 5.4mm threshold",
+  "failure_run_id": "run_00204",
+  "initial_state": {
+    "detected_objects": [
+      "fork",
+      "banana",
+      "apple"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        2.805,
+        1.078,
+        1.811,
+        0.981,
+        2.888,
+        -1.492,
+        2.866
+      ],
+      "gripper_open": false,
+      "end_effector_pose": {
+        "position": [
+          0.018,
+          0.154,
+          0.44
+        ],
+        "orientation": [
+          0.149,
+          -0.863,
+          -0.082,
+          0.686
+        ]
+      }
+    },
+    "timestep": 28
+  },
+  "action_sequence": [
+    {
+      "type": "execute_trajectory",
+      "target": [
+        -0.291,
+        -0.215,
+        -0.033
+      ]
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.003,
+        -0.491,
+        -0.443
+      ]
+    },
+    {
+      "type": "close_gripper"
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Path deviation exceeded 5.4mm threshold",
+  "created_at": "2025-10-27T14:15:20.542088",
+  "source_failures": [
+    "run_00204",
+    "run_00255"
+  ],
+  "difficulty": "medium"
+}

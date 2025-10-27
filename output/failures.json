@@ -87,7 +87,7 @@
       "severity": "error",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:19.316750"
+    "timestamp": "2025-10-27T14:15:19.876891"
   },
   {
     "run_id": "run_00005",
@@ -183,7 +183,7 @@
       "severity": "error",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:17.319605"
+    "timestamp": "2025-10-27T14:15:17.879647"
   },
   {
     "run_id": "run_00008",
@@ -266,7 +266,7 @@
       "severity": "error",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:19.522046"
+    "timestamp": "2025-10-27T14:15:20.082049"
   },
   {
     "run_id": "run_00009",
@@ -361,7 +361,7 @@
       "severity": "error",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:18.623003"
+    "timestamp": "2025-10-27T14:15:19.182999"
   },
   {
     "run_id": "run_00010",
@@ -454,7 +454,7 @@
       "severity": "error",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:19.223813"
+    "timestamp": "2025-10-27T14:15:19.783758"
   },
   {
     "run_id": "run_00012",
@@ -541,7 +541,7 @@
       "severity": "warning",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:18.127133"
+    "timestamp": "2025-10-27T14:15:18.685621"
   },
   {
     "run_id": "run_00013",
@@ -627,7 +627,7 @@
       "severity": "error",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:18.127820"
+    "timestamp": "2025-10-27T14:15:18.686275"
   },
   {
     "run_id": "run_00023",
@@ -706,7 +706,7 @@
       "severity": "critical",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:17.644092"
+    "timestamp": "2025-10-27T14:15:18.195470"
   },
   {
     "run_id": "run_00024",
@@ -792,7 +792,7 @@
       "severity": "error",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:18.544672"
+    "timestamp": "2025-10-27T14:15:19.096076"
   },
   {
     "run_id": "run_00027",
@@ -881,7 +881,7 @@
       "severity": "critical",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:18.947267"
+    "timestamp": "2025-10-27T14:15:19.498673"
   },
   {
     "run_id": "run_00028",
@@ -969,7 +969,7 @@
       "severity": "error",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:19.248103"
+    "timestamp": "2025-10-27T14:15:19.799493"
   },
   {
     "run_id": "run_00036",
@@ -1050,7 +1050,7 @@
       "severity": "error",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:18.656289"
+    "timestamp": "2025-10-27T14:15:19.207314"
   },
   {
     "run_id": "run_00043",
@@ -1141,7 +1141,7 @@
       "severity": "warning",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:18.862647"
+    "timestamp": "2025-10-27T14:15:19.414236"
   },
   {
     "run_id": "run_00044",
@@ -1234,7 +1234,7 @@
       "severity": "error",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:18.863437"
+    "timestamp": "2025-10-27T14:15:19.415412"
   },
   {
     "run_id": "run_00045",
@@ -1317,7 +1317,7 @@
       "severity": "error",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:18.364231"
+    "timestamp": "2025-10-27T14:15:18.916354"
   },
   {
     "run_id": "run_00046",
@@ -1397,7 +1397,7 @@
       "severity": "error",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:19.464913"
+    "timestamp": "2025-10-27T14:15:20.017046"
   },
   {
     "run_id": "run_00047",
@@ -1488,7 +1488,7 @@
       "severity": "critical",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:18.165792"
+    "timestamp": "2025-10-27T14:15:18.717920"
   },
   {
     "run_id": "run_00048",
@@ -1569,7 +1569,7 @@
       "severity": "critical",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:19.266453"
+    "timestamp": "2025-10-27T14:15:19.818583"
   },
   {
     "run_id": "run_00054",
@@ -1652,7 +1652,7 @@
       "severity": "warning",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:17.871864"
+    "timestamp": "2025-10-27T14:15:18.424131"
   },
   {
     "run_id": "run_00057",
@@ -1735,7 +1735,7 @@
       "severity": "critical",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:19.374388"
+    "timestamp": "2025-10-27T14:15:19.926559"
   },
   {
     "run_id": "run_00060",
@@ -1826,7 +1826,7 @@
       "severity": "warning",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:18.077126"
+    "timestamp": "2025-10-27T14:15:18.629335"
   },
   {
     "run_id": "run_00062",
@@ -1918,7 +1918,7 @@
       "severity": "warning",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:18.978687"
+    "timestamp": "2025-10-27T14:15:19.530932"
   },
   {
     "run_id": "run_00070",
@@ -2013,7 +2013,7 @@
       "severity": "critical",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:17.285916"
+    "timestamp": "2025-10-27T14:15:17.838679"
   },
   {
     "run_id": "run_00078",
@@ -2095,7 +2095,7 @@
       "severity": "warning",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:19.150208"
+    "timestamp": "2025-10-27T14:15:19.704582"
   },
   {
     "run_id": "run_00083",
@@ -2184,7 +2184,7 @@
       "severity": "warning",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:17.354691"
+    "timestamp": "2025-10-27T14:15:17.909599"
   },
   {
     "run_id": "run_00085",
@@ -2277,7 +2277,7 @@
       "severity": "warning",
       "recoverable": true
     },
-    "timestamp": "2025-10-27T14:08:19.056090"
+    "timestamp": "2025-10-27T14:15:19.611246"
   },
   {
     "run_id": "run_00088",
@@ -2357,7 +2357,7 @@
       "severity": "warning",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:19.258963"
+    "timestamp": "2025-10-27T14:15:19.814032"
   },
   {
     "run_id": "run_00094",
@@ -2447,7 +2447,7 @@
       "severity": "error",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:17.664986"
+    "timestamp": "2025-10-27T14:15:18.219838"
   },
   {
     "run_id": "run_00096",
@@ -2527,6 +2527,6038 @@
       "severity": "critical",
       "recoverable": false
     },
-    "timestamp": "2025-10-27T14:08:19.166529"
+    "timestamp": "2025-10-27T14:15:19.721396"
+  },
+  {
+    "run_id": "run_00103",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "cup",
+          "towel",
+          "knife",
+          "fork"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.398,
+          0.57,
+          -0.827,
+          -1.003,
+          -1.837,
+          -2.966,
+          2.834
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.089,
+            -0.333,
+            -0.035
+          ],
+          "orientation": [
+            -0.112,
+            0.616,
+            0.112,
+            -0.983
+          ]
+        }
+      },
+      "force_torque": [
+        -4.23,
+        1.7,
+        -4.35,
+        -3.95,
+        0.57,
+        4.93
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.444,
+          -0.18,
+          0.474
+        ]
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.024,
+          -0.238,
+          0.02
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.528174"
+  },
+  {
+    "run_id": "run_00104",
+    "error_type": "motor_overheating",
+    "error_message": "Motor 2 temperature exceeded 81\u00b0C",
+    "failure_timestep": 25,
+    "total_timesteps": 26,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 25,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.308,
+          0.07,
+          0.665,
+          -1.767,
+          -2.881,
+          1.42,
+          2.494
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.183,
+            -0.163,
+            -0.297
+          ],
+          "orientation": [
+            -0.439,
+            -0.724,
+            -0.492,
+            0.516
+          ]
+        }
+      },
+      "force_torque": [
+        -0.99,
+        0.62,
+        3.45,
+        1.41,
+        0.81,
+        -0.03
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "rotate_wrist",
+        "angle": -153.7
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.263,
+          0.12,
+          0.407
+        ]
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.282,
+          -0.244,
+          -0.006
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:17.928827"
+  },
+  {
+    "run_id": "run_00106",
+    "error_type": "calibration_error",
+    "error_message": "Robot calibration out of tolerance",
+    "failure_timestep": 32,
+    "total_timesteps": 33,
+    "action_at_failure": {
+      "type": "execute_trajectory",
+      "target": [
+        -0.199,
+        0.354,
+        0.189
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 32,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "plate",
+          "knife"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.064,
+          -0.856,
+          2.309,
+          1.676,
+          1.041,
+          -1.238,
+          -0.68
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.271,
+            -0.16,
+            -0.451
+          ],
+          "orientation": [
+            0.329,
+            0.286,
+            -0.98,
+            0.662
+          ]
+        }
+      },
+      "force_torque": [
+        3.17,
+        4.66,
+        4.74,
+        -4.61,
+        3.15,
+        -0.21
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "rotate_wrist",
+        "angle": 64.7
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.151,
+          0.448,
+          -0.028
+        ]
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "release_object"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.630339"
+  },
+  {
+    "run_id": "run_00107",
+    "error_type": "force_threshold_exceeded",
+    "error_message": "Force exceeded threshold: 42.3N",
+    "failure_timestep": 25,
+    "total_timesteps": 26,
+    "action_at_failure": {
+      "type": "rotate_wrist",
+      "angle": 31.4
+    },
+    "observation_at_failure": {
+      "timestep": 25,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "can"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.138,
+          0.242,
+          -0.591,
+          2.236,
+          2.399,
+          -1.312,
+          1.379
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.035,
+            -0.348,
+            -0.335
+          ],
+          "orientation": [
+            -0.86,
+            0.294,
+            0.231,
+            0.009
+          ]
+        }
+      },
+      "force_torque": [
+        -0.42,
+        2.1,
+        -1.72,
+        2.59,
+        -0.3,
+        -1.94
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.435,
+          -0.072,
+          0.204
+        ]
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.18,
+          0.487,
+          0.462
+        ]
+      },
+      {
+        "type": "plan_trajectory"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:17.931012"
+  },
+  {
+    "run_id": "run_00109",
+    "error_type": "planning_timeout",
+    "error_message": "Motion planning failed to find valid path",
+    "failure_timestep": 36,
+    "total_timesteps": 37,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 36,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "banana",
+          "plate"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.473,
+          -0.119,
+          1.435,
+          2.517,
+          -0.836,
+          1.362,
+          1.104
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.126,
+            -0.314,
+            0.032
+          ],
+          "orientation": [
+            0.419,
+            0.081,
+            -0.966,
+            0.154
+          ]
+        }
+      },
+      "force_torque": [
+        -2.22,
+        -0.02,
+        -4.76,
+        1.91,
+        -4.71,
+        1.63
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "visual_scan"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.032543"
+  },
+  {
+    "run_id": "run_00110",
+    "error_type": "timeout",
+    "error_message": "Action plan_trajectory exceeded timeout (30s)",
+    "failure_timestep": 48,
+    "total_timesteps": 49,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 48,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -3.115,
+          -2.724,
+          -2.173,
+          1.243,
+          2.583,
+          3.04,
+          2.2
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.172,
+            -0.081,
+            -0.499
+          ],
+          "orientation": [
+            -0.205,
+            -0.736,
+            -0.943,
+            -0.105
+          ]
+        }
+      },
+      "force_torque": [
+        4.02,
+        1.13,
+        1.05,
+        0.74,
+        -2.32,
+        1.16
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.473,
+          -0.431,
+          -0.2
+        ]
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 17.2
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.037,
+          0.175,
+          0.205
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.233275"
+  },
+  {
+    "run_id": "run_00116",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "knife",
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.68,
+          1.32,
+          -3.015,
+          1.351,
+          0.468,
+          1.848,
+          1.243
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.156,
+            -0.183,
+            -0.497
+          ],
+          "orientation": [
+            -0.941,
+            0.51,
+            -0.803,
+            -0.93
+          ]
+        }
+      },
+      "force_torque": [
+        2.26,
+        4.24,
+        -1.46,
+        -1.95,
+        -1.84,
+        4.06
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.195,
+          -0.265,
+          0.485
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "can",
+        "force": 12.1
+      },
+      {
+        "type": "visual_scan"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.581023"
+  },
+  {
+    "run_id": "run_00123",
+    "error_type": "timeout",
+    "error_message": "Action plan_trajectory exceeded timeout (30s)",
+    "failure_timestep": 39,
+    "total_timesteps": 40,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 39,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "can",
+          "box"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.051,
+          -2.449,
+          1.89,
+          -2.58,
+          -2.356,
+          3.092,
+          -0.262
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.43,
+            -0.305,
+            0.205
+          ],
+          "orientation": [
+            -0.649,
+            0.723,
+            -0.96,
+            0.819
+          ]
+        }
+      },
+      "force_torque": [
+        -4.9,
+        -0.58,
+        4.69,
+        -2.19,
+        2.5,
+        -1.16
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.19,
+          -0.145,
+          0.017
+        ]
+      },
+      {
+        "type": "visual_scan"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:19.398661"
+  },
+  {
+    "run_id": "run_00125",
+    "error_type": "execution_error",
+    "error_message": "Trajectory execution deviated from plan",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "visual_scan"
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "can",
+          "fork",
+          "knife",
+          "box"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.278,
+          -0.836,
+          1.776,
+          -0.598,
+          -2.0,
+          2.197,
+          0.546
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.45,
+            -0.485,
+            0.299
+          ],
+          "orientation": [
+            -0.565,
+            -0.33,
+            0.043,
+            -0.998
+          ]
+        }
+      },
+      "force_torque": [
+        4.29,
+        -3.11,
+        1.3,
+        0.26,
+        -2.73,
+        3.14
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.368,
+          0.374,
+          -0.338
+        ]
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.209,
+          -0.117,
+          -0.024
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.201857"
+  },
+  {
+    "run_id": "run_00126",
+    "error_type": "vision_failure",
+    "error_message": "Failed to process camera feed",
+    "failure_timestep": 34,
+    "total_timesteps": 35,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 34,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "plate",
+          "bottle",
+          "towel"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.622,
+          -1.535,
+          0.238,
+          -1.131,
+          -2.51,
+          0.123,
+          1.72
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.239,
+            -0.085,
+            0.488
+          ],
+          "orientation": [
+            0.05,
+            -0.396,
+            -0.141,
+            -0.516
+          ]
+        }
+      },
+      "force_torque": [
+        1.08,
+        0.36,
+        -3.54,
+        -3.0,
+        4.24,
+        4.71
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.412,
+          0.342,
+          0.439
+        ]
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "grasp_object",
+        "object": "knife",
+        "force": 12.2
+      },
+      {
+        "type": "grasp_object",
+        "object": "cup",
+        "force": 9.0
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.902517"
+  },
+  {
+    "run_id": "run_00132",
+    "error_type": "position_drift",
+    "error_message": "Position drift detected: 2.0mm",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "fork"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.37,
+          2.348,
+          -1.186,
+          2.078,
+          -0.215,
+          -2.213,
+          1.807
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.347,
+            -0.063,
+            0.126
+          ],
+          "orientation": [
+            0.42,
+            0.623,
+            0.054,
+            -0.631
+          ]
+        }
+      },
+      "force_torque": [
+        0.96,
+        -3.17,
+        -3.55,
+        -3.22,
+        4.22,
+        4.63
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "apple",
+        "force": 17.1
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 175.4
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.610816"
+  },
+  {
+    "run_id": "run_00133",
+    "error_type": "collision_detected",
+    "error_message": "Collision detected during trajectory execution",
+    "failure_timestep": 43,
+    "total_timesteps": 44,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "apple",
+      "force": 15.9
+    },
+    "observation_at_failure": {
+      "timestep": 43,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "bottle",
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.77,
+          -1.592,
+          -2.763,
+          -0.553,
+          -2.49,
+          1.936,
+          1.079
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.123,
+            0.07,
+            0.015
+          ],
+          "orientation": [
+            0.656,
+            -0.557,
+            0.268,
+            0.19
+          ]
+        }
+      },
+      "force_torque": [
+        4.33,
+        0.68,
+        -1.96,
+        -3.08,
+        2.6,
+        2.21
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.328,
+          0.446,
+          0.34
+        ]
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.124,
+          0.459,
+          0.348
+        ]
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -82.2
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.811690"
+  },
+  {
+    "run_id": "run_00134",
+    "error_type": "vision_failure",
+    "error_message": "Failed to process camera feed",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.622,
+          -0.63,
+          1.427,
+          -2.946,
+          -1.554,
+          -1.593,
+          -1.749
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.001,
+            -0.198,
+            -0.445
+          ],
+          "orientation": [
+            0.57,
+            -0.752,
+            -0.217,
+            0.966
+          ]
+        }
+      },
+      "force_torque": [
+        1.06,
+        3.74,
+        -4.89,
+        4.84,
+        -2.1,
+        -2.13
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -77.2
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.253,
+          0.255,
+          -0.365
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "towel",
+        "force": 5.6
+      },
+      {
+        "type": "release_object"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.212579"
+  },
+  {
+    "run_id": "run_00135",
+    "error_type": "grasp_failure",
+    "error_message": "Failed to grasp unknown",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "close_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "book"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.127,
+          0.66,
+          0.547,
+          -1.663,
+          -2.912,
+          -2.582,
+          1.506
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.327,
+            -0.165,
+            0.033
+          ],
+          "orientation": [
+            0.952,
+            0.208,
+            -0.449,
+            0.946
+          ]
+        }
+      },
+      "force_torque": [
+        -0.57,
+        1.21,
+        -4.62,
+        -3.55,
+        -0.32,
+        -0.24
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "grasp_object",
+        "object": "can",
+        "force": 9.9
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "release_object"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.613177"
+  },
+  {
+    "run_id": "run_00138",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 30,
+    "total_timesteps": 31,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 30,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "cup",
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.749,
+          2.021,
+          -2.843,
+          -1.219,
+          2.732,
+          -1.387,
+          1.192
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.261,
+            -0.075,
+            -0.105
+          ],
+          "orientation": [
+            0.351,
+            -0.76,
+            0.362,
+            0.608
+          ]
+        }
+      },
+      "force_torque": [
+        -0.42,
+        -0.66,
+        3.79,
+        -1.31,
+        4.62,
+        -2.37
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "rotate_wrist",
+        "angle": -2.3
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.515932"
+  },
+  {
+    "run_id": "run_00144",
+    "error_type": "emergency_stop",
+    "error_message": "Emergency stop triggered by safety system",
+    "failure_timestep": 39,
+    "total_timesteps": 40,
+    "action_at_failure": {
+      "type": "rotate_wrist",
+      "angle": 149.7
+    },
+    "observation_at_failure": {
+      "timestep": 39,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "fork",
+          "towel"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.137,
+          -2.446,
+          -0.642,
+          0.51,
+          -2.654,
+          -0.41,
+          -2.867
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.26,
+            -0.473,
+            0.198
+          ],
+          "orientation": [
+            0.381,
+            -0.015,
+            -0.041,
+            -0.477
+          ]
+        }
+      },
+      "force_torque": [
+        4.71,
+        4.3,
+        2.17,
+        -3.09,
+        -2.23,
+        1.84
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "grasp_object",
+        "object": "box",
+        "force": 5.3
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.422589"
+  },
+  {
+    "run_id": "run_00148",
+    "error_type": "force_threshold_exceeded",
+    "error_message": "Force exceeded threshold: 22.8N",
+    "failure_timestep": 32,
+    "total_timesteps": 33,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 32,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "box",
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.418,
+          2.886,
+          -1.568,
+          -0.278,
+          3.082,
+          -0.221,
+          -1.019
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.45,
+            0.1,
+            -0.198
+          ],
+          "orientation": [
+            -0.485,
+            0.708,
+            0.466,
+            0.809
+          ]
+        }
+      },
+      "force_torque": [
+        -4.86,
+        -3.33,
+        2.59,
+        -4.48,
+        3.43,
+        3.55
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "grasp_object",
+        "object": "plate",
+        "force": 11.0
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.726088"
+  },
+  {
+    "run_id": "run_00153",
+    "error_type": "vacuum_loss",
+    "error_message": "Vacuum gripper pressure loss detected",
+    "failure_timestep": 38,
+    "total_timesteps": 39,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 38,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "knife",
+          "apple",
+          "plate"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.022,
+          -0.652,
+          -1.719,
+          0.965,
+          2.982,
+          -2.092,
+          -0.013
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.323,
+            0.038,
+            0.372
+          ],
+          "orientation": [
+            -0.658,
+            0.12,
+            0.057,
+            0.825
+          ]
+        }
+      },
+      "force_torque": [
+        0.88,
+        -4.63,
+        4.16,
+        -4.83,
+        -0.81,
+        3.24
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.371,
+          0.375,
+          0.263
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "book",
+        "force": 12.5
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.330264"
+  },
+  {
+    "run_id": "run_00155",
+    "error_type": "vision_failure",
+    "error_message": "Failed to process camera feed",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "book",
+      "force": 16.8
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "cup"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.343,
+          2.234,
+          1.273,
+          1.119,
+          -2.771,
+          -1.33,
+          -1.094
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.304,
+            -0.178,
+            0.111
+          ],
+          "orientation": [
+            -0.155,
+            0.826,
+            0.085,
+            0.674
+          ]
+        }
+      },
+      "force_torque": [
+        -1.29,
+        -2.87,
+        4.8,
+        -0.22,
+        1.64,
+        -3.32
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.312,
+          0.122,
+          -0.049
+        ]
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -154.6
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.231900"
+  },
+  {
+    "run_id": "run_00157",
+    "error_type": "collision_detected",
+    "error_message": "Collision detected during trajectory execution",
+    "failure_timestep": 38,
+    "total_timesteps": 39,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 38,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "cup",
+          "fork",
+          "plate",
+          "can"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.946,
+          1.632,
+          -1.021,
+          -0.049,
+          -0.59,
+          -1.137,
+          -2.767
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.358,
+            0.072,
+            0.206
+          ],
+          "orientation": [
+            0.295,
+            -0.676,
+            0.892,
+            -0.817
+          ]
+        }
+      },
+      "force_torque": [
+        2.67,
+        2.67,
+        -3.86,
+        4.51,
+        -1.97,
+        1.67
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "plan_trajectory"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:19.333366"
+  },
+  {
+    "run_id": "run_00160",
+    "error_type": "vacuum_loss",
+    "error_message": "Vacuum gripper pressure loss detected",
+    "failure_timestep": 49,
+    "total_timesteps": 50,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "apple",
+      "force": 6.7
+    },
+    "observation_at_failure": {
+      "timestep": 49,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "cup",
+          "fork"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.327,
+          -0.986,
+          -1.296,
+          2.277,
+          0.572,
+          3.096,
+          -2.816
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.092,
+            0.469,
+            -0.019
+          ],
+          "orientation": [
+            -0.099,
+            -0.385,
+            0.732,
+            -0.852
+          ]
+        }
+      },
+      "force_torque": [
+        -2.58,
+        -2.46,
+        2.15,
+        -1.3,
+        3.34,
+        -1.51
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.088,
+          -0.281,
+          -0.014
+        ]
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "release_object"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.435942"
+  },
+  {
+    "run_id": "run_00161",
+    "error_type": "planning_timeout",
+    "error_message": "Motion planning failed to find valid path",
+    "failure_timestep": 49,
+    "total_timesteps": 50,
+    "action_at_failure": {
+      "type": "close_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 49,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "fork"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.861,
+          1.772,
+          -1.166,
+          1.373,
+          -1.556,
+          1.788,
+          2.483
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.361,
+            0.187,
+            0.442
+          ],
+          "orientation": [
+            0.275,
+            0.691,
+            0.432,
+            -0.709
+          ]
+        }
+      },
+      "force_torque": [
+        -0.83,
+        3.14,
+        0.73,
+        -3.17,
+        -1.41,
+        -2.03
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -115.1
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.436877"
+  },
+  {
+    "run_id": "run_00166",
+    "error_type": "grasp_failure",
+    "error_message": "Failed to grasp unknown",
+    "failure_timestep": 46,
+    "total_timesteps": 47,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 46,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "bottle",
+          "fork",
+          "knife"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.254,
+          1.627,
+          1.648,
+          0.21,
+          -1.121,
+          0.017,
+          -0.09
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.034,
+            -0.101,
+            -0.143
+          ],
+          "orientation": [
+            0.173,
+            0.621,
+            -0.803,
+            -0.713
+          ]
+        }
+      },
+      "force_torque": [
+        4.91,
+        -3.44,
+        -1.26,
+        2.76,
+        -3.41,
+        -2.03
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "cup",
+        "force": 14.0
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 163.8
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.141403"
+  },
+  {
+    "run_id": "run_00172",
+    "error_type": "vision_failure",
+    "error_message": "Failed to process camera feed",
+    "failure_timestep": 47,
+    "total_timesteps": 48,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 47,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "knife",
+          "towel",
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.924,
+          -2.284,
+          0.844,
+          -1.202,
+          0.726,
+          -2.641,
+          -1.656
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.391,
+            0.461,
+            -0.299
+          ],
+          "orientation": [
+            0.952,
+            0.521,
+            0.116,
+            0.388
+          ]
+        }
+      },
+      "force_torque": [
+        2.76,
+        -4.67,
+        -1.52,
+        -3.29,
+        -3.87,
+        4.71
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.29,
+          -0.128,
+          -0.207
+        ]
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -4.6
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.246795"
+  },
+  {
+    "run_id": "run_00173",
+    "error_type": "singularity_detected",
+    "error_message": "Robot approaching kinematic singularity",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "box",
+      "force": 12.8
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "can",
+          "plate",
+          "bottle",
+          "knife"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.287,
+          -1.555,
+          -1.361,
+          -1.549,
+          -2.958,
+          -0.128,
+          -1.693
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.421,
+            -0.272,
+            -0.169
+          ],
+          "orientation": [
+            0.42,
+            0.335,
+            -0.677,
+            -0.942
+          ]
+        }
+      },
+      "force_torque": [
+        -0.72,
+        2.55,
+        -1.92,
+        3.24,
+        1.04,
+        -3.71
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.484,
+          0.003,
+          0.273
+        ]
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.15,
+          0.003,
+          -0.134
+        ]
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.463,
+          0.442,
+          0.031
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.247686"
+  },
+  {
+    "run_id": "run_00177",
+    "error_type": "motor_overheating",
+    "error_message": "Motor 2 temperature exceeded 89\u00b0C",
+    "failure_timestep": 46,
+    "total_timesteps": 47,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "knife",
+      "force": 5.9
+    },
+    "observation_at_failure": {
+      "timestep": 46,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "bottle",
+          "cup"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.283,
+          -0.944,
+          1.652,
+          -0.443,
+          0.045,
+          0.971,
+          -0.788
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.457,
+            0.146,
+            0.131
+          ],
+          "orientation": [
+            -0.46,
+            0.198,
+            0.578,
+            -0.79
+          ]
+        }
+      },
+      "force_torque": [
+        2.53,
+        4.81,
+        2.86,
+        -4.06,
+        3.56,
+        -2.16
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.449,
+          0.137,
+          0.06
+        ]
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.274,
+          0.22,
+          -0.177
+        ]
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.293,
+          -0.313,
+          0.209
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:20.151050"
+  },
+  {
+    "run_id": "run_00178",
+    "error_type": "sensor_malfunction",
+    "error_message": "Sensor encoder malfunction detected",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.494,
+          -2.421,
+          -0.659,
+          2.149,
+          2.666,
+          -1.8,
+          -2.113
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.283,
+            0.339,
+            -0.176
+          ],
+          "orientation": [
+            -0.249,
+            -0.891,
+            -0.721,
+            -0.343
+          ]
+        }
+      },
+      "force_torque": [
+        3.27,
+        0.26,
+        -2.75,
+        2.32,
+        0.95,
+        0.62
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "can",
+        "force": 11.7
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 44.3
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -110.6
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.651957"
+  },
+  {
+    "run_id": "run_00182",
+    "error_type": "joint_limit_exceeded",
+    "error_message": "Joint 5 exceeded limit",
+    "failure_timestep": 46,
+    "total_timesteps": 47,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 46,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "book",
+          "knife",
+          "towel",
+          "bottle"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.898,
+          -2.444,
+          2.524,
+          -0.809,
+          -0.746,
+          -2.993,
+          -0.25
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.397,
+            -0.247,
+            -0.204
+          ],
+          "orientation": [
+            0.901,
+            0.995,
+            0.014,
+            -0.391
+          ]
+        }
+      },
+      "force_torque": [
+        4.43,
+        1.87,
+        3.18,
+        2.44,
+        1.32,
+        2.85
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "rotate_wrist",
+        "angle": 105.9
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -84.1
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:20.155480"
+  },
+  {
+    "run_id": "run_00185",
+    "error_type": "workspace_violation",
+    "error_message": "Target position outside workspace limits",
+    "failure_timestep": 38,
+    "total_timesteps": 39,
+    "action_at_failure": {
+      "type": "execute_trajectory",
+      "target": [
+        0.06,
+        0.308,
+        -0.312
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 38,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "book",
+          "towel",
+          "cup",
+          "can"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.626,
+          0.299,
+          0.402,
+          1.406,
+          -0.429,
+          -1.815,
+          1.674
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.233,
+            -0.098,
+            -0.234
+          ],
+          "orientation": [
+            0.332,
+            0.841,
+            0.172,
+            0.952
+          ]
+        }
+      },
+      "force_torque": [
+        0.36,
+        1.07,
+        -1.36,
+        -3.78,
+        4.22,
+        2.49
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "grasp_object",
+        "object": "fork",
+        "force": 14.8
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "grasp_object",
+        "object": "plate",
+        "force": 14.5
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.196,
+          -0.17,
+          -0.327
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.358394"
+  },
+  {
+    "run_id": "run_00187",
+    "error_type": "vacuum_loss",
+    "error_message": "Vacuum gripper pressure loss detected",
+    "failure_timestep": 47,
+    "total_timesteps": 48,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "cup",
+      "force": 5.0
+    },
+    "observation_at_failure": {
+      "timestep": 47,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "banana",
+          "bottle",
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.824,
+          1.652,
+          -2.727,
+          0.393,
+          1.507,
+          -3.12,
+          0.447
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.435,
+            0.101,
+            0.177
+          ],
+          "orientation": [
+            0.152,
+            0.988,
+            0.648,
+            -0.885
+          ]
+        }
+      },
+      "force_torque": [
+        -0.72,
+        0.95,
+        -4.2,
+        4.34,
+        2.01,
+        4.44
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "rotate_wrist",
+        "angle": 99.2
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "visual_scan"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.260197"
+  },
+  {
+    "run_id": "run_00191",
+    "error_type": "timeout",
+    "error_message": "Action rotate_wrist exceeded timeout (30s)",
+    "failure_timestep": 46,
+    "total_timesteps": 47,
+    "action_at_failure": {
+      "type": "rotate_wrist",
+      "angle": -147.8
+    },
+    "observation_at_failure": {
+      "timestep": 46,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "book",
+          "plate"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.459,
+          -0.682,
+          3.096,
+          0.483,
+          1.612,
+          -0.039,
+          -0.039
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.134,
+            -0.379,
+            -0.323
+          ],
+          "orientation": [
+            -0.994,
+            0.425,
+            0.531,
+            -0.431
+          ]
+        }
+      },
+      "force_torque": [
+        -4.43,
+        3.77,
+        -4.2,
+        -3.07,
+        -2.18,
+        0.14
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "grasp_object",
+        "object": "bottle",
+        "force": 14.5
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -101.7
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:20.164247"
+  },
+  {
+    "run_id": "run_00194",
+    "error_type": "path_deviation",
+    "error_message": "Path deviation exceeded 4.5mm threshold",
+    "failure_timestep": 42,
+    "total_timesteps": 43,
+    "action_at_failure": {
+      "type": "rotate_wrist",
+      "angle": 29.0
+    },
+    "observation_at_failure": {
+      "timestep": 42,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "fork",
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.536,
+          2.932,
+          1.389,
+          -0.814,
+          2.516,
+          0.481,
+          2.385
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.298,
+            -0.438,
+            0.19
+          ],
+          "orientation": [
+            0.292,
+            0.658,
+            0.137,
+            0.762
+          ]
+        }
+      },
+      "force_torque": [
+        -3.35,
+        -1.52,
+        1.37,
+        4.31,
+        -0.92,
+        3.64
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "grasp_object",
+        "object": "plate",
+        "force": 15.6
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.767206"
+  },
+  {
+    "run_id": "run_00196",
+    "error_type": "execution_error",
+    "error_message": "Trajectory execution deviated from plan",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "move_to_position",
+      "target": [
+        -0.42,
+        0.081,
+        0.453
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "fork",
+          "book",
+          "knife"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.189,
+          -2.527,
+          1.888,
+          2.766,
+          -0.896,
+          -2.36,
+          2.246
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.04,
+            -0.107,
+            -0.284
+          ],
+          "orientation": [
+            -0.494,
+            0.118,
+            -0.644,
+            0.087
+          ]
+        }
+      },
+      "force_torque": [
+        -0.3,
+        -2.25,
+        1.59,
+        -2.48,
+        1.69,
+        0.08
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.181,
+          -0.346,
+          0.291
+        ]
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.202,
+          -0.279,
+          0.204
+        ]
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 130.6
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.063,
+          -0.227,
+          0.245
+        ]
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.269076"
+  },
+  {
+    "run_id": "run_00197",
+    "error_type": "object_not_found",
+    "error_message": "Could not locate unknown in scene",
+    "failure_timestep": 47,
+    "total_timesteps": 48,
+    "action_at_failure": {
+      "type": "rotate_wrist",
+      "angle": 163.6
+    },
+    "observation_at_failure": {
+      "timestep": 47,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "book",
+          "apple",
+          "bottle"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.171,
+          -2.349,
+          -1.054,
+          -0.707,
+          -1.598,
+          -2.919,
+          -0.647
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.255,
+            0.027,
+            0.235
+          ],
+          "orientation": [
+            0.666,
+            -0.097,
+            -0.138,
+            0.26
+          ]
+        }
+      },
+      "force_torque": [
+        -0.8,
+        4.3,
+        -3.54,
+        2.09,
+        -4.51,
+        -4.57
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "move_to_position",
+        "target": [
+          0.359,
+          0.17,
+          0.242
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "can",
+        "force": 16.8
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.356,
+          0.345,
+          -0.238
+        ]
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -137.9
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.269643"
+  },
+  {
+    "run_id": "run_00198",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 36,
+    "total_timesteps": 37,
+    "action_at_failure": {
+      "type": "visual_scan"
+    },
+    "observation_at_failure": {
+      "timestep": 36,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "box",
+          "book",
+          "can"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.59,
+          1.443,
+          -0.128,
+          2.016,
+          -0.264,
+          -1.903,
+          0.685
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.209,
+            -0.46,
+            0.27
+          ],
+          "orientation": [
+            -0.28,
+            -0.987,
+            0.068,
+            -0.992
+          ]
+        }
+      },
+      "force_torque": [
+        1.33,
+        0.13,
+        4.36,
+        2.96,
+        4.78,
+        -2.96
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "rotate_wrist",
+        "angle": -99.5
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -14.5
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "plan_trajectory"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.170576"
+  },
+  {
+    "run_id": "run_00200",
+    "error_type": "timeout",
+    "error_message": "Action execute_trajectory exceeded timeout (30s)",
+    "failure_timestep": 35,
+    "total_timesteps": 36,
+    "action_at_failure": {
+      "type": "execute_trajectory",
+      "target": [
+        -0.002,
+        0.33,
+        0.327
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 35,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "bottle",
+          "knife"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.863,
+          -2.026,
+          2.691,
+          1.017,
+          -2.785,
+          1.924,
+          -1.489
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.478,
+            -0.426,
+            0.392
+          ],
+          "orientation": [
+            -0.365,
+            -0.904,
+            -0.596,
+            -0.884
+          ]
+        }
+      },
+      "force_torque": [
+        -4.97,
+        2.08,
+        -2.06,
+        -1.62,
+        -3.47,
+        -1.29
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.111,
+          -0.398,
+          -0.387
+        ]
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "release_object"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.072278"
+  },
+  {
+    "run_id": "run_00202",
+    "error_type": "execution_error",
+    "error_message": "Trajectory execution deviated from plan",
+    "failure_timestep": 41,
+    "total_timesteps": 42,
+    "action_at_failure": {
+      "type": "close_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 41,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "bottle",
+          "book"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.696,
+          1.204,
+          2.845,
+          2.14,
+          -0.915,
+          1.322,
+          -2.557
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.157,
+            -0.269,
+            0.404
+          ],
+          "orientation": [
+            -0.211,
+            -0.092,
+            -0.944,
+            -0.534
+          ]
+        }
+      },
+      "force_torque": [
+        -0.05,
+        -1.65,
+        3.13,
+        -0.49,
+        3.34,
+        4.57
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "move_to_position",
+        "target": [
+          0.035,
+          0.214,
+          0.007
+        ]
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "grasp_object",
+        "object": "cup",
+        "force": 11.6
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.673979"
+  },
+  {
+    "run_id": "run_00204",
+    "error_type": "path_deviation",
+    "error_message": "Path deviation exceeded 5.4mm threshold",
+    "failure_timestep": 28,
+    "total_timesteps": 29,
+    "action_at_failure": {
+      "type": "close_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 28,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "fork",
+          "banana",
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.805,
+          1.078,
+          1.811,
+          0.981,
+          2.888,
+          -1.492,
+          2.866
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.018,
+            0.154,
+            0.44
+          ],
+          "orientation": [
+            0.149,
+            -0.863,
+            -0.082,
+            0.686
+          ]
+        }
+      },
+      "force_torque": [
+        -2.06,
+        2.96,
+        4.7,
+        -0.3,
+        -1.58,
+        1.65
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.291,
+          -0.215,
+          -0.033
+        ]
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.003,
+          -0.491,
+          -0.443
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.375748"
+  },
+  {
+    "run_id": "run_00209",
+    "error_type": "vision_failure",
+    "error_message": "Failed to process camera feed",
+    "failure_timestep": 28,
+    "total_timesteps": 29,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 28,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "plate",
+          "towel",
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.175,
+          -0.197,
+          -2.892,
+          3.035,
+          -1.919,
+          -2.583,
+          -2.619
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.334,
+            0.336,
+            -0.28
+          ],
+          "orientation": [
+            -0.921,
+            -0.07,
+            -0.377,
+            -0.805
+          ]
+        }
+      },
+      "force_torque": [
+        -3.84,
+        -1.51,
+        4.92,
+        -3.86,
+        -0.4,
+        1.87
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.428,
+          -0.47,
+          0.143
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.380014"
+  },
+  {
+    "run_id": "run_00218",
+    "error_type": "joint_limit_exceeded",
+    "error_message": "Joint 2 exceeded limit",
+    "failure_timestep": 48,
+    "total_timesteps": 49,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 48,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "bottle",
+          "box",
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.048,
+          -1.705,
+          -2.544,
+          2.117,
+          -0.472,
+          1.37,
+          -1.589
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.454,
+            -0.204,
+            -0.299
+          ],
+          "orientation": [
+            0.238,
+            0.664,
+            -0.741,
+            0.952
+          ]
+        }
+      },
+      "force_torque": [
+        2.79,
+        -2.99,
+        -2.46,
+        -0.57,
+        4.22,
+        -1.23
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.387900"
+  },
+  {
+    "run_id": "run_00221",
+    "error_type": "sensor_malfunction",
+    "error_message": "Sensor force malfunction detected",
+    "failure_timestep": 35,
+    "total_timesteps": 36,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 35,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.954,
+          -0.901,
+          -2.774,
+          -3.014,
+          2.533,
+          1.065,
+          -0.443
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.479,
+            0.232,
+            0.159
+          ],
+          "orientation": [
+            -0.029,
+            0.72,
+            0.756,
+            0.847
+          ]
+        }
+      },
+      "force_torque": [
+        1.55,
+        -2.76,
+        1.2,
+        -2.91,
+        -4.92,
+        2.05
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "grasp_object",
+        "object": "towel",
+        "force": 18.5
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 64.6
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 64.9
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:19.090583"
+  },
+  {
+    "run_id": "run_00222",
+    "error_type": "timeout",
+    "error_message": "Action move_to_position exceeded timeout (30s)",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "move_to_position",
+      "target": [
+        -0.135,
+        0.152,
+        -0.113
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "bottle",
+          "can",
+          "cup",
+          "plate"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.966,
+          0.92,
+          -2.271,
+          -1.857,
+          0.485,
+          1.98,
+          -0.558
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.021,
+            -0.155,
+            0.18
+          ],
+          "orientation": [
+            0.337,
+            -0.689,
+            -0.452,
+            0.06
+          ]
+        }
+      },
+      "force_torque": [
+        4.26,
+        -2.34,
+        0.33,
+        2.01,
+        0.03,
+        0.03
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "cup",
+        "force": 12.1
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "grasp_object",
+        "object": "box",
+        "force": 6.4
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.691248"
+  },
+  {
+    "run_id": "run_00223",
+    "error_type": "grasp_failure",
+    "error_message": "Failed to grasp unknown",
+    "failure_timestep": 32,
+    "total_timesteps": 33,
+    "action_at_failure": {
+      "type": "execute_trajectory",
+      "target": [
+        -0.463,
+        0.225,
+        0.387
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 32,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "banana",
+          "knife"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.012,
+          0.698,
+          0.807,
+          -1.566,
+          -1.771,
+          -0.919,
+          1.333
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.047,
+            0.138,
+            -0.276
+          ],
+          "orientation": [
+            -0.422,
+            0.194,
+            0.715,
+            0.965
+          ]
+        }
+      },
+      "force_torque": [
+        0.87,
+        2.09,
+        -0.81,
+        4.11,
+        -2.68,
+        0.63
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "rotate_wrist",
+        "angle": -99.2
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -30.2
+      },
+      {
+        "type": "grasp_object",
+        "object": "banana",
+        "force": 9.2
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.791837"
+  },
+  {
+    "run_id": "run_00224",
+    "error_type": "collision_detected",
+    "error_message": "Collision detected during trajectory execution",
+    "failure_timestep": 26,
+    "total_timesteps": 27,
+    "action_at_failure": {
+      "type": "execute_trajectory",
+      "target": [
+        -0.229,
+        0.163,
+        -0.083
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 26,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "knife"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.778,
+          -2.256,
+          1.74,
+          0.666,
+          2.416,
+          1.313,
+          1.881
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.016,
+            -0.149,
+            0.485
+          ],
+          "orientation": [
+            0.865,
+            -0.248,
+            -0.542,
+            -0.851
+          ]
+        }
+      },
+      "force_torque": [
+        -4.17,
+        -3.73,
+        -2.87,
+        3.88,
+        -2.38,
+        1.81
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.213,
+          0.023,
+          0.157
+        ]
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.192456"
+  },
+  {
+    "run_id": "run_00226",
+    "error_type": "motor_overheating",
+    "error_message": "Motor 1 temperature exceeded 74\u00b0C",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "knife",
+          "fork",
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.295,
+          -1.249,
+          -1.246,
+          -1.854,
+          2.117,
+          -1.87,
+          -2.0
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.167,
+            0.348,
+            -0.322
+          ],
+          "orientation": [
+            0.005,
+            -0.106,
+            0.255,
+            0.833
+          ]
+        }
+      },
+      "force_torque": [
+        -4.65,
+        1.4,
+        1.42,
+        -4.06,
+        -1.9,
+        -1.16
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "move_to_position",
+        "target": [
+          0.268,
+          0.228,
+          0.048
+        ]
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.693894"
+  },
+  {
+    "run_id": "run_00229",
+    "error_type": "vision_failure",
+    "error_message": "Failed to process camera feed",
+    "failure_timestep": 49,
+    "total_timesteps": 50,
+    "action_at_failure": {
+      "type": "close_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 49,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "cup",
+          "fork",
+          "box"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.88,
+          -2.378,
+          0.399,
+          0.934,
+          1.815,
+          0.51,
+          -2.376
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.271,
+            0.286,
+            0.182
+          ],
+          "orientation": [
+            0.532,
+            -0.852,
+            0.903,
+            0.251
+          ]
+        }
+      },
+      "force_torque": [
+        1.52,
+        0.66,
+        -2.62,
+        -2.11,
+        -3.21,
+        0.67
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "grasp_object",
+        "object": "plate",
+        "force": 15.2
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.459,
+          -0.378,
+          0.133
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "can",
+        "force": 8.2
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:20.496330"
+  },
+  {
+    "run_id": "run_00234",
+    "error_type": "grasp_failure",
+    "error_message": "Failed to grasp unknown",
+    "failure_timestep": 43,
+    "total_timesteps": 44,
+    "action_at_failure": {
+      "type": "rotate_wrist",
+      "angle": -15.9
+    },
+    "observation_at_failure": {
+      "timestep": 43,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple",
+          "fork",
+          "book"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -3.067,
+          1.936,
+          3.071,
+          2.072,
+          -0.35,
+          -0.739,
+          1.873
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.264,
+            0.225,
+            -0.194
+          ],
+          "orientation": [
+            0.583,
+            -0.852,
+            0.917,
+            -0.739
+          ]
+        }
+      },
+      "force_torque": [
+        -2.1,
+        4.09,
+        4.06,
+        1.74,
+        0.29,
+        0.35
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "grasp_object",
+        "object": "fork",
+        "force": 15.7
+      },
+      {
+        "type": "grasp_object",
+        "object": "fork",
+        "force": 13.1
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.463,
+          0.103,
+          -0.158
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:19.900861"
+  },
+  {
+    "run_id": "run_00236",
+    "error_type": "vision_failure",
+    "error_message": "Failed to process camera feed",
+    "failure_timestep": 29,
+    "total_timesteps": 30,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 29,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "book",
+          "box",
+          "towel",
+          "can"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.174,
+          2.506,
+          2.053,
+          -2.107,
+          -1.555,
+          1.552,
+          -2.546
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.072,
+            -0.341,
+            -0.115
+          ],
+          "orientation": [
+            0.957,
+            0.281,
+            0.618,
+            -0.17
+          ]
+        }
+      },
+      "force_torque": [
+        -2.9,
+        -4.0,
+        0.14,
+        0.75,
+        1.75,
+        -0.43
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.118,
+          0.247,
+          0.272
+        ]
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.355,
+          -0.334,
+          0.42
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "towel",
+        "force": 8.0
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "close_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.502559"
+  },
+  {
+    "run_id": "run_00239",
+    "error_type": "sensor_malfunction",
+    "error_message": "Sensor proximity malfunction detected",
+    "failure_timestep": 34,
+    "total_timesteps": 35,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 34,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "can",
+          "bottle",
+          "apple",
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.576,
+          0.696,
+          1.022,
+          -2.301,
+          2.949,
+          -1.687,
+          -2.926
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.429,
+            -0.412,
+            0.169
+          ],
+          "orientation": [
+            -0.7,
+            -0.753,
+            0.159,
+            -0.784
+          ]
+        }
+      },
+      "force_torque": [
+        1.54,
+        -1.8,
+        -2.29,
+        2.85,
+        -3.13,
+        -1.95
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.213,
+          -0.485,
+          -0.206
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:19.004933"
+  },
+  {
+    "run_id": "run_00241",
+    "error_type": "execution_error",
+    "error_message": "Trajectory execution deviated from plan",
+    "failure_timestep": 48,
+    "total_timesteps": 49,
+    "action_at_failure": {
+      "type": "visual_scan"
+    },
+    "observation_at_failure": {
+      "timestep": 48,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.848,
+          2.248,
+          -1.614,
+          -1.773,
+          1.593,
+          -1.093,
+          -1.815
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.365,
+            -0.128,
+            -0.207
+          ],
+          "orientation": [
+            -0.625,
+            -0.133,
+            -0.901,
+            0.992
+          ]
+        }
+      },
+      "force_torque": [
+        4.53,
+        0.93,
+        4.29,
+        2.52,
+        -0.6,
+        -2.91
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "grasp_object",
+        "object": "knife",
+        "force": 17.3
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 18.4
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:20.406472"
+  },
+  {
+    "run_id": "run_00244",
+    "error_type": "force_threshold_exceeded",
+    "error_message": "Force exceeded threshold: 22.9N",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "fork"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.296,
+          -2.621,
+          -1.937,
+          -1.795,
+          1.556,
+          0.694,
+          3.006
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.141,
+            0.355,
+            0.193
+          ],
+          "orientation": [
+            0.531,
+            -0.309,
+            0.293,
+            0.041
+          ]
+        }
+      },
+      "force_torque": [
+        4.53,
+        -4.79,
+        -4.02,
+        -3.51,
+        3.17,
+        0.51
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.343,
+          -0.276,
+          0.446
+        ]
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.335,
+          -0.301,
+          0.259
+        ]
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.418,
+          0.23,
+          0.151
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.709192"
+  },
+  {
+    "run_id": "run_00247",
+    "error_type": "calibration_error",
+    "error_message": "Robot calibration out of tolerance",
+    "failure_timestep": 44,
+    "total_timesteps": 45,
+    "action_at_failure": {
+      "type": "release_object"
+    },
+    "observation_at_failure": {
+      "timestep": 44,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.601,
+          2.162,
+          -2.181,
+          2.683,
+          -2.071,
+          2.788,
+          -0.024
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.264,
+            -0.001,
+            -0.127
+          ],
+          "orientation": [
+            0.149,
+            -0.543,
+            0.732,
+            -0.632
+          ]
+        }
+      },
+      "force_torque": [
+        -0.69,
+        1.97,
+        -0.28,
+        4.06,
+        4.85,
+        -1.11
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "plate",
+        "force": 7.3
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.109,
+          -0.178,
+          -0.161
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "can",
+        "force": 17.1
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:20.011591"
+  },
+  {
+    "run_id": "run_00250",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 33,
+    "total_timesteps": 34,
+    "action_at_failure": {
+      "type": "move_to_position",
+      "target": [
+        -0.478,
+        -0.262,
+        -0.232
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 33,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "knife",
+          "fork",
+          "box",
+          "towel"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.891,
+          1.976,
+          -0.419,
+          -3.06,
+          1.242,
+          0.347,
+          -2.484
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.424,
+            0.39,
+            -0.265
+          ],
+          "orientation": [
+            -0.005,
+            0.833,
+            0.966,
+            0.524
+          ]
+        }
+      },
+      "force_torque": [
+        -3.68,
+        3.58,
+        1.64,
+        4.32,
+        3.38,
+        4.84
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.444,
+          0.176,
+          -0.12
+        ]
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.009,
+          -0.308,
+          -0.157
+        ]
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.454,
+          0.464,
+          0.137
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.914222"
+  },
+  {
+    "run_id": "run_00252",
+    "error_type": "planning_timeout",
+    "error_message": "Motion planning failed to find valid path",
+    "failure_timestep": 45,
+    "total_timesteps": 46,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 45,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "can",
+          "cup",
+          "towel",
+          "plate"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.787,
+          -1.507,
+          1.261,
+          -3.02,
+          2.205,
+          1.866,
+          -0.593
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.199,
+            0.122,
+            -0.315
+          ],
+          "orientation": [
+            -0.816,
+            0.05,
+            -0.306,
+            0.951
+          ]
+        }
+      },
+      "force_torque": [
+        -4.89,
+        -3.36,
+        -3.94,
+        -1.65,
+        -1.43,
+        1.66
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.005,
+          -0.078,
+          0.095
+        ]
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.26,
+          0.14,
+          -0.379
+        ]
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.064,
+          0.293,
+          -0.075
+        ]
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.417,
+          -0.248,
+          -0.113
+        ]
+      },
+      {
+        "type": "plan_trajectory"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.115880"
+  },
+  {
+    "run_id": "run_00255",
+    "error_type": "path_deviation",
+    "error_message": "Path deviation exceeded 9.4mm threshold",
+    "failure_timestep": 41,
+    "total_timesteps": 42,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "apple",
+      "force": 19.9
+    },
+    "observation_at_failure": {
+      "timestep": 41,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "plate",
+          "book"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.47,
+          2.915,
+          1.022,
+          1.119,
+          -3.036,
+          -0.806,
+          1.132
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.289,
+            -0.335,
+            0.348
+          ],
+          "orientation": [
+            -0.182,
+            -0.195,
+            -0.447,
+            0.167
+          ]
+        }
+      },
+      "force_torque": [
+        2.61,
+        -4.14,
+        0.97,
+        -0.43,
+        -0.9,
+        4.1
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.491,
+          -0.476,
+          0.004
+        ]
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 132.1
+      },
+      {
+        "type": "open_gripper"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.718666"
+  },
+  {
+    "run_id": "run_00258",
+    "error_type": "path_deviation",
+    "error_message": "Path deviation exceeded 3.9mm threshold",
+    "failure_timestep": 41,
+    "total_timesteps": 42,
+    "action_at_failure": {
+      "type": "move_to_position",
+      "target": [
+        -0.488,
+        -0.264,
+        0.304
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 41,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "fork",
+          "banana",
+          "can",
+          "towel"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.503,
+          0.083,
+          2.369,
+          1.934,
+          -0.677,
+          2.785,
+          2.73
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.069,
+            -0.298,
+            0.073
+          ],
+          "orientation": [
+            -0.144,
+            0.593,
+            0.844,
+            0.358
+          ]
+        }
+      },
+      "force_torque": [
+        2.91,
+        1.68,
+        1.16,
+        4.06,
+        1.21,
+        -3.27
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "release_object"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:19.721268"
+  },
+  {
+    "run_id": "run_00260",
+    "error_type": "planning_timeout",
+    "error_message": "Motion planning failed to find valid path",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "apple"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.026,
+          -2.304,
+          1.503,
+          -2.527,
+          1.407,
+          -1.923,
+          1.168
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.463,
+            -0.196,
+            -0.145
+          ],
+          "orientation": [
+            -0.533,
+            -0.81,
+            0.763,
+            -0.911
+          ]
+        }
+      },
+      "force_torque": [
+        -3.14,
+        -3.48,
+        -2.73,
+        4.68,
+        -2.66,
+        0.53
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "towel",
+        "force": 18.9
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": 91.2
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.322977"
+  },
+  {
+    "run_id": "run_00263",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 49,
+    "total_timesteps": 50,
+    "action_at_failure": {
+      "type": "rotate_wrist",
+      "angle": -52.2
+    },
+    "observation_at_failure": {
+      "timestep": 49,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "cup"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -1.882,
+          2.173,
+          -1.562,
+          -2.903,
+          2.424,
+          -2.589,
+          -2.243
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.194,
+            -0.384,
+            -0.419
+          ],
+          "orientation": [
+            -0.142,
+            0.394,
+            0.561,
+            -0.59
+          ]
+        }
+      },
+      "force_torque": [
+        1.27,
+        -3.79,
+        -4.67,
+        -1.22,
+        4.45,
+        3.51
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.268,
+          -0.215,
+          -0.321
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.525329"
+  },
+  {
+    "run_id": "run_00264",
+    "error_type": "planning_timeout",
+    "error_message": "Motion planning failed to find valid path",
+    "failure_timestep": 35,
+    "total_timesteps": 36,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "knife",
+      "force": 17.1
+    },
+    "observation_at_failure": {
+      "timestep": 35,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "plate",
+          "book"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.593,
+          -0.855,
+          0.52,
+          2.26,
+          0.011,
+          1.666,
+          -2.176
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.055,
+            0.115,
+            0.302
+          ],
+          "orientation": [
+            0.697,
+            -0.759,
+            0.823,
+            -0.651
+          ]
+        }
+      },
+      "force_torque": [
+        1.68,
+        1.57,
+        4.97,
+        -1.04,
+        -4.21,
+        -2.39
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.487,
+          0.469,
+          0.013
+        ]
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.131,
+          -0.074,
+          0.002
+        ]
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.013,
+          -0.308,
+          0.293
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.126254"
+  },
+  {
+    "run_id": "run_00267",
+    "error_type": "motor_overheating",
+    "error_message": "Motor 5 temperature exceeded 85\u00b0C",
+    "failure_timestep": 26,
+    "total_timesteps": 27,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 26,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "cup",
+          "banana",
+          "plate"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          2.723,
+          -2.789,
+          2.738,
+          -0.407,
+          -2.315,
+          -0.333,
+          -1.412
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            0.182,
+            -0.007,
+            0.015
+          ],
+          "orientation": [
+            -0.172,
+            0.143,
+            -0.741,
+            -0.664
+          ]
+        }
+      },
+      "force_torque": [
+        -1.65,
+        1.57,
+        4.66,
+        4.1,
+        -3.99,
+        4.67
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "grasp_object",
+        "object": "book",
+        "force": 10.4
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.287,
+          0.251,
+          -0.059
+        ]
+      },
+      {
+        "type": "plan_trajectory"
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.228756"
+  },
+  {
+    "run_id": "run_00268",
+    "error_type": "object_not_found",
+    "error_message": "Could not locate fork in scene",
+    "failure_timestep": 42,
+    "total_timesteps": 43,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "fork",
+      "force": 8.0
+    },
+    "observation_at_failure": {
+      "timestep": 42,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "bottle"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.566,
+          0.813,
+          2.016,
+          -0.573,
+          0.816,
+          -1.919,
+          -1.02
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.23,
+            -0.32,
+            -0.356
+          ],
+          "orientation": [
+            -0.359,
+            0.711,
+            0.175,
+            0.047
+          ]
+        }
+      },
+      "force_torque": [
+        2.61,
+        1.28,
+        -3.73,
+        3.74,
+        4.55,
+        -2.38
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.051,
+          0.459,
+          0.305
+        ]
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.058,
+          -0.115,
+          0.169
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:19.829268"
+  },
+  {
+    "run_id": "run_00274",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 44,
+    "total_timesteps": 45,
+    "action_at_failure": {
+      "type": "plan_trajectory"
+    },
+    "observation_at_failure": {
+      "timestep": 44,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "knife",
+          "bottle"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -2.551,
+          -0.872,
+          2.809,
+          1.411,
+          1.575,
+          -2.12,
+          -3.134
+        ],
+        "gripper_open": false,
+        "end_effector_pose": {
+          "position": [
+            -0.066,
+            0.33,
+            -0.103
+          ],
+          "orientation": [
+            0.798,
+            -0.902,
+            0.995,
+            -0.021
+          ]
+        }
+      },
+      "force_torque": [
+        -2.93,
+        0.51,
+        -4.64,
+        0.89,
+        0.55,
+        -1.26
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -155.4
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.276,
+          -0.496,
+          -0.178
+        ]
+      },
+      {
+        "type": "grasp_object",
+        "object": "banana",
+        "force": 19.8
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:20.034697"
+  },
+  {
+    "run_id": "run_00280",
+    "error_type": "emergency_stop",
+    "error_message": "Emergency stop triggered by safety system",
+    "failure_timestep": 38,
+    "total_timesteps": 39,
+    "action_at_failure": {
+      "type": "visual_scan"
+    },
+    "observation_at_failure": {
+      "timestep": 38,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "plate",
+          "fork"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.102,
+          -1.8,
+          -3.111,
+          1.486,
+          -1.01,
+          1.583,
+          -1.328
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.045,
+            -0.476,
+            0.212
+          ],
+          "orientation": [
+            -0.565,
+            -0.868,
+            0.202,
+            0.993
+          ]
+        }
+      },
+      "force_torque": [
+        1.02,
+        3.71,
+        -0.81,
+        -3.24,
+        -0.23,
+        -1.11
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          -0.008,
+          0.452,
+          -0.362
+        ]
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "grasp_object",
+        "object": "apple",
+        "force": 19.6
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.440131"
+  },
+  {
+    "run_id": "run_00282",
+    "error_type": "object_not_found",
+    "error_message": "Could not locate unknown in scene",
+    "failure_timestep": 38,
+    "total_timesteps": 39,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 38,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "plate",
+          "knife",
+          "bottle",
+          "banana"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          3.098,
+          1.282,
+          -1.122,
+          -1.434,
+          0.837,
+          1.292,
+          -0.612
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.083,
+            0.385,
+            0.392
+          ],
+          "orientation": [
+            0.551,
+            0.662,
+            0.241,
+            0.88
+          ]
+        }
+      },
+      "force_torque": [
+        2.81,
+        -4.97,
+        3.36,
+        2.86,
+        1.0,
+        -1.58
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "release_object"
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:19.441749"
+  },
+  {
+    "run_id": "run_00284",
+    "error_type": "planning_timeout",
+    "error_message": "Motion planning failed to find valid path",
+    "failure_timestep": 30,
+    "total_timesteps": 31,
+    "action_at_failure": {
+      "type": "close_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 30,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "can",
+          "plate",
+          "box"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.979,
+          -0.16,
+          1.91,
+          0.643,
+          2.021,
+          1.052,
+          2.518
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.074,
+            -0.111,
+            -0.47
+          ],
+          "orientation": [
+            -0.736,
+            0.174,
+            -0.623,
+            0.198
+          ]
+        }
+      },
+      "force_torque": [
+        2.36,
+        0.34,
+        0.67,
+        1.34,
+        1.81,
+        4.45
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "visual_scan"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          -0.469,
+          0.417,
+          -0.295
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "error",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.643363"
+  },
+  {
+    "run_id": "run_00287",
+    "error_type": "force_threshold_exceeded",
+    "error_message": "Force exceeded threshold: 39.0N",
+    "failure_timestep": 31,
+    "total_timesteps": 32,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 31,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "banana",
+          "cup"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.281,
+          -0.543,
+          -0.274,
+          -2.677,
+          -2.619,
+          -2.642,
+          -0.037
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.497,
+            0.486,
+            0.418
+          ],
+          "orientation": [
+            -0.072,
+            0.736,
+            -0.954,
+            -0.467
+          ]
+        }
+      },
+      "force_torque": [
+        4.78,
+        4.73,
+        4.05,
+        -0.29,
+        3.18,
+        0.5
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.165,
+          -0.148,
+          0.109
+        ]
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -56.1
+      },
+      {
+        "type": "grasp_object",
+        "object": "towel",
+        "force": 16.2
+      },
+      {
+        "type": "grasp_object",
+        "object": "book",
+        "force": 5.7
+      }
+    ],
+    "error_metadata": {
+      "severity": "critical",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.745739"
+  },
+  {
+    "run_id": "run_00290",
+    "error_type": "gripper_slip",
+    "error_message": "Object unknown slipped from gripper",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "open_gripper"
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "cup"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          -0.07,
+          0.562,
+          -2.906,
+          -1.63,
+          -1.851,
+          0.619,
+          0.408
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.155,
+            -0.262,
+            -0.259
+          ],
+          "orientation": [
+            0.901,
+            -0.334,
+            0.229,
+            -0.263
+          ]
+        }
+      },
+      "force_torque": [
+        -3.74,
+        2.59,
+        -1.9,
+        -1.31,
+        -2.21,
+        -1.35
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "knife",
+        "force": 18.0
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "open_gripper"
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.163,
+          0.128,
+          0.292
+        ]
+      },
+      {
+        "type": "execute_trajectory",
+        "target": [
+          0.23,
+          -0.093,
+          0.4
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": true
+    },
+    "timestamp": "2025-10-27T14:15:18.348153"
+  },
+  {
+    "run_id": "run_00297",
+    "error_type": "planning_timeout",
+    "error_message": "Motion planning failed to find valid path",
+    "failure_timestep": 30,
+    "total_timesteps": 31,
+    "action_at_failure": {
+      "type": "move_to_position",
+      "target": [
+        0.015,
+        -0.021,
+        0.437
+      ]
+    },
+    "observation_at_failure": {
+      "timestep": 30,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "towel",
+          "fork"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          0.587,
+          2.04,
+          -1.866,
+          2.301,
+          -2.273,
+          2.162,
+          2.856
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            0.103,
+            0.441,
+            0.362
+          ],
+          "orientation": [
+            0.245,
+            -0.05,
+            -0.928,
+            -0.574
+          ]
+        }
+      },
+      "force_torque": [
+        4.72,
+        -1.33,
+        -3.35,
+        -1.22,
+        4.98,
+        3.06
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.459,
+          -0.296,
+          0.074
+        ]
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "move_to_position",
+        "target": [
+          0.48,
+          -0.495,
+          -0.442
+        ]
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.654156"
+  },
+  {
+    "run_id": "run_00299",
+    "error_type": "execution_error",
+    "error_message": "Trajectory execution deviated from plan",
+    "failure_timestep": 27,
+    "total_timesteps": 28,
+    "action_at_failure": {
+      "type": "grasp_object",
+      "object": "knife",
+      "force": 10.2
+    },
+    "observation_at_failure": {
+      "timestep": 27,
+      "camera": {
+        "rgb_shape": [
+          224,
+          224,
+          3
+        ],
+        "detected_objects": [
+          "can",
+          "knife",
+          "book"
+        ]
+      },
+      "robot_state": {
+        "joint_positions": [
+          1.891,
+          0.251,
+          -1.217,
+          1.52,
+          1.345,
+          -0.282,
+          -2.493
+        ],
+        "gripper_open": true,
+        "end_effector_pose": {
+          "position": [
+            -0.484,
+            -0.422,
+            -0.278
+          ],
+          "orientation": [
+            0.178,
+            -0.035,
+            0.327,
+            -0.901
+          ]
+        }
+      },
+      "force_torque": [
+        -3.4,
+        -1.28,
+        4.16,
+        -0.9,
+        -2.7,
+        4.16
+      ]
+    },
+    "preceding_actions": [
+      {
+        "type": "grasp_object",
+        "object": "apple",
+        "force": 9.4
+      },
+      {
+        "type": "release_object"
+      },
+      {
+        "type": "close_gripper"
+      },
+      {
+        "type": "plan_trajectory"
+      },
+      {
+        "type": "rotate_wrist",
+        "angle": -158.5
+      }
+    ],
+    "error_metadata": {
+      "severity": "warning",
+      "recoverable": false
+    },
+    "timestamp": "2025-10-27T14:15:18.355628"
   }
 ]

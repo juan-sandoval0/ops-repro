@@ -1,0 +1,77 @@
+{
+  "bundle_id": "bundle_cluster_49",
+  "cluster_id": 49,
+  "error_type": "grasp_failure",
+  "error_message": "Failed to grasp unknown",
+  "failure_run_id": "run_00234",
+  "initial_state": {
+    "detected_objects": [
+      "apple",
+      "fork",
+      "book"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        -3.067,
+        1.936,
+        3.071,
+        2.072,
+        -0.35,
+        -0.739,
+        1.873
+      ],
+      "gripper_open": false,
+      "end_effector_pose": {
+        "position": [
+          0.264,
+          0.225,
+          -0.194
+        ],
+        "orientation": [
+          0.583,
+          -0.852,
+          0.917,
+          -0.739
+        ]
+      }
+    },
+    "timestep": 43
+  },
+  "action_sequence": [
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "grasp_object",
+      "object": "fork",
+      "force": 15.7
+    },
+    {
+      "type": "grasp_object",
+      "object": "fork",
+      "force": 13.1
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        0.463,
+        0.103,
+        -0.158
+      ]
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": -15.9
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Failed to grasp unknown",
+  "created_at": "2025-10-27T14:15:20.542700",
+  "source_failures": [
+    "run_00234"
+  ],
+  "difficulty": "hard"
+}

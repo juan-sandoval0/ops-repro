@@ -1,67 +1,71 @@
 {
   "bundle_id": "bundle_cluster_15",
   "cluster_id": 15,
-  "error_type": "force_threshold_exceeded",
-  "error_message": "Force exceeded threshold: 40.8N",
-  "failure_run_id": "run_00046",
+  "error_type": "collision_detected",
+  "error_message": "Collision detected during trajectory execution",
+  "failure_run_id": "run_00045",
   "initial_state": {
     "detected_objects": [
-      "apple",
-      "bottle"
+      "cup"
     ],
     "robot_state": {
       "joint_positions": [
-        2.553,
-        2.418,
-        1.487,
-        -2.545,
-        -1.403,
-        -1.743,
-        1.63
+        -1.785,
+        1.559,
+        -3.045,
+        -2.249,
+        2.043,
+        -1.145,
+        -2.265
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.344,
-          -0.161,
-          0.431
+          0.305,
+          0.36,
+          -0.063
         ],
         "orientation": [
-          -0.629,
-          0.729,
-          -0.662,
-          0.199
+          -0.063,
+          0.338,
+          0.483,
+          0.665
         ]
       }
     },
-    "timestep": 47
+    "timestep": 36
   },
   "action_sequence": [
     {
-      "type": "rotate_wrist",
-      "angle": 144.0
+      "type": "close_gripper"
     },
     {
-      "type": "open_gripper"
-    },
-    {
-      "type": "open_gripper"
-    },
-    {
-      "type": "plan_trajectory"
+      "type": "execute_trajectory",
+      "target": [
+        -0.207,
+        0.396,
+        0.446
+      ]
     },
     {
       "type": "close_gripper"
     },
     {
-      "type": "open_gripper"
+      "type": "close_gripper"
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "release_object"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Force exceeded threshold: 40.8N",
-  "created_at": "2025-10-27T14:08:18.515999",
+  "actual_outcome": "Failure at step 6: Collision detected during trajectory execution",
+  "created_at": "2025-10-27T14:15:20.534222",
   "source_failures": [
-    "run_00046"
+    "run_00045",
+    "run_00157"
   ],
-  "difficulty": "medium"
+  "difficulty": "hard"
 }

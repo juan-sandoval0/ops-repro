@@ -1,0 +1,77 @@
+{
+  "bundle_id": "bundle_cluster_44",
+  "cluster_id": 44,
+  "error_type": "timeout",
+  "error_message": "Action execute_trajectory exceeded timeout (30s)",
+  "failure_run_id": "run_00200",
+  "initial_state": {
+    "detected_objects": [
+      "bottle",
+      "knife"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        0.863,
+        -2.026,
+        2.691,
+        1.017,
+        -2.785,
+        1.924,
+        -1.489
+      ],
+      "gripper_open": false,
+      "end_effector_pose": {
+        "position": [
+          -0.478,
+          -0.426,
+          0.392
+        ],
+        "orientation": [
+          -0.365,
+          -0.904,
+          -0.596,
+          -0.884
+        ]
+      }
+    },
+    "timestep": 35
+  },
+  "action_sequence": [
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        0.111,
+        -0.398,
+        -0.387
+      ]
+    },
+    {
+      "type": "open_gripper"
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        -0.002,
+        0.33,
+        0.327
+      ]
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Action execute_trajectory exceeded timeout (30s)",
+  "created_at": "2025-10-27T14:15:20.541953",
+  "source_failures": [
+    "run_00200",
+    "run_00222"
+  ],
+  "difficulty": "medium"
+}

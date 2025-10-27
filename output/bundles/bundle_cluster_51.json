@@ -1,0 +1,73 @@
+{
+  "bundle_id": "bundle_cluster_51",
+  "cluster_id": 51,
+  "error_type": "path_deviation",
+  "error_message": "Path deviation exceeded 3.9mm threshold",
+  "failure_run_id": "run_00258",
+  "initial_state": {
+    "detected_objects": [
+      "fork",
+      "banana",
+      "can",
+      "towel"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        1.503,
+        0.083,
+        2.369,
+        1.934,
+        -0.677,
+        2.785,
+        2.73
+      ],
+      "gripper_open": true,
+      "end_effector_pose": {
+        "position": [
+          -0.069,
+          -0.298,
+          0.073
+        ],
+        "orientation": [
+          -0.144,
+          0.593,
+          0.844,
+          0.358
+        ]
+      }
+    },
+    "timestep": 41
+  },
+  "action_sequence": [
+    {
+      "type": "open_gripper"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "open_gripper"
+    },
+    {
+      "type": "visual_scan"
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.488,
+        -0.264,
+        0.304
+      ]
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Path deviation exceeded 3.9mm threshold",
+  "created_at": "2025-10-27T14:15:20.543051",
+  "source_failures": [
+    "run_00258"
+  ],
+  "difficulty": "hard"
+}

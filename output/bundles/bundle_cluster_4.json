@@ -1,62 +1,53 @@
 {
   "bundle_id": "bundle_cluster_4",
   "cluster_id": 4,
-  "error_type": "motor_overheating",
-  "error_message": "Motor 5 temperature exceeded 73\u00b0C",
-  "failure_run_id": "run_00010",
+  "error_type": "calibration_error",
+  "error_message": "Robot calibration out of tolerance",
+  "failure_run_id": "run_00009",
   "initial_state": {
     "detected_objects": [
-      "apple",
-      "cup",
+      "knife",
       "bottle",
-      "fork"
+      "book"
     ],
     "robot_state": {
       "joint_positions": [
-        2.15,
-        1.46,
-        2.542,
-        0.881,
-        -1.075,
-        1.049,
-        -1.562
+        2.611,
+        0.018,
+        -3.058,
+        -1.425,
+        0.925,
+        0.89,
+        -0.639
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.417,
-          -0.399,
-          0.306
+          -0.226,
+          -0.443,
+          0.072
         ],
         "orientation": [
-          -0.515,
-          -0.01,
-          0.182,
-          0.331
+          -0.939,
+          0.436,
+          -0.058,
+          0.215
         ]
       }
     },
-    "timestep": 45
+    "timestep": 39
   },
   "action_sequence": [
     {
-      "type": "grasp_object",
-      "object": "can",
-      "force": 15.7
+      "type": "close_gripper"
     },
     {
       "type": "execute_trajectory",
       "target": [
-        -0.333,
-        -0.341,
-        0.18
+        0.383,
+        -0.155,
+        -0.486
       ]
-    },
-    {
-      "type": "release_object"
-    },
-    {
-      "type": "plan_trajectory"
     },
     {
       "type": "plan_trajectory"
@@ -64,17 +55,29 @@
     {
       "type": "execute_trajectory",
       "target": [
-        0.37,
-        0.168,
-        -0.458
+        -0.183,
+        -0.422,
+        0.105
       ]
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.304,
+        -0.139,
+        -0.305
+      ]
+    },
+    {
+      "type": "close_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Motor 5 temperature exceeded 73\u00b0C",
-  "created_at": "2025-10-27T14:08:18.512350",
+  "actual_outcome": "Failure at step 6: Robot calibration out of tolerance",
+  "created_at": "2025-10-27T14:15:20.530692",
   "source_failures": [
-    "run_00010"
+    "run_00009",
+    "run_00247"
   ],
-  "difficulty": "hard"
+  "difficulty": "medium"
 }

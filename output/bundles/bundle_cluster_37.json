@@ -1,0 +1,69 @@
+{
+  "bundle_id": "bundle_cluster_37",
+  "cluster_id": 37,
+  "error_type": "sensor_malfunction",
+  "error_message": "Sensor encoder malfunction detected",
+  "failure_run_id": "run_00178",
+  "initial_state": {
+    "detected_objects": [
+      "towel"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        2.494,
+        -2.421,
+        -0.659,
+        2.149,
+        2.666,
+        -1.8,
+        -2.113
+      ],
+      "gripper_open": false,
+      "end_effector_pose": {
+        "position": [
+          -0.283,
+          0.339,
+          -0.176
+        ],
+        "orientation": [
+          -0.249,
+          -0.891,
+          -0.721,
+          -0.343
+        ]
+      }
+    },
+    "timestep": 31
+  },
+  "action_sequence": [
+    {
+      "type": "grasp_object",
+      "object": "can",
+      "force": 11.7
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": 44.3
+    },
+    {
+      "type": "open_gripper"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": -110.6
+    },
+    {
+      "type": "plan_trajectory"
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Sensor encoder malfunction detected",
+  "created_at": "2025-10-27T14:15:20.539839",
+  "source_failures": [
+    "run_00178"
+  ],
+  "difficulty": "hard"
+}

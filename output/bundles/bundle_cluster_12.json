@@ -1,78 +1,89 @@
 {
   "bundle_id": "bundle_cluster_12",
   "cluster_id": 12,
-  "error_type": "motor_overheating",
-  "error_message": "Motor 4 temperature exceeded 90\u00b0C",
-  "failure_run_id": "run_00043",
+  "error_type": "planning_timeout",
+  "error_message": "Motion planning failed to find valid path",
+  "failure_run_id": "run_00252",
   "initial_state": {
     "detected_objects": [
-      "apple",
+      "can",
+      "cup",
       "towel",
-      "can"
+      "plate"
     ],
     "robot_state": {
       "joint_positions": [
-        -2.852,
-        -2.271,
-        -1.236,
-        -3.128,
-        2.657,
-        -0.309,
-        -1.883
+        -0.787,
+        -1.507,
+        1.261,
+        -3.02,
+        2.205,
+        1.866,
+        -0.593
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.159,
-          0.052,
-          0.408
+          -0.199,
+          0.122,
+          -0.315
         ],
         "orientation": [
-          0.816,
-          0.236,
-          -0.408,
-          0.369
+          -0.816,
+          0.05,
+          -0.306,
+          0.951
         ]
       }
     },
-    "timestep": 41
+    "timestep": 45
   },
   "action_sequence": [
     {
-      "type": "grasp_object",
-      "object": "bottle",
-      "force": 19.4
-    },
-    {
-      "type": "grasp_object",
-      "object": "fork",
-      "force": 6.1
-    },
-    {
-      "type": "open_gripper"
-    },
-    {
-      "type": "release_object"
-    },
-    {
-      "type": "move_to_position",
+      "type": "execute_trajectory",
       "target": [
-        0.188,
-        0.454,
-        0.219
+        0.005,
+        -0.078,
+        0.095
       ]
     },
     {
-      "type": "grasp_object",
-      "object": "knife",
-      "force": 8.5
+      "type": "execute_trajectory",
+      "target": [
+        0.26,
+        0.14,
+        -0.379
+      ]
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        0.064,
+        0.293,
+        -0.075
+      ]
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        -0.417,
+        -0.248,
+        -0.113
+      ]
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "open_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Motor 4 temperature exceeded 90\u00b0C",
-  "created_at": "2025-10-27T14:08:18.515102",
+  "actual_outcome": "Failure at step 6: Motion planning failed to find valid path",
+  "created_at": "2025-10-27T14:15:20.532666",
   "source_failures": [
-    "run_00043"
+    "run_00252",
+    "run_00264"
   ],
-  "difficulty": "medium"
+  "difficulty": "hard"
 }

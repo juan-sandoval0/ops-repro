@@ -1,70 +1,69 @@
 {
   "bundle_id": "bundle_cluster_18",
   "cluster_id": 18,
-  "error_type": "vacuum_loss",
-  "error_message": "Vacuum gripper pressure loss detected",
-  "failure_run_id": "run_00054",
+  "error_type": "force_threshold_exceeded",
+  "error_message": "Force exceeded threshold: 22.8N",
+  "failure_run_id": "run_00148",
   "initial_state": {
     "detected_objects": [
-      "banana",
-      "cup",
-      "plate",
-      "can"
+      "box",
+      "banana"
     ],
     "robot_state": {
       "joint_positions": [
-        1.117,
-        -2.694,
-        -1.733,
-        1.235,
-        2.561,
-        -0.456,
-        -1.519
+        2.418,
+        2.886,
+        -1.568,
+        -0.278,
+        3.082,
+        -0.221,
+        -1.019
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.305,
-          -0.068,
-          -0.173
+          0.45,
+          0.1,
+          -0.198
         ],
         "orientation": [
-          -0.849,
-          0.055,
-          0.194,
-          -0.705
+          -0.485,
+          0.708,
+          0.466,
+          0.809
         ]
       }
     },
-    "timestep": 31
+    "timestep": 32
   },
   "action_sequence": [
+    {
+      "type": "close_gripper"
+    },
+    {
+      "type": "visual_scan"
+    },
+    {
+      "type": "grasp_object",
+      "object": "plate",
+      "force": 11.0
+    },
     {
       "type": "plan_trajectory"
     },
     {
-      "type": "release_object"
-    },
-    {
-      "type": "open_gripper"
-    },
-    {
-      "type": "grasp_object",
-      "object": "towel",
-      "force": 19.8
-    },
-    {
-      "type": "release_object"
-    },
-    {
       "type": "close_gripper"
+    },
+    {
+      "type": "release_object"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Vacuum gripper pressure loss detected",
-  "created_at": "2025-10-27T14:08:18.516493",
+  "actual_outcome": "Failure at step 6: Force exceeded threshold: 22.8N",
+  "created_at": "2025-10-27T14:15:20.535129",
   "source_failures": [
-    "run_00054"
+    "run_00148",
+    "run_00244"
   ],
   "difficulty": "medium"
 }

@@ -1,0 +1,82 @@
+{
+  "bundle_id": "bundle_cluster_39",
+  "cluster_id": 39,
+  "error_type": "workspace_violation",
+  "error_message": "Target position outside workspace limits",
+  "failure_run_id": "run_00185",
+  "initial_state": {
+    "detected_objects": [
+      "book",
+      "towel",
+      "cup",
+      "can"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        -2.626,
+        0.299,
+        0.402,
+        1.406,
+        -0.429,
+        -1.815,
+        1.674
+      ],
+      "gripper_open": false,
+      "end_effector_pose": {
+        "position": [
+          0.233,
+          -0.098,
+          -0.234
+        ],
+        "orientation": [
+          0.332,
+          0.841,
+          0.172,
+          0.952
+        ]
+      }
+    },
+    "timestep": 38
+  },
+  "action_sequence": [
+    {
+      "type": "visual_scan"
+    },
+    {
+      "type": "grasp_object",
+      "object": "fork",
+      "force": 14.8
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "grasp_object",
+      "object": "plate",
+      "force": 14.5
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        0.196,
+        -0.17,
+        -0.327
+      ]
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        0.06,
+        0.308,
+        -0.312
+      ]
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Target position outside workspace limits",
+  "created_at": "2025-10-27T14:15:20.541097",
+  "source_failures": [
+    "run_00185"
+  ],
+  "difficulty": "medium"
+}

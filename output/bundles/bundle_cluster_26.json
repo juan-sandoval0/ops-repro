@@ -1,67 +1,85 @@
 {
   "bundle_id": "bundle_cluster_26",
   "cluster_id": 26,
-  "error_type": "timeout",
-  "error_message": "Action visual_scan exceeded timeout (30s)",
-  "failure_run_id": "run_00096",
+  "error_type": "gripper_slip",
+  "error_message": "Object unknown slipped from gripper",
+  "failure_run_id": "run_00070",
   "initial_state": {
     "detected_objects": [
-      "bottle",
-      "cup",
-      "plate"
+      "plate",
+      "towel",
+      "knife",
+      "cup"
     ],
     "robot_state": {
       "joint_positions": [
-        -1.916,
-        2.921,
-        2.204,
-        -2.909,
-        -1.446,
-        2.485,
-        -2.754
+        -2.993,
+        0.278,
+        2.391,
+        -2.519,
+        2.854,
+        -0.158,
+        -1.224
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.438,
-          0.16,
-          -0.233
+          -0.034,
+          0.267,
+          -0.343
         ],
         "orientation": [
-          -0.646,
-          -0.939,
-          -0.104,
-          -0.709
+          -0.518,
+          -0.953,
+          0.876,
+          0.965
         ]
       }
     },
-    "timestep": 43
+    "timestep": 25
   },
   "action_sequence": [
+    {
+      "type": "execute_trajectory",
+      "target": [
+        0.114,
+        0.11,
+        0.253
+      ]
+    },
+    {
+      "type": "grasp_object",
+      "object": "apple",
+      "force": 8.4
+    },
     {
       "type": "open_gripper"
     },
     {
+      "type": "grasp_object",
+      "object": "towel",
+      "force": 6.5
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.054,
+        -0.491,
+        0.348
+      ]
+    },
+    {
       "type": "plan_trajectory"
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "release_object"
-    },
-    {
-      "type": "visual_scan"
-    },
-    {
-      "type": "visual_scan"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Action visual_scan exceeded timeout (30s)",
-  "created_at": "2025-10-27T14:08:18.517626",
+  "actual_outcome": "Failure at step 6: Object unknown slipped from gripper",
+  "created_at": "2025-10-27T14:15:20.537046",
   "source_failures": [
-    "run_00096"
+    "run_00070",
+    "run_00138",
+    "run_00198",
+    "run_00274"
   ],
-  "difficulty": "hard"
+  "difficulty": "medium"
 }

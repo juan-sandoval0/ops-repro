@@ -1,0 +1,88 @@
+{
+  "bundle_id": "bundle_cluster_42",
+  "cluster_id": 42,
+  "error_type": "execution_error",
+  "error_message": "Trajectory execution deviated from plan",
+  "failure_run_id": "run_00196",
+  "initial_state": {
+    "detected_objects": [
+      "fork",
+      "book",
+      "knife"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        -0.189,
+        -2.527,
+        1.888,
+        2.766,
+        -0.896,
+        -2.36,
+        2.246
+      ],
+      "gripper_open": false,
+      "end_effector_pose": {
+        "position": [
+          0.04,
+          -0.107,
+          -0.284
+        ],
+        "orientation": [
+          -0.494,
+          0.118,
+          -0.644,
+          0.087
+        ]
+      }
+    },
+    "timestep": 27
+  },
+  "action_sequence": [
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.181,
+        -0.346,
+        0.291
+      ]
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        0.202,
+        -0.279,
+        0.204
+      ]
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": 130.6
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.063,
+        -0.227,
+        0.245
+      ]
+    },
+    {
+      "type": "close_gripper"
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.42,
+        0.081,
+        0.453
+      ]
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Trajectory execution deviated from plan",
+  "created_at": "2025-10-27T14:15:20.541567",
+  "source_failures": [
+    "run_00196"
+  ],
+  "difficulty": "medium"
+}

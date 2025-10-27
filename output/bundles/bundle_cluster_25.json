@@ -1,36 +1,37 @@
 {
   "bundle_id": "bundle_cluster_25",
   "cluster_id": 25,
-  "error_type": "collision_detected",
-  "error_message": "Collision detected during trajectory execution",
-  "failure_run_id": "run_00094",
+  "error_type": "vision_failure",
+  "error_message": "Failed to process camera feed",
+  "failure_run_id": "run_00209",
   "initial_state": {
     "detected_objects": [
-      "can",
-      "towel"
+      "plate",
+      "towel",
+      "apple"
     ],
     "robot_state": {
       "joint_positions": [
-        -2.247,
-        -3.041,
-        2.998,
-        0.677,
-        -2.071,
-        1.126,
-        -0.633
+        -0.175,
+        -0.197,
+        -2.892,
+        3.035,
+        -1.919,
+        -2.583,
+        -2.619
       ],
       "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          -0.232,
-          -0.224,
-          0.418
+          -0.334,
+          0.336,
+          -0.28
         ],
         "orientation": [
-          -0.856,
-          -0.151,
-          -0.584,
-          0.639
+          -0.921,
+          -0.07,
+          -0.377,
+          -0.805
         ]
       }
     },
@@ -38,40 +39,34 @@
   },
   "action_sequence": [
     {
-      "type": "grasp_object",
-      "object": "book",
-      "force": 8.5
+      "type": "open_gripper"
     },
     {
       "type": "visual_scan"
     },
     {
-      "type": "grasp_object",
-      "object": "can",
-      "force": 18.8
+      "type": "release_object"
+    },
+    {
+      "type": "visual_scan"
     },
     {
       "type": "execute_trajectory",
       "target": [
-        0.386,
-        -0.431,
-        -0.125
+        0.428,
+        -0.47,
+        0.143
       ]
     },
     {
-      "type": "grasp_object",
-      "object": "fork",
-      "force": 11.2
-    },
-    {
-      "type": "close_gripper"
+      "type": "open_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Collision detected during trajectory execution",
-  "created_at": "2025-10-27T14:08:18.517484",
+  "actual_outcome": "Failure at step 6: Failed to process camera feed",
+  "created_at": "2025-10-27T14:15:20.536776",
   "source_failures": [
-    "run_00094"
+    "run_00209"
   ],
   "difficulty": "hard"
 }

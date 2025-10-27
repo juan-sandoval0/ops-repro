@@ -1,66 +1,74 @@
 {
   "bundle_id": "bundle_cluster_7",
   "cluster_id": 7,
-  "error_type": "gripper_slip",
-  "error_message": "Object unknown slipped from gripper",
-  "failure_run_id": "run_00023",
+  "error_type": "emergency_stop",
+  "error_message": "Emergency stop triggered by safety system",
+  "failure_run_id": "run_00024",
   "initial_state": {
     "detected_objects": [
-      "bottle"
+      "can",
+      "fork"
     ],
     "robot_state": {
       "joint_positions": [
-        -2.133,
-        2.814,
-        -1.308,
-        2.199,
-        -1.851,
-        -2.948,
-        -3.049
+        -0.32,
+        -2.914,
+        -2.172,
+        -1.617,
+        1.067,
+        2.134,
+        -2.088
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.139,
-          0.456,
-          -0.468
+          -0.409,
+          0.234,
+          0.365
         ],
         "orientation": [
-          0.895,
-          0.399,
-          0.156,
-          -0.668
+          -0.581,
+          -0.681,
+          -0.966,
+          0.735
         ]
       }
     },
-    "timestep": 29
+    "timestep": 38
   },
   "action_sequence": [
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "grasp_object",
+      "object": "bottle",
+      "force": 19.7
+    },
+    {
+      "type": "plan_trajectory"
+    },
     {
       "type": "close_gripper"
     },
     {
-      "type": "rotate_wrist",
-      "angle": 108.5
+      "type": "execute_trajectory",
+      "target": [
+        0.261,
+        -0.324,
+        0.002
+      ]
     },
     {
       "type": "plan_trajectory"
-    },
-    {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "visual_scan"
-    },
-    {
-      "type": "release_object"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Object unknown slipped from gripper",
-  "created_at": "2025-10-27T14:08:18.513197",
+  "actual_outcome": "Failure at step 6: Emergency stop triggered by safety system",
+  "created_at": "2025-10-27T14:15:20.531328",
   "source_failures": [
-    "run_00023"
+    "run_00024",
+    "run_00280"
   ],
   "difficulty": "hard"
 }

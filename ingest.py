@@ -13,6 +13,23 @@ from dataclasses import dataclass
 from datetime import datetime
 
 
+# Action grouping to reduce signature diversity
+ACTION_GROUPS = {
+    "gripper": ["open_gripper", "close_gripper", "grasp_object", "release_object"],
+    "movement": ["move_to_position", "execute_trajectory"],
+    "planning": ["plan_trajectory", "visual_scan"],
+    "manipulation": ["rotate_wrist"]
+}
+
+
+def get_action_group(action_type: str) -> str:
+    """Map an action type to its action group."""
+    for group, actions in ACTION_GROUPS.items():
+        if action_type in actions:
+            return group
+    return action_type  # Return original if not in any group
+
+
 @dataclass
 class RunFailure:
     """Represents a failed robot run with context."""
@@ -43,9 +60,10 @@ class RunFailure:
         }
 
     def get_signature(self) -> str:
-        """Get a signature for this failure (error type + action type)."""
+        """Get a signature for this failure (error type + action group)."""
         action_type = self.action_at_failure.get("type", "unknown")
-        return f"{self.error_type}::{action_type}"
+        action_group = get_action_group(action_type)
+        return f"{self.error_type}::{action_group}"
 
 
 class LogIngestor:

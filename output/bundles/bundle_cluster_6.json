@@ -1,38 +1,37 @@
 {
   "bundle_id": "bundle_cluster_6",
   "cluster_id": 6,
-  "error_type": "motor_overheating",
-  "error_message": "Motor 1 temperature exceeded 82\u00b0C",
-  "failure_run_id": "run_00013",
+  "error_type": "execution_error",
+  "error_message": "Trajectory execution deviated from plan",
+  "failure_run_id": "run_00012",
   "initial_state": {
     "detected_objects": [
-      "book",
-      "box",
+      "apple",
       "cup",
       "knife"
     ],
     "robot_state": {
       "joint_positions": [
-        -1.755,
-        -1.383,
-        -3.034,
-        -0.03,
-        -0.36,
-        -1.372,
-        -2.121
+        2.273,
+        -2.605,
+        2.154,
+        0.594,
+        0.386,
+        -2.408,
+        -2.287
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.385,
-          0.226,
-          0.263
+          0.054,
+          0.052,
+          0.262
         ],
         "orientation": [
-          -0.177,
-          -0.74,
-          -0.726,
-          -0.961
+          -0.76,
+          0.622,
+          0.572,
+          0.276
         ]
       }
     },
@@ -40,34 +39,38 @@
   },
   "action_sequence": [
     {
-      "type": "release_object"
-    },
-    {
       "type": "visual_scan"
-    },
-    {
-      "type": "release_object"
-    },
-    {
-      "type": "visual_scan"
-    },
-    {
-      "type": "plan_trajectory"
     },
     {
       "type": "move_to_position",
       "target": [
-        0.482,
-        0.065,
-        0.432
+        0.185,
+        -0.42,
+        0.147
       ]
+    },
+    {
+      "type": "grasp_object",
+      "object": "banana",
+      "force": 10.1
+    },
+    {
+      "type": "close_gripper"
+    },
+    {
+      "type": "close_gripper"
+    },
+    {
+      "type": "release_object"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Motor 1 temperature exceeded 82\u00b0C",
-  "created_at": "2025-10-27T14:08:18.512882",
+  "actual_outcome": "Failure at step 6: Trajectory execution deviated from plan",
+  "created_at": "2025-10-27T14:15:20.531119",
   "source_failures": [
-    "run_00013"
+    "run_00012",
+    "run_00202",
+    "run_00299"
   ],
-  "difficulty": "medium"
+  "difficulty": "hard"
 }
