@@ -1,67 +1,78 @@
 {
   "bundle_id": "bundle_cluster_11",
   "cluster_id": 11,
-  "error_type": "planning_timeout",
-  "error_message": "Motion planning failed to find valid path",
-  "failure_run_id": "run_00161",
+  "error_type": "motor_overheating",
+  "error_message": "Motor 3 temperature exceeded 78\u00b0C",
+  "failure_run_id": "run_00038",
   "initial_state": {
     "detected_objects": [
-      "fork"
+      "bottle",
+      "book"
     ],
     "robot_state": {
       "joint_positions": [
-        0.861,
-        1.772,
-        -1.166,
-        1.373,
-        -1.556,
-        1.788,
-        2.483
+        -0.72,
+        -0.303,
+        0.841,
+        -0.521,
+        -2.866,
+        -2.28,
+        -2.476
       ],
       "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.361,
-          0.187,
-          0.442
+          -0.232,
+          -0.043,
+          0.275
         ],
         "orientation": [
-          0.275,
-          0.691,
-          0.432,
-          -0.709
+          -0.245,
+          -0.431,
+          0.273,
+          -0.324
         ]
       }
     },
-    "timestep": 49
+    "timestep": 42
   },
   "action_sequence": [
     {
-      "type": "open_gripper"
-    },
-    {
       "type": "rotate_wrist",
-      "angle": -115.1
+      "angle": 83.7
     },
     {
       "type": "release_object"
     },
     {
-      "type": "open_gripper"
+      "type": "execute_trajectory",
+      "target": [
+        -0.402,
+        0.381,
+        0.086
+      ]
     },
     {
-      "type": "plan_trajectory"
+      "type": "rotate_wrist",
+      "angle": -87.3
+    },
+    {
+      "type": "visual_scan"
     },
     {
       "type": "close_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Motion planning failed to find valid path",
-  "created_at": "2025-10-27T14:15:20.532385",
+  "actual_outcome": "Failure at step 6: Motor 3 temperature exceeded 78\u00b0C",
+  "created_at": "2025-10-27T14:21:29.332135",
   "source_failures": [
-    "run_00161",
-    "run_00260"
+    "run_00038",
+    "run_00060",
+    "run_00074",
+    "run_00172",
+    "run_00183",
+    "run_00206"
   ],
   "difficulty": "hard"
 }

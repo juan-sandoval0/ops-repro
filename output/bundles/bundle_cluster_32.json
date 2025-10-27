@@ -1,76 +1,82 @@
 {
   "bundle_id": "bundle_cluster_32",
   "cluster_id": 32,
-  "error_type": "force_threshold_exceeded",
-  "error_message": "Force exceeded threshold: 42.3N",
-  "failure_run_id": "run_00107",
+  "error_type": "joint_limit_exceeded",
+  "error_message": "Joint 5 exceeded limit",
+  "failure_run_id": "run_00236",
   "initial_state": {
     "detected_objects": [
-      "can"
+      "plate",
+      "book",
+      "fork"
     ],
     "robot_state": {
       "joint_positions": [
-        1.138,
-        0.242,
-        -0.591,
-        2.236,
-        2.399,
-        -1.312,
-        1.379
+        -0.071,
+        -2.598,
+        -1.636,
+        0.791,
+        0.828,
+        1.845,
+        0.874
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.035,
-          -0.348,
-          -0.335
+          0.02,
+          -0.129,
+          -0.102
         ],
         "orientation": [
-          -0.86,
-          0.294,
-          0.231,
-          0.009
+          -0.739,
+          0.448,
+          0.633,
+          -0.772
         ]
       }
     },
-    "timestep": 25
+    "timestep": 30
   },
   "action_sequence": [
     {
-      "type": "close_gripper"
+      "type": "grasp_object",
+      "object": "apple",
+      "force": 19.7
     },
     {
-      "type": "move_to_position",
+      "type": "execute_trajectory",
       "target": [
-        -0.435,
-        -0.072,
-        0.204
+        0.161,
+        0.104,
+        0.192
       ]
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": 39.7
+    },
+    {
+      "type": "visual_scan"
     },
     {
       "type": "release_object"
     },
     {
-      "type": "execute_trajectory",
+      "type": "move_to_position",
       "target": [
-        -0.18,
-        0.487,
-        0.462
+        0.045,
+        0.119,
+        0.36
       ]
-    },
-    {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "rotate_wrist",
-      "angle": 31.4
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Force exceeded threshold: 42.3N",
-  "created_at": "2025-10-27T14:15:20.538330",
+  "actual_outcome": "Failure at step 6: Joint 5 exceeded limit",
+  "created_at": "2025-10-27T14:21:29.394794",
   "source_failures": [
-    "run_00107"
+    "run_00236",
+    "run_00243",
+    "run_00255"
   ],
-  "difficulty": "hard"
+  "difficulty": "medium"
 }

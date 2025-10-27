@@ -1,83 +1,72 @@
 {
   "bundle_id": "bundle_cluster_4",
   "cluster_id": 4,
-  "error_type": "calibration_error",
-  "error_message": "Robot calibration out of tolerance",
-  "failure_run_id": "run_00009",
+  "error_type": "force_threshold_exceeded",
+  "error_message": "Force exceeded threshold: 31.0N",
+  "failure_run_id": "run_00128",
   "initial_state": {
     "detected_objects": [
-      "knife",
       "bottle",
-      "book"
+      "box",
+      "can"
     ],
     "robot_state": {
       "joint_positions": [
-        2.611,
-        0.018,
-        -3.058,
-        -1.425,
-        0.925,
-        0.89,
-        -0.639
+        1.256,
+        -1.03,
+        -2.011,
+        0.153,
+        -0.177,
+        -0.933,
+        -1.052
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          -0.226,
-          -0.443,
-          0.072
+          -0.134,
+          0.19,
+          0.409
         ],
         "orientation": [
-          -0.939,
-          0.436,
-          -0.058,
-          0.215
+          -0.694,
+          0.29,
+          0.581,
+          0.834
         ]
       }
     },
-    "timestep": 39
+    "timestep": 41
   },
   "action_sequence": [
     {
-      "type": "close_gripper"
+      "type": "release_object"
     },
     {
-      "type": "execute_trajectory",
-      "target": [
-        0.383,
-        -0.155,
-        -0.486
-      ]
+      "type": "release_object"
     },
     {
-      "type": "plan_trajectory"
+      "type": "release_object"
     },
     {
-      "type": "execute_trajectory",
-      "target": [
-        -0.183,
-        -0.422,
-        0.105
-      ]
+      "type": "visual_scan"
     },
     {
       "type": "move_to_position",
       "target": [
-        -0.304,
-        -0.139,
-        -0.305
+        0.36,
+        -0.2,
+        0.079
       ]
     },
     {
-      "type": "close_gripper"
+      "type": "open_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Robot calibration out of tolerance",
-  "created_at": "2025-10-27T14:15:20.530692",
+  "actual_outcome": "Failure at step 6: Force exceeded threshold: 31.0N",
+  "created_at": "2025-10-27T14:21:29.304566",
   "source_failures": [
-    "run_00009",
-    "run_00247"
+    "run_00128"
   ],
   "difficulty": "medium"
 }

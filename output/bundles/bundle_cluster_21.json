@@ -3,58 +3,65 @@
   "cluster_id": 21,
   "error_type": "vacuum_loss",
   "error_message": "Vacuum gripper pressure loss detected",
-  "failure_run_id": "run_00054",
+  "failure_run_id": "run_00086",
   "initial_state": {
     "detected_objects": [
-      "banana",
-      "cup",
-      "plate",
-      "can"
+      "apple",
+      "fork",
+      "can",
+      "banana"
     ],
     "robot_state": {
       "joint_positions": [
-        1.117,
-        -2.694,
-        -1.733,
-        1.235,
-        2.561,
-        -0.456,
-        -1.519
+        -1.154,
+        1.223,
+        -2.899,
+        1.336,
+        -0.838,
+        -1.19,
+        2.025
       ],
       "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.305,
-          -0.068,
-          -0.173
+          0.302,
+          -0.03,
+          0.115
         ],
         "orientation": [
-          -0.849,
-          0.055,
-          0.194,
-          -0.705
+          0.879,
+          -0.302,
+          0.667,
+          0.189
         ]
       }
     },
-    "timestep": 31
+    "timestep": 41
   },
   "action_sequence": [
     {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "release_object"
+      "type": "move_to_position",
+      "target": [
+        -0.018,
+        0.28,
+        0.167
+      ]
     },
     {
       "type": "open_gripper"
     },
     {
       "type": "grasp_object",
-      "object": "towel",
-      "force": 19.8
+      "object": "bottle",
+      "force": 7.5
     },
     {
-      "type": "release_object"
+      "type": "grasp_object",
+      "object": "fork",
+      "force": 7.9
+    },
+    {
+      "type": "open_gripper"
     },
     {
       "type": "close_gripper"
@@ -62,12 +69,10 @@
   ],
   "expected_outcome": "Action sequence completes successfully",
   "actual_outcome": "Failure at step 6: Vacuum gripper pressure loss detected",
-  "created_at": "2025-10-27T14:15:20.535757",
+  "created_at": "2025-10-27T14:21:29.364688",
   "source_failures": [
-    "run_00054",
-    "run_00153",
-    "run_00160",
-    "run_00187"
+    "run_00086",
+    "run_00192"
   ],
-  "difficulty": "medium"
+  "difficulty": "hard"
 }

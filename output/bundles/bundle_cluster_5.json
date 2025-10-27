@@ -1,81 +1,82 @@
 {
   "bundle_id": "bundle_cluster_5",
   "cluster_id": 5,
-  "error_type": "motor_overheating",
-  "error_message": "Motor 5 temperature exceeded 73\u00b0C",
-  "failure_run_id": "run_00010",
+  "error_type": "force_threshold_exceeded",
+  "error_message": "Force exceeded threshold: 40.2N",
+  "failure_run_id": "run_00129",
   "initial_state": {
     "detected_objects": [
-      "apple",
-      "cup",
-      "bottle",
-      "fork"
+      "cup"
     ],
     "robot_state": {
       "joint_positions": [
-        2.15,
-        1.46,
-        2.542,
-        0.881,
-        -1.075,
-        1.049,
-        -1.562
+        -0.007,
+        -0.552,
+        -1.625,
+        1.037,
+        -0.518,
+        2.028,
+        2.718
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          -0.417,
-          -0.399,
-          0.306
+          0.435,
+          -0.018,
+          -0.043
         ],
         "orientation": [
-          -0.515,
-          -0.01,
-          0.182,
-          0.331
+          -0.09,
+          0.866,
+          0.982,
+          0.395
         ]
       }
     },
-    "timestep": 45
+    "timestep": 44
   },
   "action_sequence": [
     {
-      "type": "grasp_object",
-      "object": "can",
-      "force": 15.7
+      "type": "execute_trajectory",
+      "target": [
+        -0.315,
+        0.034,
+        0.305
+      ]
     },
     {
       "type": "execute_trajectory",
       "target": [
-        -0.333,
-        -0.341,
-        0.18
+        0.021,
+        0.026,
+        0.447
       ]
     },
     {
-      "type": "release_object"
+      "type": "close_gripper"
     },
     {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "execute_trajectory",
+      "type": "move_to_position",
       "target": [
-        0.37,
-        0.168,
-        -0.458
+        -0.094,
+        0.271,
+        -0.373
       ]
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": -145.1
+    },
+    {
+      "type": "open_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Motor 5 temperature exceeded 73\u00b0C",
-  "created_at": "2025-10-27T14:15:20.530963",
+  "actual_outcome": "Failure at step 6: Force exceeded threshold: 40.2N",
+  "created_at": "2025-10-27T14:21:29.309362",
   "source_failures": [
-    "run_00010",
-    "run_00013"
+    "run_00129",
+    "run_00168"
   ],
   "difficulty": "hard"
 }

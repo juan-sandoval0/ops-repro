@@ -1,36 +1,35 @@
 {
   "bundle_id": "bundle_cluster_7",
   "cluster_id": 7,
-  "error_type": "emergency_stop",
-  "error_message": "Emergency stop triggered by safety system",
-  "failure_run_id": "run_00024",
+  "error_type": "timeout",
+  "error_message": "Action close_gripper exceeded timeout (30s)",
+  "failure_run_id": "run_00010",
   "initial_state": {
     "detected_objects": [
-      "can",
-      "fork"
+      "book"
     ],
     "robot_state": {
       "joint_positions": [
-        -0.32,
-        -2.914,
-        -2.172,
-        -1.617,
-        1.067,
-        2.134,
-        -2.088
+        2.801,
+        -2.52,
+        2.642,
+        1.896,
+        1.438,
+        2.194,
+        -1.548
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.409,
-          0.234,
-          0.365
+          -0.148,
+          0.466,
+          -0.223
         ],
         "orientation": [
-          -0.581,
-          -0.681,
-          -0.966,
-          0.735
+          0.567,
+          -0.351,
+          0.398,
+          0.27
         ]
       }
     },
@@ -41,34 +40,35 @@
       "type": "release_object"
     },
     {
-      "type": "grasp_object",
-      "object": "bottle",
-      "force": 19.7
-    },
-    {
       "type": "plan_trajectory"
     },
     {
-      "type": "close_gripper"
+      "type": "plan_trajectory"
     },
     {
       "type": "execute_trajectory",
       "target": [
-        0.261,
-        -0.324,
-        0.002
+        0.37,
+        0.168,
+        -0.458
       ]
     },
     {
-      "type": "plan_trajectory"
+      "type": "rotate_wrist",
+      "angle": 24.1
+    },
+    {
+      "type": "close_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Emergency stop triggered by safety system",
-  "created_at": "2025-10-27T14:15:20.531328",
+  "actual_outcome": "Failure at step 6: Action close_gripper exceeded timeout (30s)",
+  "created_at": "2025-10-27T14:21:29.313487",
   "source_failures": [
-    "run_00024",
-    "run_00280"
+    "run_00010",
+    "run_00033",
+    "run_00151",
+    "run_00244"
   ],
   "difficulty": "hard"
 }

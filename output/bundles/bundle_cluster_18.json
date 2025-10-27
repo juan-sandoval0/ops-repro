@@ -1,42 +1,47 @@
 {
   "bundle_id": "bundle_cluster_18",
   "cluster_id": 18,
-  "error_type": "force_threshold_exceeded",
-  "error_message": "Force exceeded threshold: 22.8N",
-  "failure_run_id": "run_00148",
+  "error_type": "vision_failure",
+  "error_message": "Failed to process camera feed",
+  "failure_run_id": "run_00067",
   "initial_state": {
     "detected_objects": [
-      "box",
-      "banana"
+      "banana",
+      "knife",
+      "plate",
+      "apple"
     ],
     "robot_state": {
       "joint_positions": [
-        2.418,
-        2.886,
-        -1.568,
-        -0.278,
-        3.082,
-        -0.221,
-        -1.019
+        2.843,
+        -2.27,
+        -2.392,
+        -3.091,
+        3.078,
+        -0.094,
+        1.552
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.45,
-          0.1,
-          -0.198
+          -0.44,
+          0.306,
+          0.092
         ],
         "orientation": [
-          -0.485,
-          0.708,
-          0.466,
-          0.809
+          -0.701,
+          -0.031,
+          -0.262,
+          -0.046
         ]
       }
     },
-    "timestep": 32
+    "timestep": 45
   },
   "action_sequence": [
+    {
+      "type": "release_object"
+    },
     {
       "type": "close_gripper"
     },
@@ -44,26 +49,28 @@
       "type": "visual_scan"
     },
     {
+      "type": "execute_trajectory",
+      "target": [
+        -0.026,
+        -0.135,
+        -0.261
+      ]
+    },
+    {
+      "type": "visual_scan"
+    },
+    {
       "type": "grasp_object",
-      "object": "plate",
-      "force": 11.0
-    },
-    {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "release_object"
+      "object": "fork",
+      "force": 12.2
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Force exceeded threshold: 22.8N",
-  "created_at": "2025-10-27T14:15:20.535129",
+  "actual_outcome": "Failure at step 6: Failed to process camera feed",
+  "created_at": "2025-10-27T14:21:29.355870",
   "source_failures": [
-    "run_00148",
-    "run_00244"
+    "run_00067",
+    "run_00268"
   ],
   "difficulty": "medium"
 }

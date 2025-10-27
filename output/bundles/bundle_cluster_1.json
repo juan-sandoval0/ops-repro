@@ -1,83 +1,72 @@
 {
   "bundle_id": "bundle_cluster_1",
   "cluster_id": 1,
-  "error_type": "calibration_error",
-  "error_message": "Robot calibration out of tolerance",
-  "failure_run_id": "run_00005",
+  "error_type": "vision_failure",
+  "error_message": "Failed to process camera feed",
+  "failure_run_id": "run_00154",
   "initial_state": {
     "detected_objects": [
-      "book",
-      "bottle",
-      "plate"
+      "fork",
+      "banana"
     ],
     "robot_state": {
       "joint_positions": [
-        2.461,
-        -0.265,
-        -2.637,
-        2.499,
-        -1.329,
-        2.868,
-        -2.453
+        -2.163,
+        -0.561,
+        -3.13,
+        0.068,
+        1.251,
+        -1.678,
+        0.96
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          -0.388,
-          -0.352,
-          -0.35
+          -0.224,
+          0.303,
+          0.093
         ],
         "orientation": [
-          -0.591,
-          0.904,
-          -0.955,
-          -0.167
+          0.445,
+          -0.896,
+          0.207,
+          0.566
         ]
       }
     },
-    "timestep": 26
+    "timestep": 45
   },
   "action_sequence": [
-    {
-      "type": "move_to_position",
-      "target": [
-        -0.219,
-        -0.389,
-        -0.034
-      ]
-    },
     {
       "type": "release_object"
     },
     {
+      "type": "visual_scan"
+    },
+    {
+      "type": "visual_scan"
+    },
+    {
       "type": "move_to_position",
       "target": [
-        0.476,
-        -0.036,
-        -0.361
+        0.491,
+        -0.097,
+        -0.264
       ]
     },
     {
-      "type": "execute_trajectory",
-      "target": [
-        0.205,
-        0.061,
-        0.274
-      ]
+      "type": "close_gripper"
     },
     {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "rotate_wrist",
-      "angle": -157.3
+      "type": "visual_scan"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Robot calibration out of tolerance",
-  "created_at": "2025-10-27T14:15:20.530042",
+  "actual_outcome": "Failure at step 6: Failed to process camera feed",
+  "created_at": "2025-10-27T14:21:29.281782",
   "source_failures": [
-    "run_00005"
+    "run_00154",
+    "run_00250"
   ],
   "difficulty": "hard"
 }

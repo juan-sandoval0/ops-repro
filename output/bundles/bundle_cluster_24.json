@@ -1,78 +1,74 @@
 {
   "bundle_id": "bundle_cluster_24",
   "cluster_id": 24,
-  "error_type": "vision_failure",
-  "error_message": "Failed to process camera feed",
-  "failure_run_id": "run_00126",
+  "error_type": "sensor_malfunction",
+  "error_message": "Sensor force malfunction detected",
+  "failure_run_id": "run_00096",
   "initial_state": {
     "detected_objects": [
-      "plate",
-      "bottle",
-      "towel"
+      "book"
     ],
     "robot_state": {
       "joint_positions": [
-        -2.622,
-        -1.535,
-        0.238,
+        -1.799,
+        -2.645,
+        -2.048,
         -1.131,
-        -2.51,
-        0.123,
-        1.72
+        2.605,
+        -2.58,
+        2.296
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          -0.239,
-          -0.085,
-          0.488
+          -0.211,
+          0.116,
+          0.317
         ],
         "orientation": [
-          0.05,
-          -0.396,
-          -0.141,
-          -0.516
+          0.615,
+          -0.767,
+          -0.806,
+          -0.718
         ]
       }
     },
-    "timestep": 34
+    "timestep": 30
   },
   "action_sequence": [
     {
+      "type": "open_gripper"
+    },
+    {
       "type": "move_to_position",
       "target": [
-        -0.412,
-        0.342,
-        0.439
+        0.268,
+        0.041,
+        0.043
       ]
     },
     {
       "type": "visual_scan"
     },
     {
-      "type": "plan_trajectory"
+      "type": "visual_scan"
     },
     {
       "type": "grasp_object",
       "object": "knife",
-      "force": 12.2
+      "force": 10.7
     },
     {
-      "type": "grasp_object",
-      "object": "cup",
-      "force": 9.0
-    },
-    {
-      "type": "release_object"
+      "type": "visual_scan"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Failed to process camera feed",
-  "created_at": "2025-10-27T14:15:20.536567",
+  "actual_outcome": "Failure at step 6: Sensor force malfunction detected",
+  "created_at": "2025-10-27T14:21:29.376733",
   "source_failures": [
-    "run_00126",
-    "run_00155",
-    "run_00229"
+    "run_00096",
+    "run_00171",
+    "run_00202"
   ],
-  "difficulty": "hard"
+  "difficulty": "medium"
 }

@@ -1,76 +1,74 @@
 {
   "bundle_id": "bundle_cluster_6",
   "cluster_id": 6,
-  "error_type": "execution_error",
-  "error_message": "Trajectory execution deviated from plan",
-  "failure_run_id": "run_00012",
+  "error_type": "force_threshold_exceeded",
+  "error_message": "Force exceeded threshold: 35.6N",
+  "failure_run_id": "run_00158",
   "initial_state": {
     "detected_objects": [
-      "apple",
-      "cup",
-      "knife"
+      "box",
+      "cup"
     ],
     "robot_state": {
       "joint_positions": [
-        2.273,
-        -2.605,
-        2.154,
-        0.594,
-        0.386,
-        -2.408,
-        -2.287
+        -0.702,
+        -0.008,
+        -2.439,
+        0.903,
+        2.461,
+        -0.717,
+        3.073
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.054,
-          0.052,
-          0.262
+          0.268,
+          -0.271,
+          -0.442
         ],
         "orientation": [
-          -0.76,
-          0.622,
-          0.572,
-          0.276
+          0.483,
+          -0.361,
+          -0.416,
+          -0.998
         ]
       }
     },
-    "timestep": 34
+    "timestep": 33
   },
   "action_sequence": [
+    {
+      "type": "grasp_object",
+      "object": "book",
+      "force": 11.0
+    },
+    {
+      "type": "open_gripper"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": -129.4
+    },
     {
       "type": "visual_scan"
     },
     {
-      "type": "move_to_position",
-      "target": [
-        0.185,
-        -0.42,
-        0.147
-      ]
+      "type": "grasp_object",
+      "object": "box",
+      "force": 18.7
     },
     {
       "type": "grasp_object",
-      "object": "banana",
-      "force": 10.1
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "release_object"
+      "object": "bottle",
+      "force": 18.6
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Trajectory execution deviated from plan",
-  "created_at": "2025-10-27T14:15:20.531119",
+  "actual_outcome": "Failure at step 6: Force exceeded threshold: 35.6N",
+  "created_at": "2025-10-27T14:21:29.312370",
   "source_failures": [
-    "run_00012",
-    "run_00202",
-    "run_00299"
+    "run_00158",
+    "run_00224"
   ],
   "difficulty": "hard"
 }

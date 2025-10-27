@@ -1,44 +1,50 @@
 {
   "bundle_id": "bundle_cluster_22",
   "cluster_id": 22,
-  "error_type": "gripper_slip",
-  "error_message": "Object unknown slipped from gripper",
-  "failure_run_id": "run_00057",
+  "error_type": "collision_detected",
+  "error_message": "Collision detected during trajectory execution",
+  "failure_run_id": "run_00092",
   "initial_state": {
     "detected_objects": [
-      "towel",
       "box",
-      "banana",
-      "bottle"
+      "book",
+      "can",
+      "knife"
     ],
     "robot_state": {
       "joint_positions": [
-        0.319,
-        -0.915,
-        -2.692,
-        -0.207,
-        -1.83,
-        -0.933,
-        1.93
+        -1.318,
+        -0.396,
+        0.276,
+        -2.205,
+        -0.688,
+        2.522,
+        2.868
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.388,
-          0.099,
-          0.367
+          0.453,
+          0.152,
+          0.351
         ],
         "orientation": [
-          0.084,
-          0.465,
-          -0.968,
-          -0.012
+          0.946,
+          -0.627,
+          -0.542,
+          -0.431
         ]
       }
     },
-    "timestep": 46
+    "timestep": 29
   },
   "action_sequence": [
+    {
+      "type": "visual_scan"
+    },
+    {
+      "type": "close_gripper"
+    },
     {
       "type": "open_gripper"
     },
@@ -46,26 +52,29 @@
       "type": "release_object"
     },
     {
-      "type": "rotate_wrist",
-      "angle": -29.0
+      "type": "move_to_position",
+      "target": [
+        0.108,
+        -0.266,
+        -0.153
+      ]
     },
     {
-      "type": "visual_scan"
-    },
-    {
-      "type": "visual_scan"
-    },
-    {
-      "type": "rotate_wrist",
-      "angle": 41.7
+      "type": "move_to_position",
+      "target": [
+        0.262,
+        0.232,
+        0.276
+      ]
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Object unknown slipped from gripper",
-  "created_at": "2025-10-27T14:15:20.535970",
+  "actual_outcome": "Failure at step 6: Collision detected during trajectory execution",
+  "created_at": "2025-10-27T14:21:29.368700",
   "source_failures": [
-    "run_00057",
-    "run_00263"
+    "run_00092",
+    "run_00257",
+    "run_00265"
   ],
   "difficulty": "hard"
 }

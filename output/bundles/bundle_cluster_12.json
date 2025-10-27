@@ -1,89 +1,71 @@
 {
   "bundle_id": "bundle_cluster_12",
   "cluster_id": 12,
-  "error_type": "planning_timeout",
-  "error_message": "Motion planning failed to find valid path",
-  "failure_run_id": "run_00252",
+  "error_type": "workspace_violation",
+  "error_message": "Target position outside workspace limits",
+  "failure_run_id": "run_00039",
   "initial_state": {
     "detected_objects": [
       "can",
-      "cup",
-      "towel",
-      "plate"
+      "towel"
     ],
     "robot_state": {
       "joint_positions": [
-        -0.787,
-        -1.507,
-        1.261,
-        -3.02,
-        2.205,
-        1.866,
-        -0.593
+        2.909,
+        1.665,
+        1.984,
+        1.698,
+        1.073,
+        -1.235,
+        2.522
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          -0.199,
-          0.122,
-          -0.315
+          0.165,
+          0.473,
+          0.478
         ],
         "orientation": [
-          -0.816,
-          0.05,
-          -0.306,
-          0.951
+          0.683,
+          0.229,
+          -0.999,
+          -0.596
         ]
       }
     },
-    "timestep": 45
+    "timestep": 29
   },
   "action_sequence": [
     {
-      "type": "execute_trajectory",
-      "target": [
-        0.005,
-        -0.078,
-        0.095
-      ]
+      "type": "grasp_object",
+      "object": "can",
+      "force": 11.2
     },
     {
-      "type": "execute_trajectory",
-      "target": [
-        0.26,
-        0.14,
-        -0.379
-      ]
+      "type": "visual_scan"
     },
     {
-      "type": "execute_trajectory",
-      "target": [
-        0.064,
-        0.293,
-        -0.075
-      ]
+      "type": "grasp_object",
+      "object": "knife",
+      "force": 8.0
     },
     {
-      "type": "execute_trajectory",
-      "target": [
-        -0.417,
-        -0.248,
-        -0.113
-      ]
+      "type": "close_gripper"
+    },
+    {
+      "type": "release_object"
     },
     {
       "type": "plan_trajectory"
-    },
-    {
-      "type": "open_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Motion planning failed to find valid path",
-  "created_at": "2025-10-27T14:15:20.532666",
+  "actual_outcome": "Failure at step 6: Target position outside workspace limits",
+  "created_at": "2025-10-27T14:21:29.336078",
   "source_failures": [
-    "run_00252",
-    "run_00264"
+    "run_00039",
+    "run_00057"
   ],
-  "difficulty": "hard"
+  "difficulty": "medium"
 }

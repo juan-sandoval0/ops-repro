@@ -1,16 +1,16 @@
 {
-  "evaluated_at": "2025-10-27T14:15:20.546231",
+  "evaluated_at": "2025-10-27T14:21:29.425165",
   "total_bundles": 54,
   "total_evaluations": 108,
   "results": [
     {
       "bundle_id": "bundle_cluster_41",
       "policy_name": "baseline",
-      "success": true,
-      "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
-      "execution_time_ms": 0.011,
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: close_gripper",
+      "execution_time_ms": 0.009000000000000001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -19,9 +19,9 @@
       "bundle_id": "bundle_cluster_5",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: release_object",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: execute_trajectory",
       "execution_time_ms": 0.003,
       "metadata": {
         "success_rate": 0.5
@@ -31,9 +31,9 @@
       "bundle_id": "bundle_cluster_16",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: grasp_object",
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -43,9 +43,9 @@
       "bundle_id": "bundle_cluster_9",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "steps_executed": 4,
+      "failure_step": 3,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -55,9 +55,9 @@
       "bundle_id": "bundle_cluster_20",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: release_object",
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: rotate_wrist",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -67,9 +67,9 @@
       "bundle_id": "bundle_cluster_36",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: execute_trajectory",
+      "steps_executed": 4,
+      "failure_step": 3,
+      "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -79,10 +79,10 @@
       "bundle_id": "bundle_cluster_37",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 6,
-      "failure_step": 5,
-      "error_encountered": "Policy failed at action: plan_trajectory",
-      "execution_time_ms": 0.002,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: grasp_object",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -91,9 +91,9 @@
       "bundle_id": "bundle_cluster_21",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: grasp_object",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -105,7 +105,7 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: plan_trajectory",
+      "error_encountered": "Policy failed at action: close_gripper",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -115,10 +115,10 @@
       "bundle_id": "bundle_cluster_17",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: plan_trajectory",
-      "execution_time_ms": 0.001,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: close_gripper",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -127,10 +127,10 @@
       "bundle_id": "bundle_cluster_4",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: execute_trajectory",
-      "execution_time_ms": 0.001,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: release_object",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -139,10 +139,10 @@
       "bundle_id": "bundle_cluster_40",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 5,
-      "failure_step": 4,
-      "error_encountered": "Policy failed at action: rotate_wrist",
-      "execution_time_ms": 0.0,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: visual_scan",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -153,7 +153,7 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: execute_trajectory",
+      "error_encountered": "Policy failed at action: grasp_object",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -162,11 +162,11 @@
     {
       "bundle_id": "bundle_cluster_30",
       "policy_name": "baseline",
-      "success": true,
-      "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
-      "execution_time_ms": 0.001,
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: rotate_wrist",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -175,10 +175,10 @@
       "bundle_id": "bundle_cluster_47",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: close_gripper",
-      "execution_time_ms": 0.0,
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: execute_trajectory",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -187,8 +187,8 @@
       "bundle_id": "bundle_cluster_3",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
+      "steps_executed": 2,
+      "failure_step": 1,
       "error_encountered": "Policy failed at action: close_gripper",
       "execution_time_ms": 0.001,
       "metadata": {
@@ -199,10 +199,10 @@
       "bundle_id": "bundle_cluster_10",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: close_gripper",
-      "execution_time_ms": 0.0,
+      "steps_executed": 4,
+      "failure_step": 3,
+      "error_encountered": "Policy failed at action: plan_trajectory",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -214,7 +214,7 @@
       "steps_executed": 1,
       "failure_step": 0,
       "error_encountered": "Policy failed at action: open_gripper",
-      "execution_time_ms": 0.001,
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -223,9 +223,9 @@
       "bundle_id": "bundle_cluster_50",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: move_to_position",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -235,10 +235,10 @@
       "bundle_id": "bundle_cluster_11",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: open_gripper",
-      "execution_time_ms": 0.0,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: release_object",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -247,10 +247,10 @@
       "bundle_id": "bundle_cluster_2",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: close_gripper",
-      "execution_time_ms": 0.001,
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: move_to_position",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -259,10 +259,10 @@
       "bundle_id": "bundle_cluster_46",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: grasp_object",
-      "execution_time_ms": 0.0,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: rotate_wrist",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -271,9 +271,9 @@
       "bundle_id": "bundle_cluster_31",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: open_gripper",
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: release_object",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -285,7 +285,7 @@
       "success": false,
       "steps_executed": 2,
       "failure_step": 1,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
@@ -295,9 +295,9 @@
       "bundle_id": "bundle_cluster_32",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: rotate_wrist",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -307,10 +307,10 @@
       "bundle_id": "bundle_cluster_24",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: plan_trajectory",
-      "execution_time_ms": 0.0,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -322,7 +322,7 @@
       "steps_executed": 1,
       "failure_step": 0,
       "error_encountered": "Policy failed at action: plan_trajectory",
-      "execution_time_ms": 0.001,
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -331,10 +331,10 @@
       "bundle_id": "bundle_cluster_28",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: grasp_object",
-      "execution_time_ms": 0.0,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: close_gripper",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -343,10 +343,10 @@
       "bundle_id": "bundle_cluster_53",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: plan_trajectory",
-      "execution_time_ms": 0.001,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: move_to_position",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -355,28 +355,16 @@
       "bundle_id": "bundle_cluster_12",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: execute_trajectory",
-      "execution_time_ms": 0.0,
-      "metadata": {
-        "success_rate": 0.5
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_1",
-      "policy_name": "baseline",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: move_to_position",
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
     },
     {
-      "bundle_id": "bundle_cluster_45",
+      "bundle_id": "bundle_cluster_1",
       "policy_name": "baseline",
       "success": true,
       "steps_executed": 6,
@@ -388,12 +376,24 @@
       }
     },
     {
-      "bundle_id": "bundle_cluster_44",
+      "bundle_id": "bundle_cluster_45",
       "policy_name": "baseline",
       "success": false,
       "steps_executed": 5,
       "failure_step": 4,
-      "error_encountered": "Policy failed at action: release_object",
+      "error_encountered": "Policy failed at action: move_to_position",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_44",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: plan_trajectory",
       "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
@@ -403,9 +403,9 @@
       "bundle_id": "bundle_cluster_0",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: move_to_position",
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -417,8 +417,8 @@
       "success": false,
       "steps_executed": 2,
       "failure_step": 1,
-      "error_encountered": "Policy failed at action: grasp_object",
-      "execution_time_ms": 0.0,
+      "error_encountered": "Policy failed at action: execute_trajectory",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
       }
@@ -427,10 +427,10 @@
       "bundle_id": "bundle_cluster_52",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: visual_scan",
-      "execution_time_ms": 0.001,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: move_to_position",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
       }
@@ -441,6 +441,54 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
+      "error_encountered": "Policy failed at action: execute_trajectory",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_48",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: release_object",
+      "execution_time_ms": 0.0,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_25",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: close_gripper",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_33",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: rotate_wrist",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_38",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
       "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.0,
       "metadata": {
@@ -448,7 +496,31 @@
       }
     },
     {
-      "bundle_id": "bundle_cluster_48",
+      "bundle_id": "bundle_cluster_14",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_7",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: plan_trajectory",
+      "execution_time_ms": 0.0,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_43",
       "policy_name": "baseline",
       "success": false,
       "steps_executed": 1,
@@ -460,84 +532,12 @@
       }
     },
     {
-      "bundle_id": "bundle_cluster_25",
-      "policy_name": "baseline",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: open_gripper",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.5
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_33",
-      "policy_name": "baseline",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: release_object",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.5
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_38",
-      "policy_name": "baseline",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: rotate_wrist",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.5
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_14",
-      "policy_name": "baseline",
-      "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: rotate_wrist",
-      "execution_time_ms": 0.0,
-      "metadata": {
-        "success_rate": 0.5
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_7",
-      "policy_name": "baseline",
-      "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: grasp_object",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.5
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_43",
-      "policy_name": "baseline",
-      "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: grasp_object",
-      "execution_time_ms": 0.0,
-      "metadata": {
-        "success_rate": 0.5
-      }
-    },
-    {
       "bundle_id": "bundle_cluster_34",
       "policy_name": "baseline",
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "error_encountered": "Policy failed at action: plan_trajectory",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -547,9 +547,9 @@
       "bundle_id": "bundle_cluster_22",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: release_object",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
@@ -561,7 +561,7 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "error_encountered": "Policy failed at action: release_object",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -573,7 +573,7 @@
       "success": false,
       "steps_executed": 3,
       "failure_step": 2,
-      "error_encountered": "Policy failed at action: visual_scan",
+      "error_encountered": "Policy failed at action: execute_trajectory",
       "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
@@ -583,9 +583,9 @@
       "bundle_id": "bundle_cluster_23",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: grasp_object",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -595,9 +595,9 @@
       "bundle_id": "bundle_cluster_35",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: visual_scan",
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: rotate_wrist",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -607,8 +607,8 @@
       "bundle_id": "bundle_cluster_42",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
+      "steps_executed": 2,
+      "failure_step": 1,
       "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
@@ -621,7 +621,7 @@
       "success": false,
       "steps_executed": 2,
       "failure_step": 1,
-      "error_encountered": "Policy failed at action: move_to_position",
+      "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.5
@@ -631,9 +631,9 @@
       "bundle_id": "bundle_cluster_15",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -643,9 +643,9 @@
       "bundle_id": "bundle_cluster_39",
       "policy_name": "baseline",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: visual_scan",
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: grasp_object",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.5
@@ -658,7 +658,7 @@
       "steps_executed": 2,
       "failure_step": 1,
       "error_encountered": "Policy failed at action: grasp_object",
-      "execution_time_ms": 0.001,
+      "execution_time_ms": 0.003,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -668,9 +668,9 @@
       "bundle_id": "bundle_cluster_5",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: release_object",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: execute_trajectory",
       "execution_time_ms": 0.002,
       "metadata": {
         "success_rate": 0.7,
@@ -680,24 +680,24 @@
     {
       "bundle_id": "bundle_cluster_16",
       "policy_name": "improved",
-      "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: visual_scan",
-      "execution_time_ms": 0.002,
+      "success": true,
+      "steps_executed": 6,
+      "failure_step": null,
+      "error_encountered": null,
+      "execution_time_ms": 0.001,
       "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
+        "success_rate": 0.9,
+        "handled_error": true
       }
     },
     {
       "bundle_id": "bundle_cluster_9",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
+      "steps_executed": 4,
+      "failure_step": 3,
       "error_encountered": "Policy failed at action: visual_scan",
-      "execution_time_ms": 0.001,
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -709,8 +709,8 @@
       "success": false,
       "steps_executed": 2,
       "failure_step": 1,
-      "error_encountered": "Policy failed at action: release_object",
-      "execution_time_ms": 0.001,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -719,11 +719,11 @@
     {
       "bundle_id": "bundle_cluster_36",
       "policy_name": "improved",
-      "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: visual_scan",
-      "execution_time_ms": 0.001,
+      "success": true,
+      "steps_executed": 6,
+      "failure_step": null,
+      "error_encountered": null,
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -733,9 +733,9 @@
       "bundle_id": "bundle_cluster_37",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: release_object",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: grasp_object",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -746,8 +746,8 @@
       "bundle_id": "bundle_cluster_21",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
+      "steps_executed": 2,
+      "failure_step": 1,
       "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.001,
       "metadata": {
@@ -759,13 +759,13 @@
       "bundle_id": "bundle_cluster_8",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: plan_trajectory",
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
-        "success_rate": 0.9,
-        "handled_error": true
+        "success_rate": 0.7,
+        "handled_error": false
       }
     },
     {
@@ -785,9 +785,9 @@
       "bundle_id": "bundle_cluster_4",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 5,
-      "failure_step": 4,
-      "error_encountered": "Policy failed at action: move_to_position",
+      "steps_executed": 4,
+      "failure_step": 3,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -801,7 +801,7 @@
       "steps_executed": 6,
       "failure_step": null,
       "error_encountered": null,
-      "execution_time_ms": 0.001,
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.9,
         "handled_error": true
@@ -811,9 +811,9 @@
       "bundle_id": "bundle_cluster_26",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: execute_trajectory",
+      "steps_executed": 5,
+      "failure_step": 4,
+      "error_encountered": "Policy failed at action: plan_trajectory",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.9,
@@ -823,11 +823,11 @@
     {
       "bundle_id": "bundle_cluster_30",
       "policy_name": "improved",
-      "success": false,
+      "success": true,
       "steps_executed": 6,
-      "failure_step": 5,
-      "error_encountered": "Policy failed at action: visual_scan",
-      "execution_time_ms": 0.001,
+      "failure_step": null,
+      "error_encountered": null,
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.9,
         "handled_error": true
@@ -837,9 +837,9 @@
       "bundle_id": "bundle_cluster_47",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "steps_executed": 5,
+      "failure_step": 4,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -849,24 +849,24 @@
     {
       "bundle_id": "bundle_cluster_3",
       "policy_name": "improved",
-      "success": true,
+      "success": false,
       "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
-      "execution_time_ms": 0.0,
+      "failure_step": 5,
+      "error_encountered": "Policy failed at action: grasp_object",
+      "execution_time_ms": 0.001,
       "metadata": {
-        "success_rate": 0.9,
-        "handled_error": true
+        "success_rate": 0.7,
+        "handled_error": false
       }
     },
     {
       "bundle_id": "bundle_cluster_10",
       "policy_name": "improved",
-      "success": true,
-      "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
-      "execution_time_ms": 0.0,
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: execute_trajectory",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -876,10 +876,10 @@
       "bundle_id": "bundle_cluster_51",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 5,
-      "failure_step": 4,
-      "error_encountered": "Policy failed at action: release_object",
-      "execution_time_ms": 0.0,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -889,9 +889,9 @@
       "bundle_id": "bundle_cluster_50",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: close_gripper",
+      "steps_executed": 4,
+      "failure_step": 3,
+      "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.9,
@@ -900,45 +900,6 @@
     },
     {
       "bundle_id": "bundle_cluster_11",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: open_gripper",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_2",
-      "policy_name": "improved",
-      "success": true,
-      "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.9,
-        "handled_error": true
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_46",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 6,
-      "failure_step": 5,
-      "error_encountered": "Policy failed at action: execute_trajectory",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.9,
-        "handled_error": true
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_31",
       "policy_name": "improved",
       "success": false,
       "steps_executed": 1,
@@ -951,12 +912,12 @@
       }
     },
     {
-      "bundle_id": "bundle_cluster_27",
+      "bundle_id": "bundle_cluster_2",
       "policy_name": "improved",
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: plan_trajectory",
+      "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -964,33 +925,7 @@
       }
     },
     {
-      "bundle_id": "bundle_cluster_32",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: execute_trajectory",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_24",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: plan_trajectory",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_49",
+      "bundle_id": "bundle_cluster_46",
       "policy_name": "improved",
       "success": true,
       "steps_executed": 6,
@@ -1003,13 +938,78 @@
       }
     },
     {
+      "bundle_id": "bundle_cluster_31",
+      "policy_name": "improved",
+      "success": true,
+      "steps_executed": 6,
+      "failure_step": null,
+      "error_encountered": null,
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_27",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: close_gripper",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_32",
+      "policy_name": "improved",
+      "success": true,
+      "steps_executed": 6,
+      "failure_step": null,
+      "error_encountered": null,
+      "execution_time_ms": 0.0,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_24",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: move_to_position",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_49",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: plan_trajectory",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.9,
+        "handled_error": true
+      }
+    },
+    {
       "bundle_id": "bundle_cluster_28",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 5,
-      "failure_step": 4,
-      "error_encountered": "Policy failed at action: open_gripper",
-      "execution_time_ms": 0.0,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: grasp_object",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -1019,10 +1019,10 @@
       "bundle_id": "bundle_cluster_53",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: close_gripper",
-      "execution_time_ms": 0.001,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: plan_trajectory",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -1034,8 +1034,8 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: execute_trajectory",
-      "execution_time_ms": 0.001,
+      "error_encountered": "Policy failed at action: grasp_object",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -1044,10 +1044,10 @@
     {
       "bundle_id": "bundle_cluster_1",
       "policy_name": "improved",
-      "success": true,
-      "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
+      "success": false,
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -1058,9 +1058,9 @@
       "bundle_id": "bundle_cluster_45",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: release_object",
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: plan_trajectory",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -1070,10 +1070,10 @@
     {
       "bundle_id": "bundle_cluster_44",
       "policy_name": "improved",
-      "success": false,
-      "steps_executed": 5,
-      "failure_step": 4,
-      "error_encountered": "Policy failed at action: release_object",
+      "success": true,
+      "steps_executed": 6,
+      "failure_step": null,
+      "error_encountered": null,
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.9,
@@ -1084,9 +1084,9 @@
       "bundle_id": "bundle_cluster_0",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 5,
-      "failure_step": 4,
-      "error_encountered": "Policy failed at action: open_gripper",
+      "steps_executed": 6,
+      "failure_step": 5,
+      "error_encountered": "Policy failed at action: visual_scan",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -1099,7 +1099,7 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: grasp_object",
+      "error_encountered": "Policy failed at action: execute_trajectory",
       "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.7,
@@ -1122,23 +1122,23 @@
     {
       "bundle_id": "bundle_cluster_29",
       "policy_name": "improved",
-      "success": false,
-      "steps_executed": 4,
-      "failure_step": 3,
-      "error_encountered": "Policy failed at action: visual_scan",
+      "success": true,
+      "steps_executed": 6,
+      "failure_step": null,
+      "error_encountered": null,
       "execution_time_ms": 0.001,
       "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
+        "success_rate": 0.9,
+        "handled_error": true
       }
     },
     {
       "bundle_id": "bundle_cluster_48",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 2,
-      "failure_step": 1,
-      "error_encountered": "Policy failed at action: release_object",
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: move_to_position",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -1151,8 +1151,8 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: open_gripper",
-      "execution_time_ms": 0.0,
+      "error_encountered": "Policy failed at action: close_gripper",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -1164,8 +1164,8 @@
       "success": false,
       "steps_executed": 1,
       "failure_step": 0,
-      "error_encountered": "Policy failed at action: release_object",
-      "execution_time_ms": 0.001,
+      "error_encountered": "Policy failed at action: execute_trajectory",
+      "execution_time_ms": 0.0,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -1175,9 +1175,9 @@
       "bundle_id": "bundle_cluster_38",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: rotate_wrist",
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: open_gripper",
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -1187,10 +1187,10 @@
     {
       "bundle_id": "bundle_cluster_14",
       "policy_name": "improved",
-      "success": false,
+      "success": true,
       "steps_executed": 6,
-      "failure_step": 5,
-      "error_encountered": "Policy failed at action: visual_scan",
+      "failure_step": null,
+      "error_encountered": null,
       "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
@@ -1199,97 +1199,6 @@
     },
     {
       "bundle_id": "bundle_cluster_7",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: release_object",
-      "execution_time_ms": 0.0,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_43",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: move_to_position",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_34",
-      "policy_name": "improved",
-      "success": true,
-      "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_22",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 3,
-      "failure_step": 2,
-      "error_encountered": "Policy failed at action: rotate_wrist",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.9,
-        "handled_error": true
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_18",
-      "policy_name": "improved",
-      "success": true,
-      "steps_executed": 6,
-      "failure_step": null,
-      "error_encountered": null,
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_19",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: execute_trajectory",
-      "execution_time_ms": 0.0,
-      "metadata": {
-        "success_rate": 0.9,
-        "handled_error": true
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_23",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: move_to_position",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
-      "bundle_id": "bundle_cluster_35",
       "policy_name": "improved",
       "success": false,
       "steps_executed": 5,
@@ -1302,7 +1211,111 @@
       }
     },
     {
+      "bundle_id": "bundle_cluster_43",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 4,
+      "failure_step": 3,
+      "error_encountered": "Policy failed at action: move_to_position",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_34",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 4,
+      "failure_step": 3,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.9,
+        "handled_error": true
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_22",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 1,
+      "failure_step": 0,
+      "error_encountered": "Policy failed at action: visual_scan",
+      "execution_time_ms": 0.0,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_18",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: visual_scan",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_19",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: plan_trajectory",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_23",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.001,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_35",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 5,
+      "failure_step": 4,
+      "error_encountered": "Policy failed at action: move_to_position",
+      "execution_time_ms": 0.0,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
       "bundle_id": "bundle_cluster_42",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 3,
+      "failure_step": 2,
+      "error_encountered": "Policy failed at action: rotate_wrist",
+      "execution_time_ms": 0.0,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_6",
       "policy_name": "improved",
       "success": false,
       "steps_executed": 3,
@@ -1315,26 +1328,13 @@
       }
     },
     {
-      "bundle_id": "bundle_cluster_6",
-      "policy_name": "improved",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: visual_scan",
-      "execution_time_ms": 0.001,
-      "metadata": {
-        "success_rate": 0.7,
-        "handled_error": false
-      }
-    },
-    {
       "bundle_id": "bundle_cluster_15",
       "policy_name": "improved",
-      "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: close_gripper",
-      "execution_time_ms": 0.0,
+      "success": true,
+      "steps_executed": 6,
+      "failure_step": null,
+      "error_encountered": null,
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false
@@ -1344,10 +1344,10 @@
       "bundle_id": "bundle_cluster_39",
       "policy_name": "improved",
       "success": false,
-      "steps_executed": 1,
-      "failure_step": 0,
-      "error_encountered": "Policy failed at action: visual_scan",
-      "execution_time_ms": 0.0,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: grasp_object",
+      "execution_time_ms": 0.001,
       "metadata": {
         "success_rate": 0.7,
         "handled_error": false

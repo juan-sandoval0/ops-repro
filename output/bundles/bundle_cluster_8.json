@@ -1,77 +1,82 @@
 {
   "bundle_id": "bundle_cluster_8",
   "cluster_id": 8,
-  "error_type": "grasp_failure",
-  "error_message": "Failed to grasp unknown",
-  "failure_run_id": "run_00027",
+  "error_type": "calibration_error",
+  "error_message": "Robot calibration out of tolerance",
+  "failure_run_id": "run_00012",
   "initial_state": {
     "detected_objects": [
-      "book",
+      "can",
       "bottle",
-      "box",
-      "plate"
+      "banana",
+      "fork"
     ],
     "robot_state": {
       "joint_positions": [
-        0.669,
-        -2.612,
-        2.958,
-        -1.738,
-        -0.273,
-        0.853,
-        -2.131
+        1.793,
+        -0.903,
+        -2.562,
+        -2.032,
+        1.925,
+        0.285,
+        -1.568
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.007,
-          -0.275,
-          -0.225
+          0.411,
+          0.12,
+          0.469
         ],
         "orientation": [
-          -0.766,
-          -0.494,
-          -0.317,
-          0.003
+          0.533,
+          0.984,
+          -0.675,
+          -0.316
         ]
       }
     },
-    "timestep": 42
+    "timestep": 30
   },
   "action_sequence": [
     {
-      "type": "plan_trajectory"
-    },
-    {
-      "type": "rotate_wrist",
-      "angle": 73.8
+      "type": "close_gripper"
     },
     {
       "type": "move_to_position",
       "target": [
-        -0.29,
-        -0.372,
-        -0.479
+        -0.216,
+        -0.482,
+        0.089
       ]
     },
     {
-      "type": "release_object"
+      "type": "visual_scan"
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        0.185,
+        -0.42,
+        0.147
+      ]
     },
     {
       "type": "grasp_object",
-      "object": "plate",
-      "force": 12.5
+      "object": "banana",
+      "force": 10.1
     },
     {
-      "type": "open_gripper"
+      "type": "close_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Failed to grasp unknown",
-  "created_at": "2025-10-27T14:15:20.531547",
+  "actual_outcome": "Failure at step 6: Robot calibration out of tolerance",
+  "created_at": "2025-10-27T14:21:29.317239",
   "source_failures": [
-    "run_00027",
-    "run_00135"
+    "run_00012",
+    "run_00147",
+    "run_00263"
   ],
   "difficulty": "medium"
 }

@@ -3,78 +3,76 @@
   "cluster_id": 28,
   "error_type": "sensor_malfunction",
   "error_message": "Sensor IMU malfunction detected",
-  "failure_run_id": "run_00085",
+  "failure_run_id": "run_00132",
   "initial_state": {
     "detected_objects": [
       "can",
-      "fork",
+      "box",
       "book"
     ],
     "robot_state": {
       "joint_positions": [
-        -0.324,
-        0.831,
-        0.716,
-        0.688,
-        0.012,
-        0.134,
-        -2.787
+        -0.591,
+        -2.153,
+        0.522,
+        2.502,
+        -2.965,
+        -2.399,
+        2.301
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.479,
-          -0.453,
-          0.216
+          -0.239,
+          0.312,
+          0.388
         ],
         "orientation": [
-          -0.462,
-          0.788,
-          0.359,
-          0.306
+          0.508,
+          -0.358,
+          0.358,
+          -0.118
         ]
       }
     },
-    "timestep": 42
+    "timestep": 27
   },
   "action_sequence": [
     {
       "type": "grasp_object",
-      "object": "box",
-      "force": 11.8
+      "object": "cup",
+      "force": 13.8
     },
     {
-      "type": "move_to_position",
-      "target": [
-        -0.353,
-        0.19,
-        -0.222
-      ]
+      "type": "close_gripper"
+    },
+    {
+      "type": "grasp_object",
+      "object": "cup",
+      "force": 15.2
     },
     {
       "type": "rotate_wrist",
-      "angle": -118.8
+      "angle": 15.8
     },
     {
-      "type": "visual_scan"
+      "type": "grasp_object",
+      "object": "apple",
+      "force": 17.6
     },
     {
       "type": "open_gripper"
-    },
-    {
-      "type": "execute_trajectory",
-      "target": [
-        0.367,
-        0.321,
-        0.472
-      ]
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
   "actual_outcome": "Failure at step 6: Sensor IMU malfunction detected",
-  "created_at": "2025-10-27T14:15:20.537595",
+  "created_at": "2025-10-27T14:21:29.384532",
   "source_failures": [
-    "run_00085"
+    "run_00132",
+    "run_00139",
+    "run_00225",
+    "run_00234",
+    "run_00262"
   ],
   "difficulty": "medium"
 }

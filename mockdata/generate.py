@@ -15,31 +15,85 @@ import argparse
 class RobotLogGenerator:
     """Generates mock robot run logs with various failure modes."""
 
-    # Error types with weighted probabilities (higher = more common)
-    ERROR_TYPES_WEIGHTS = {
-        # Original error types
-        "gripper_slip": 0.08,
-        "object_not_found": 0.06,
-        "collision_detected": 0.05,
-        "timeout": 0.07,
-        "joint_limit_exceeded": 0.04,
-        "force_threshold_exceeded": 0.05,
-        "vision_failure": 0.09,
-        "grasp_failure": 0.08,
-        "planning_timeout": 0.06,
-        "execution_error": 0.07,
-
-        # New error types
-        "sensor_malfunction": 0.03,
-        "calibration_error": 0.02,
-        "network_failure": 0.01,
-        "motor_overheating": 0.04,
-        "position_drift": 0.05,
-        "vacuum_loss": 0.06,
-        "path_deviation": 0.05,
-        "singularity_detected": 0.02,
-        "workspace_violation": 0.04,
-        "emergency_stop": 0.03,
+    # Action-dependent error types with weights
+    # Maps action types to possible errors and their probabilities
+    ACTION_ERROR_MAP = {
+        "grasp_object": {
+            "gripper_slip": 0.25,
+            "grasp_failure": 0.20,
+            "object_not_found": 0.15,
+            "force_threshold_exceeded": 0.15,
+            "vision_failure": 0.10,
+            "vacuum_loss": 0.10,
+            "timeout": 0.05,
+        },
+        "release_object": {
+            "gripper_slip": 0.30,
+            "position_drift": 0.20,
+            "execution_error": 0.20,
+            "force_threshold_exceeded": 0.15,
+            "timeout": 0.10,
+            "sensor_malfunction": 0.05,
+        },
+        "open_gripper": {
+            "motor_overheating": 0.25,
+            "force_threshold_exceeded": 0.20,
+            "calibration_error": 0.20,
+            "sensor_malfunction": 0.15,
+            "timeout": 0.10,
+            "emergency_stop": 0.10,
+        },
+        "close_gripper": {
+            "motor_overheating": 0.25,
+            "force_threshold_exceeded": 0.20,
+            "gripper_slip": 0.15,
+            "vacuum_loss": 0.15,
+            "timeout": 0.10,
+            "calibration_error": 0.10,
+            "sensor_malfunction": 0.05,
+        },
+        "move_to_position": {
+            "collision_detected": 0.25,
+            "workspace_violation": 0.20,
+            "joint_limit_exceeded": 0.15,
+            "path_deviation": 0.15,
+            "position_drift": 0.10,
+            "singularity_detected": 0.10,
+            "timeout": 0.05,
+        },
+        "execute_trajectory": {
+            "collision_detected": 0.20,
+            "execution_error": 0.20,
+            "path_deviation": 0.15,
+            "joint_limit_exceeded": 0.15,
+            "motor_overheating": 0.10,
+            "position_drift": 0.10,
+            "timeout": 0.10,
+        },
+        "rotate_wrist": {
+            "joint_limit_exceeded": 0.25,
+            "singularity_detected": 0.20,
+            "motor_overheating": 0.20,
+            "calibration_error": 0.15,
+            "execution_error": 0.10,
+            "timeout": 0.10,
+        },
+        "plan_trajectory": {
+            "planning_timeout": 0.35,
+            "workspace_violation": 0.20,
+            "collision_detected": 0.15,
+            "singularity_detected": 0.15,
+            "network_failure": 0.10,
+            "timeout": 0.05,
+        },
+        "visual_scan": {
+            "vision_failure": 0.40,
+            "object_not_found": 0.25,
+            "sensor_malfunction": 0.15,
+            "timeout": 0.10,
+            "network_failure": 0.05,
+            "calibration_error": 0.05,
+        },
     }
 
     # Action primitives
@@ -142,16 +196,12 @@ class RobotLogGenerator:
 
         failed = False
         failure_timestep = None
-        error_type = None
+        failure_action = None
 
         # Decide if this run will fail and when
         if random.random() < failure_prob:
             failed = True
             failure_timestep = random.randint(run_length // 2, run_length - 1)
-            # Use weighted selection for error types
-            error_types = list(self.ERROR_TYPES_WEIGHTS.keys())
-            weights = list(self.ERROR_TYPES_WEIGHTS.values())
-            error_type = random.choices(error_types, weights=weights, k=1)[0]
 
         for timestep in range(run_length):
             timestamp = base_time + timedelta(milliseconds=100 * timestep)
@@ -167,8 +217,20 @@ class RobotLogGenerator:
             # Add error if this is the failure timestep
             if failed and timestep == failure_timestep:
                 action = log_entry["action"]
+                action_type = action["type"]
+
+                # Select error type based on the action type
+                if action_type in self.ACTION_ERROR_MAP:
+                    error_map = self.ACTION_ERROR_MAP[action_type]
+                    error_types = list(error_map.keys())
+                    weights = list(error_map.values())
+                    error_type = random.choices(error_types, weights=weights, k=1)[0]
+                else:
+                    # Fallback to uniform selection if action not in map
+                    error_type = random.choice(["execution_error", "timeout", "emergency_stop"])
+
                 context = {
-                    "action": action["type"],
+                    "action": action_type,
                     "object": action.get("object", "unknown")
                 }
                 log_entry["error"] = self.generate_error(error_type, context)

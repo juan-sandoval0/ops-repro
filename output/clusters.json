@@ -1,167 +1,168 @@
 {
-  "total_clusters": 54,
-  "total_failures_clustered": 98,
-  "avg_cluster_size": 1.8148148148148149,
-  "median_cluster_size": 2.0,
-  "max_cluster_size": 4,
+  "total_clusters": 36,
+  "total_failures_clustered": 94,
+  "avg_cluster_size": 2.611111111111111,
+  "median_cluster_size": 3.0,
+  "max_cluster_size": 6,
   "min_cluster_size": 1,
   "clusters": [
     {
       "cluster_id": 0,
       "signature": "vision_failure::planning",
-      "subcluster_id": -1,
+      "subcluster_id": 0,
       "failure_ids": [
         "run_00002",
-        "run_00236"
+        "run_00018",
+        "run_00082",
+        "run_00178"
       ],
       "exemplar_id": "run_00002",
+      "size": 4,
+      "error_types": [
+        "vision_failure"
+      ],
+      "action_types": [
+        "visual_scan"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "signature": "vision_failure::planning",
+      "subcluster_id": 1,
+      "failure_ids": [
+        "run_00154",
+        "run_00250"
+      ],
+      "exemplar_id": "run_00154",
       "size": 2,
       "error_types": [
         "vision_failure"
       ],
       "action_types": [
-        "visual_scan",
-        "plan_trajectory"
+        "visual_scan"
       ]
     },
     {
-      "cluster_id": 1,
-      "signature": "calibration_error::manipulation",
-      "subcluster_id": 0,
+      "cluster_id": 2,
+      "signature": "execution_error::manipulation",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00005"
+        "run_00005",
+        "run_00137",
+        "run_00241"
       ],
       "exemplar_id": "run_00005",
-      "size": 1,
+      "size": 3,
       "error_types": [
-        "calibration_error"
+        "execution_error"
       ],
       "action_types": [
         "rotate_wrist"
       ]
     },
     {
-      "cluster_id": 2,
-      "signature": "gripper_slip::gripper",
+      "cluster_id": 3,
+      "signature": "force_threshold_exceeded::gripper",
       "subcluster_id": 0,
       "failure_ids": [
         "run_00008",
-        "run_00103",
-        "run_00290"
+        "run_00019",
+        "run_00041"
       ],
       "exemplar_id": "run_00008",
       "size": 3,
       "error_types": [
-        "gripper_slip"
+        "force_threshold_exceeded"
       ],
       "action_types": [
         "open_gripper",
-        "release_object"
-      ]
-    },
-    {
-      "cluster_id": 3,
-      "signature": "gripper_slip::gripper",
-      "subcluster_id": 1,
-      "failure_ids": [
-        "run_00023",
-        "run_00116"
-      ],
-      "exemplar_id": "run_00023",
-      "size": 2,
-      "error_types": [
-        "gripper_slip"
-      ],
-      "action_types": [
-        "release_object"
+        "grasp_object"
       ]
     },
     {
       "cluster_id": 4,
-      "signature": "calibration_error::gripper",
+      "signature": "force_threshold_exceeded::gripper",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00009",
-        "run_00247"
+        "run_00128"
       ],
-      "exemplar_id": "run_00009",
-      "size": 2,
+      "exemplar_id": "run_00128",
+      "size": 1,
       "error_types": [
-        "calibration_error"
+        "force_threshold_exceeded"
       ],
       "action_types": [
-        "close_gripper",
-        "release_object"
+        "open_gripper"
       ]
     },
     {
       "cluster_id": 5,
-      "signature": "motor_overheating::movement",
-      "subcluster_id": -1,
+      "signature": "force_threshold_exceeded::gripper",
+      "subcluster_id": 1,
       "failure_ids": [
-        "run_00010",
-        "run_00013"
+        "run_00129",
+        "run_00168"
       ],
-      "exemplar_id": "run_00010",
+      "exemplar_id": "run_00129",
       "size": 2,
       "error_types": [
-        "motor_overheating"
+        "force_threshold_exceeded"
       ],
       "action_types": [
-        "execute_trajectory",
-        "move_to_position"
+        "open_gripper"
       ]
     },
     {
       "cluster_id": 6,
-      "signature": "execution_error::gripper",
-      "subcluster_id": -1,
+      "signature": "force_threshold_exceeded::gripper",
+      "subcluster_id": 2,
       "failure_ids": [
-        "run_00012",
-        "run_00202",
-        "run_00299"
+        "run_00158",
+        "run_00224"
       ],
-      "exemplar_id": "run_00012",
-      "size": 3,
+      "exemplar_id": "run_00158",
+      "size": 2,
       "error_types": [
-        "execution_error"
+        "force_threshold_exceeded"
       ],
       "action_types": [
-        "grasp_object",
-        "close_gripper",
-        "release_object"
+        "grasp_object"
       ]
     },
     {
       "cluster_id": 7,
-      "signature": "emergency_stop::planning",
+      "signature": "timeout::gripper",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00024",
-        "run_00280"
+        "run_00010",
+        "run_00033",
+        "run_00151",
+        "run_00244"
       ],
-      "exemplar_id": "run_00024",
-      "size": 2,
+      "exemplar_id": "run_00010",
+      "size": 4,
       "error_types": [
-        "emergency_stop"
+        "timeout"
       ],
       "action_types": [
-        "visual_scan",
-        "plan_trajectory"
+        "open_gripper",
+        "close_gripper",
+        "grasp_object"
       ]
     },
     {
       "cluster_id": 8,
-      "signature": "grasp_failure::gripper",
+      "signature": "calibration_error::gripper",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00027",
-        "run_00135"
+        "run_00012",
+        "run_00147",
+        "run_00263"
       ],
-      "exemplar_id": "run_00027",
-      "size": 2,
+      "exemplar_id": "run_00012",
+      "size": 3,
       "error_types": [
-        "grasp_failure"
+        "calibration_error"
       ],
       "action_types": [
         "open_gripper",
@@ -173,52 +174,55 @@
       "signature": "position_drift::gripper",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00028",
-        "run_00078",
-        "run_00132"
+        "run_00014",
+        "run_00068",
+        "run_00246",
+        "run_00277"
       ],
-      "exemplar_id": "run_00028",
-      "size": 3,
+      "exemplar_id": "run_00014",
+      "size": 4,
       "error_types": [
         "position_drift"
       ],
       "action_types": [
-        "close_gripper",
         "release_object"
       ]
     },
     {
       "cluster_id": 10,
-      "signature": "planning_timeout::gripper",
-      "subcluster_id": 0,
+      "signature": "motor_overheating::manipulation",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00036",
-        "run_00109",
-        "run_00284"
+        "run_00032",
+        "run_00063",
+        "run_00242",
+        "run_00261"
       ],
-      "exemplar_id": "run_00036",
-      "size": 3,
+      "exemplar_id": "run_00032",
+      "size": 4,
       "error_types": [
-        "planning_timeout"
+        "motor_overheating"
       ],
       "action_types": [
-        "open_gripper",
-        "close_gripper",
-        "release_object"
+        "rotate_wrist"
       ]
     },
     {
       "cluster_id": 11,
-      "signature": "planning_timeout::gripper",
-      "subcluster_id": 1,
+      "signature": "motor_overheating::gripper",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00161",
-        "run_00260"
+        "run_00038",
+        "run_00060",
+        "run_00074",
+        "run_00172",
+        "run_00183",
+        "run_00206"
       ],
-      "exemplar_id": "run_00161",
-      "size": 2,
+      "exemplar_id": "run_00038",
+      "size": 6,
       "error_types": [
-        "planning_timeout"
+        "motor_overheating"
       ],
       "action_types": [
         "open_gripper",
@@ -227,44 +231,42 @@
     },
     {
       "cluster_id": 12,
-      "signature": "planning_timeout::gripper",
+      "signature": "workspace_violation::planning",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00252",
-        "run_00264"
+        "run_00039",
+        "run_00057"
       ],
-      "exemplar_id": "run_00252",
+      "exemplar_id": "run_00039",
       "size": 2,
       "error_types": [
-        "planning_timeout"
+        "workspace_violation"
       ],
       "action_types": [
-        "grasp_object",
-        "open_gripper"
+        "plan_trajectory"
       ]
     },
     {
       "cluster_id": 13,
-      "signature": "motor_overheating::gripper",
+      "signature": "joint_limit_exceeded::manipulation",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00043",
-        "run_00104",
-        "run_00177"
+        "run_00042",
+        "run_00223",
+        "run_00254"
       ],
-      "exemplar_id": "run_00043",
+      "exemplar_id": "run_00042",
       "size": 3,
       "error_types": [
-        "motor_overheating"
+        "joint_limit_exceeded"
       ],
       "action_types": [
-        "grasp_object",
-        "open_gripper"
+        "rotate_wrist"
       ]
     },
     {
       "cluster_id": 14,
-      "signature": "collision_detected::planning",
+      "signature": "singularity_detected::planning",
       "subcluster_id": 0,
       "failure_ids": [
         "run_00044"
@@ -272,117 +274,116 @@
       "exemplar_id": "run_00044",
       "size": 1,
       "error_types": [
-        "collision_detected"
+        "singularity_detected"
       ],
       "action_types": [
-        "visual_scan"
+        "plan_trajectory"
       ]
     },
     {
       "cluster_id": 15,
-      "signature": "collision_detected::gripper",
-      "subcluster_id": 0,
+      "signature": "singularity_detected::manipulation",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00045",
-        "run_00157"
+        "run_00051",
+        "run_00276"
       ],
-      "exemplar_id": "run_00045",
+      "exemplar_id": "run_00051",
       "size": 2,
       "error_types": [
-        "collision_detected"
+        "singularity_detected"
       ],
       "action_types": [
-        "open_gripper",
-        "release_object"
+        "rotate_wrist"
       ]
     },
     {
       "cluster_id": 16,
-      "signature": "collision_detected::gripper",
-      "subcluster_id": 1,
-      "failure_ids": [
-        "run_00094",
-        "run_00133"
-      ],
-      "exemplar_id": "run_00094",
-      "size": 2,
-      "error_types": [
-        "collision_detected"
-      ],
-      "action_types": [
-        "grasp_object",
-        "close_gripper"
-      ]
-    },
-    {
-      "cluster_id": 17,
-      "signature": "force_threshold_exceeded::gripper",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00046",
-        "run_00287"
-      ],
-      "exemplar_id": "run_00046",
-      "size": 2,
-      "error_types": [
-        "force_threshold_exceeded"
-      ],
-      "action_types": [
-        "open_gripper"
-      ]
-    },
-    {
-      "cluster_id": 18,
-      "signature": "force_threshold_exceeded::gripper",
-      "subcluster_id": 1,
-      "failure_ids": [
-        "run_00148",
-        "run_00244"
-      ],
-      "exemplar_id": "run_00148",
-      "size": 2,
-      "error_types": [
-        "force_threshold_exceeded"
-      ],
-      "action_types": [
-        "open_gripper",
-        "release_object"
-      ]
-    },
-    {
-      "cluster_id": 19,
-      "signature": "timeout::gripper",
+      "signature": "timeout::planning",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00047",
-        "run_00062"
+        "run_00053",
+        "run_00240"
       ],
-      "exemplar_id": "run_00047",
+      "exemplar_id": "run_00053",
       "size": 2,
       "error_types": [
         "timeout"
       ],
       "action_types": [
-        "open_gripper"
+        "visual_scan",
+        "plan_trajectory"
+      ]
+    },
+    {
+      "cluster_id": 17,
+      "signature": "workspace_violation::movement",
+      "subcluster_id": -1,
+      "failure_ids": [
+        "run_00054",
+        "run_00138",
+        "run_00237",
+        "run_00293"
+      ],
+      "exemplar_id": "run_00054",
+      "size": 4,
+      "error_types": [
+        "workspace_violation"
+      ],
+      "action_types": [
+        "move_to_position"
+      ]
+    },
+    {
+      "cluster_id": 18,
+      "signature": "vision_failure::gripper",
+      "subcluster_id": -1,
+      "failure_ids": [
+        "run_00067",
+        "run_00268"
+      ],
+      "exemplar_id": "run_00067",
+      "size": 2,
+      "error_types": [
+        "vision_failure"
+      ],
+      "action_types": [
+        "grasp_object"
+      ]
+    },
+    {
+      "cluster_id": 19,
+      "signature": "calibration_error::manipulation",
+      "subcluster_id": -1,
+      "failure_ids": [
+        "run_00075",
+        "run_00155",
+        "run_00198"
+      ],
+      "exemplar_id": "run_00075",
+      "size": 3,
+      "error_types": [
+        "calibration_error"
+      ],
+      "action_types": [
+        "rotate_wrist"
       ]
     },
     {
       "cluster_id": 20,
-      "signature": "sensor_malfunction::gripper",
+      "signature": "execution_error::movement",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00048",
-        "run_00221",
+        "run_00077",
         "run_00239"
       ],
-      "exemplar_id": "run_00048",
-      "size": 3,
+      "exemplar_id": "run_00077",
+      "size": 2,
       "error_types": [
-        "sensor_malfunction"
+        "execution_error"
       ],
       "action_types": [
-        "open_gripper",
-        "release_object"
+        "execute_trajectory"
       ]
     },
     {
@@ -390,555 +391,262 @@
       "signature": "vacuum_loss::gripper",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00054",
-        "run_00153",
-        "run_00160",
-        "run_00187"
+        "run_00086",
+        "run_00192"
       ],
-      "exemplar_id": "run_00054",
-      "size": 4,
+      "exemplar_id": "run_00086",
+      "size": 2,
       "error_types": [
         "vacuum_loss"
       ],
       "action_types": [
-        "grasp_object",
-        "open_gripper",
-        "close_gripper"
+        "close_gripper",
+        "grasp_object"
       ]
     },
     {
       "cluster_id": 22,
-      "signature": "gripper_slip::manipulation",
+      "signature": "collision_detected::movement",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00057",
-        "run_00263"
+        "run_00092",
+        "run_00257",
+        "run_00265"
       ],
-      "exemplar_id": "run_00057",
-      "size": 2,
+      "exemplar_id": "run_00092",
+      "size": 3,
       "error_types": [
-        "gripper_slip"
+        "collision_detected"
       ],
       "action_types": [
-        "rotate_wrist"
+        "move_to_position",
+        "execute_trajectory"
       ]
     },
     {
       "cluster_id": 23,
-      "signature": "vision_failure::gripper",
-      "subcluster_id": 0,
+      "signature": "execution_error::gripper",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00060",
-        "run_00134",
-        "run_00172"
+        "run_00094",
+        "run_00201"
       ],
-      "exemplar_id": "run_00060",
-      "size": 3,
+      "exemplar_id": "run_00094",
+      "size": 2,
       "error_types": [
-        "vision_failure"
+        "execution_error"
       ],
       "action_types": [
-        "grasp_object",
-        "open_gripper",
         "release_object"
       ]
     },
     {
       "cluster_id": 24,
-      "signature": "vision_failure::gripper",
-      "subcluster_id": 1,
-      "failure_ids": [
-        "run_00126",
-        "run_00155",
-        "run_00229"
-      ],
-      "exemplar_id": "run_00126",
-      "size": 3,
-      "error_types": [
-        "vision_failure"
-      ],
-      "action_types": [
-        "grasp_object",
-        "close_gripper",
-        "release_object"
-      ]
-    },
-    {
-      "cluster_id": 25,
-      "signature": "vision_failure::gripper",
-      "subcluster_id": -1,
-      "failure_ids": [
-        "run_00209"
-      ],
-      "exemplar_id": "run_00209",
-      "size": 1,
-      "error_types": [
-        "vision_failure"
-      ],
-      "action_types": [
-        "open_gripper"
-      ]
-    },
-    {
-      "cluster_id": 26,
-      "signature": "gripper_slip::planning",
-      "subcluster_id": -1,
-      "failure_ids": [
-        "run_00070",
-        "run_00138",
-        "run_00198",
-        "run_00274"
-      ],
-      "exemplar_id": "run_00070",
-      "size": 4,
-      "error_types": [
-        "gripper_slip"
-      ],
-      "action_types": [
-        "visual_scan",
-        "plan_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 27,
-      "signature": "object_not_found::movement",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00083"
-      ],
-      "exemplar_id": "run_00083",
-      "size": 1,
-      "error_types": [
-        "object_not_found"
-      ],
-      "action_types": [
-        "move_to_position"
-      ]
-    },
-    {
-      "cluster_id": 28,
-      "signature": "sensor_malfunction::movement",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00085"
-      ],
-      "exemplar_id": "run_00085",
-      "size": 1,
-      "error_types": [
-        "sensor_malfunction"
-      ],
-      "action_types": [
-        "execute_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 29,
-      "signature": "emergency_stop::gripper",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00088"
-      ],
-      "exemplar_id": "run_00088",
-      "size": 1,
-      "error_types": [
-        "emergency_stop"
-      ],
-      "action_types": [
-        "open_gripper"
-      ]
-    },
-    {
-      "cluster_id": 30,
-      "signature": "timeout::planning",
+      "signature": "sensor_malfunction::planning",
       "subcluster_id": -1,
       "failure_ids": [
         "run_00096",
-        "run_00110",
-        "run_00123"
+        "run_00171",
+        "run_00202"
       ],
       "exemplar_id": "run_00096",
       "size": 3,
       "error_types": [
-        "timeout"
-      ],
-      "action_types": [
-        "visual_scan",
-        "plan_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 31,
-      "signature": "calibration_error::movement",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00106"
-      ],
-      "exemplar_id": "run_00106",
-      "size": 1,
-      "error_types": [
-        "calibration_error"
-      ],
-      "action_types": [
-        "execute_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 32,
-      "signature": "force_threshold_exceeded::manipulation",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00107"
-      ],
-      "exemplar_id": "run_00107",
-      "size": 1,
-      "error_types": [
-        "force_threshold_exceeded"
-      ],
-      "action_types": [
-        "rotate_wrist"
-      ]
-    },
-    {
-      "cluster_id": 33,
-      "signature": "execution_error::planning",
-      "subcluster_id": -1,
-      "failure_ids": [
-        "run_00125",
-        "run_00241"
-      ],
-      "exemplar_id": "run_00125",
-      "size": 2,
-      "error_types": [
-        "execution_error"
+        "sensor_malfunction"
       ],
       "action_types": [
         "visual_scan"
       ]
     },
     {
-      "cluster_id": 34,
-      "signature": "emergency_stop::manipulation",
-      "subcluster_id": 0,
+      "cluster_id": 25,
+      "signature": "planning_timeout::planning",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00144"
+        "run_00110",
+        "run_00146",
+        "run_00286"
       ],
-      "exemplar_id": "run_00144",
-      "size": 1,
+      "exemplar_id": "run_00110",
+      "size": 3,
       "error_types": [
-        "emergency_stop"
-      ],
-      "action_types": [
-        "rotate_wrist"
-      ]
-    },
-    {
-      "cluster_id": 35,
-      "signature": "grasp_failure::planning",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00166"
-      ],
-      "exemplar_id": "run_00166",
-      "size": 1,
-      "error_types": [
-        "grasp_failure"
+        "planning_timeout"
       ],
       "action_types": [
         "plan_trajectory"
       ]
     },
     {
-      "cluster_id": 36,
-      "signature": "singularity_detected::gripper",
-      "subcluster_id": 0,
+      "cluster_id": 26,
+      "signature": "grasp_failure::gripper",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00173"
+        "run_00120",
+        "run_00127",
+        "run_00205"
       ],
-      "exemplar_id": "run_00173",
-      "size": 1,
+      "exemplar_id": "run_00120",
+      "size": 3,
       "error_types": [
-        "singularity_detected"
+        "grasp_failure"
       ],
       "action_types": [
         "grasp_object"
       ]
     },
     {
-      "cluster_id": 37,
-      "signature": "sensor_malfunction::planning",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00178"
-      ],
-      "exemplar_id": "run_00178",
-      "size": 1,
-      "error_types": [
-        "sensor_malfunction"
-      ],
-      "action_types": [
-        "plan_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 38,
-      "signature": "joint_limit_exceeded::gripper",
+      "cluster_id": 27,
+      "signature": "collision_detected::planning",
       "subcluster_id": -1,
       "failure_ids": [
-        "run_00182",
-        "run_00218"
+        "run_00122",
+        "run_00238",
+        "run_00285"
       ],
-      "exemplar_id": "run_00182",
-      "size": 2,
-      "error_types": [
-        "joint_limit_exceeded"
-      ],
-      "action_types": [
-        "open_gripper",
-        "release_object"
-      ]
-    },
-    {
-      "cluster_id": 39,
-      "signature": "workspace_violation::movement",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00185"
-      ],
-      "exemplar_id": "run_00185",
-      "size": 1,
-      "error_types": [
-        "workspace_violation"
-      ],
-      "action_types": [
-        "execute_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 40,
-      "signature": "timeout::manipulation",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00191"
-      ],
-      "exemplar_id": "run_00191",
-      "size": 1,
-      "error_types": [
-        "timeout"
-      ],
-      "action_types": [
-        "rotate_wrist"
-      ]
-    },
-    {
-      "cluster_id": 41,
-      "signature": "path_deviation::manipulation",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00194"
-      ],
-      "exemplar_id": "run_00194",
-      "size": 1,
-      "error_types": [
-        "path_deviation"
-      ],
-      "action_types": [
-        "rotate_wrist"
-      ]
-    },
-    {
-      "cluster_id": 42,
-      "signature": "execution_error::movement",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00196"
-      ],
-      "exemplar_id": "run_00196",
-      "size": 1,
-      "error_types": [
-        "execution_error"
-      ],
-      "action_types": [
-        "move_to_position"
-      ]
-    },
-    {
-      "cluster_id": 43,
-      "signature": "object_not_found::manipulation",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00197"
-      ],
-      "exemplar_id": "run_00197",
-      "size": 1,
-      "error_types": [
-        "object_not_found"
-      ],
-      "action_types": [
-        "rotate_wrist"
-      ]
-    },
-    {
-      "cluster_id": 44,
-      "signature": "timeout::movement",
-      "subcluster_id": -1,
-      "failure_ids": [
-        "run_00200",
-        "run_00222"
-      ],
-      "exemplar_id": "run_00200",
-      "size": 2,
-      "error_types": [
-        "timeout"
-      ],
-      "action_types": [
-        "execute_trajectory",
-        "move_to_position"
-      ]
-    },
-    {
-      "cluster_id": 45,
-      "signature": "path_deviation::gripper",
-      "subcluster_id": -1,
-      "failure_ids": [
-        "run_00204",
-        "run_00255"
-      ],
-      "exemplar_id": "run_00204",
-      "size": 2,
-      "error_types": [
-        "path_deviation"
-      ],
-      "action_types": [
-        "grasp_object",
-        "close_gripper"
-      ]
-    },
-    {
-      "cluster_id": 46,
-      "signature": "grasp_failure::movement",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00223"
-      ],
-      "exemplar_id": "run_00223",
-      "size": 1,
-      "error_types": [
-        "grasp_failure"
-      ],
-      "action_types": [
-        "execute_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 47,
-      "signature": "collision_detected::movement",
-      "subcluster_id": 0,
-      "failure_ids": [
-        "run_00224"
-      ],
-      "exemplar_id": "run_00224",
-      "size": 1,
+      "exemplar_id": "run_00122",
+      "size": 3,
       "error_types": [
         "collision_detected"
       ],
       "action_types": [
-        "execute_trajectory"
-      ]
-    },
-    {
-      "cluster_id": 48,
-      "signature": "motor_overheating::planning",
-      "subcluster_id": -1,
-      "failure_ids": [
-        "run_00226",
-        "run_00267"
-      ],
-      "exemplar_id": "run_00226",
-      "size": 2,
-      "error_types": [
-        "motor_overheating"
-      ],
-      "action_types": [
         "plan_trajectory"
       ]
     },
     {
-      "cluster_id": 49,
-      "signature": "grasp_failure::manipulation",
+      "cluster_id": 28,
+      "signature": "sensor_malfunction::gripper",
+      "subcluster_id": -1,
+      "failure_ids": [
+        "run_00132",
+        "run_00139",
+        "run_00225",
+        "run_00234",
+        "run_00262"
+      ],
+      "exemplar_id": "run_00132",
+      "size": 5,
+      "error_types": [
+        "sensor_malfunction"
+      ],
+      "action_types": [
+        "open_gripper",
+        "close_gripper"
+      ]
+    },
+    {
+      "cluster_id": 29,
+      "signature": "timeout::manipulation",
       "subcluster_id": 0,
       "failure_ids": [
-        "run_00234"
+        "run_00148"
       ],
-      "exemplar_id": "run_00234",
+      "exemplar_id": "run_00148",
       "size": 1,
       "error_types": [
-        "grasp_failure"
+        "timeout"
       ],
       "action_types": [
         "rotate_wrist"
       ]
     },
     {
-      "cluster_id": 50,
-      "signature": "gripper_slip::movement",
-      "subcluster_id": 0,
+      "cluster_id": 30,
+      "signature": "gripper_slip::gripper",
+      "subcluster_id": -1,
       "failure_ids": [
-        "run_00250"
+        "run_00193",
+        "run_00214",
+        "run_00233"
       ],
-      "exemplar_id": "run_00250",
-      "size": 1,
+      "exemplar_id": "run_00193",
+      "size": 3,
       "error_types": [
         "gripper_slip"
       ],
       "action_types": [
-        "move_to_position"
+        "release_object",
+        "close_gripper",
+        "grasp_object"
       ]
     },
     {
-      "cluster_id": 51,
-      "signature": "path_deviation::movement",
+      "cluster_id": 31,
+      "signature": "emergency_stop::gripper",
       "subcluster_id": 0,
       "failure_ids": [
-        "run_00258"
+        "run_00200"
       ],
-      "exemplar_id": "run_00258",
+      "exemplar_id": "run_00200",
       "size": 1,
       "error_types": [
-        "path_deviation"
+        "emergency_stop"
       ],
       "action_types": [
-        "move_to_position"
-      ]
-    },
-    {
-      "cluster_id": 52,
-      "signature": "object_not_found::gripper",
-      "subcluster_id": -1,
-      "failure_ids": [
-        "run_00268",
-        "run_00282"
-      ],
-      "exemplar_id": "run_00268",
-      "size": 2,
-      "error_types": [
-        "object_not_found"
-      ],
-      "action_types": [
-        "grasp_object",
         "open_gripper"
       ]
     },
     {
-      "cluster_id": 53,
-      "signature": "planning_timeout::movement",
+      "cluster_id": 32,
+      "signature": "joint_limit_exceeded::movement",
+      "subcluster_id": -1,
+      "failure_ids": [
+        "run_00236",
+        "run_00243",
+        "run_00255"
+      ],
+      "exemplar_id": "run_00236",
+      "size": 3,
+      "error_types": [
+        "joint_limit_exceeded"
+      ],
+      "action_types": [
+        "move_to_position",
+        "execute_trajectory"
+      ]
+    },
+    {
+      "cluster_id": 33,
+      "signature": "motor_overheating::movement",
       "subcluster_id": 0,
       "failure_ids": [
-        "run_00297"
+        "run_00249"
       ],
-      "exemplar_id": "run_00297",
+      "exemplar_id": "run_00249",
       "size": 1,
       "error_types": [
-        "planning_timeout"
+        "motor_overheating"
+      ],
+      "action_types": [
+        "execute_trajectory"
+      ]
+    },
+    {
+      "cluster_id": 34,
+      "signature": "timeout::movement",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00269"
+      ],
+      "exemplar_id": "run_00269",
+      "size": 1,
+      "error_types": [
+        "timeout"
+      ],
+      "action_types": [
+        "execute_trajectory"
+      ]
+    },
+    {
+      "cluster_id": 35,
+      "signature": "path_deviation::movement",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00291"
+      ],
+      "exemplar_id": "run_00291",
+      "size": 1,
+      "error_types": [
+        "path_deviation"
       ],
       "action_types": [
         "move_to_position"

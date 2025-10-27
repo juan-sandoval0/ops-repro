@@ -1,78 +1,81 @@
 {
   "bundle_id": "bundle_cluster_16",
   "cluster_id": 16,
-  "error_type": "collision_detected",
-  "error_message": "Collision detected during trajectory execution",
-  "failure_run_id": "run_00094",
+  "error_type": "timeout",
+  "error_message": "Action plan_trajectory exceeded timeout (30s)",
+  "failure_run_id": "run_00053",
   "initial_state": {
     "detected_objects": [
-      "can",
-      "towel"
+      "banana"
     ],
     "robot_state": {
       "joint_positions": [
-        -2.247,
-        -3.041,
-        2.998,
-        0.677,
-        -2.071,
-        1.126,
-        -0.633
+        1.459,
+        -1.152,
+        -0.419,
+        2.228,
+        1.178,
+        -1.297,
+        2.953
       ],
       "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          -0.232,
-          -0.224,
-          0.418
+          0.034,
+          0.011,
+          -0.487
         ],
         "orientation": [
-          -0.856,
-          -0.151,
-          -0.584,
-          0.639
+          0.337,
+          0.347,
+          0.283,
+          -0.309
         ]
       }
     },
-    "timestep": 28
+    "timestep": 40
   },
   "action_sequence": [
     {
-      "type": "grasp_object",
-      "object": "book",
-      "force": 8.5
+      "type": "plan_trajectory"
     },
     {
-      "type": "visual_scan"
+      "type": "move_to_position",
+      "target": [
+        0.425,
+        -0.28,
+        -0.451
+      ]
     },
     {
-      "type": "grasp_object",
-      "object": "can",
-      "force": 18.8
+      "type": "move_to_position",
+      "target": [
+        0.086,
+        -0.307,
+        -0.48
+      ]
+    },
+    {
+      "type": "plan_trajectory"
     },
     {
       "type": "execute_trajectory",
       "target": [
-        0.386,
-        -0.431,
-        -0.125
+        0.021,
+        -0.259,
+        -0.363
       ]
     },
     {
-      "type": "grasp_object",
-      "object": "fork",
-      "force": 11.2
-    },
-    {
-      "type": "close_gripper"
+      "type": "plan_trajectory"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Collision detected during trajectory execution",
-  "created_at": "2025-10-27T14:15:20.534540",
+  "actual_outcome": "Failure at step 6: Action plan_trajectory exceeded timeout (30s)",
+  "created_at": "2025-10-27T14:21:29.351587",
   "source_failures": [
-    "run_00094",
-    "run_00133"
+    "run_00053",
+    "run_00240"
   ],
   "difficulty": "hard"
 }

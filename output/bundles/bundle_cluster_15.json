@@ -1,71 +1,80 @@
 {
   "bundle_id": "bundle_cluster_15",
   "cluster_id": 15,
-  "error_type": "collision_detected",
-  "error_message": "Collision detected during trajectory execution",
-  "failure_run_id": "run_00045",
+  "error_type": "singularity_detected",
+  "error_message": "Robot approaching kinematic singularity",
+  "failure_run_id": "run_00051",
   "initial_state": {
     "detected_objects": [
-      "cup"
+      "book",
+      "can"
     ],
     "robot_state": {
       "joint_positions": [
-        -1.785,
-        1.559,
-        -3.045,
-        -2.249,
-        2.043,
-        -1.145,
-        -2.265
+        -1.641,
+        0.542,
+        0.592,
+        2.564,
+        2.032,
+        0.014,
+        -2.363
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.305,
-          0.36,
-          -0.063
+          0.156,
+          0.458,
+          -0.222
         ],
         "orientation": [
-          -0.063,
-          0.338,
-          0.483,
-          0.665
+          0.305,
+          -0.909,
+          0.566,
+          -0.496
         ]
       }
     },
-    "timestep": 36
+    "timestep": 44
   },
   "action_sequence": [
     {
-      "type": "close_gripper"
+      "type": "open_gripper"
     },
     {
       "type": "execute_trajectory",
       "target": [
-        -0.207,
-        0.396,
-        0.446
+        -0.319,
+        -0.359,
+        0.119
       ]
     },
     {
-      "type": "close_gripper"
+      "type": "grasp_object",
+      "object": "can",
+      "force": 12.8
     },
     {
-      "type": "close_gripper"
+      "type": "move_to_position",
+      "target": [
+        -0.156,
+        -0.11,
+        0.112
+      ]
     },
     {
-      "type": "release_object"
+      "type": "plan_trajectory"
     },
     {
-      "type": "release_object"
+      "type": "rotate_wrist",
+      "angle": 57.8
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Collision detected during trajectory execution",
-  "created_at": "2025-10-27T14:15:20.534222",
+  "actual_outcome": "Failure at step 6: Robot approaching kinematic singularity",
+  "created_at": "2025-10-27T14:21:29.344238",
   "source_failures": [
-    "run_00045",
-    "run_00157"
+    "run_00051",
+    "run_00276"
   ],
   "difficulty": "hard"
 }

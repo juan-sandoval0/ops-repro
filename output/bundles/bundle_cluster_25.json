@@ -1,72 +1,75 @@
 {
   "bundle_id": "bundle_cluster_25",
   "cluster_id": 25,
-  "error_type": "vision_failure",
-  "error_message": "Failed to process camera feed",
-  "failure_run_id": "run_00209",
+  "error_type": "planning_timeout",
+  "error_message": "Motion planning failed to find valid path",
+  "failure_run_id": "run_00110",
   "initial_state": {
     "detected_objects": [
-      "plate",
+      "can",
       "towel",
-      "apple"
+      "bottle",
+      "plate"
     ],
     "robot_state": {
       "joint_positions": [
-        -0.175,
-        -0.197,
-        -2.892,
-        3.035,
-        -1.919,
-        -2.583,
-        -2.619
+        1.643,
+        1.533,
+        0.01,
+        -3.099,
+        -0.343,
+        0.281,
+        0.585
       ],
-      "gripper_open": true,
+      "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.334,
-          0.336,
-          -0.28
+          0.183,
+          -0.073,
+          0.201
         ],
         "orientation": [
-          -0.921,
-          -0.07,
-          -0.377,
-          -0.805
+          -0.748,
+          0.371,
+          -0.144,
+          0.975
         ]
       }
     },
-    "timestep": 28
+    "timestep": 27
   },
   "action_sequence": [
     {
-      "type": "open_gripper"
+      "type": "close_gripper"
+    },
+    {
+      "type": "close_gripper"
     },
     {
       "type": "visual_scan"
     },
     {
-      "type": "release_object"
-    },
-    {
-      "type": "visual_scan"
-    },
-    {
-      "type": "execute_trajectory",
+      "type": "move_to_position",
       "target": [
-        0.428,
-        -0.47,
-        0.143
+        0.044,
+        -0.458,
+        -0.18
       ]
     },
     {
-      "type": "open_gripper"
+      "type": "close_gripper"
+    },
+    {
+      "type": "plan_trajectory"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Failed to process camera feed",
-  "created_at": "2025-10-27T14:15:20.536776",
+  "actual_outcome": "Failure at step 6: Motion planning failed to find valid path",
+  "created_at": "2025-10-27T14:21:29.379696",
   "source_failures": [
-    "run_00209"
+    "run_00110",
+    "run_00146",
+    "run_00286"
   ],
   "difficulty": "hard"
 }

@@ -1,69 +1,78 @@
 {
   "bundle_id": "bundle_cluster_34",
   "cluster_id": 34,
-  "error_type": "emergency_stop",
-  "error_message": "Emergency stop triggered by safety system",
-  "failure_run_id": "run_00144",
+  "error_type": "timeout",
+  "error_message": "Action execute_trajectory exceeded timeout (30s)",
+  "failure_run_id": "run_00269",
   "initial_state": {
     "detected_objects": [
-      "fork",
-      "towel"
+      "plate"
     ],
     "robot_state": {
       "joint_positions": [
-        -2.137,
-        -2.446,
-        -0.642,
-        0.51,
-        -2.654,
-        -0.41,
-        -2.867
+        -2.228,
+        -2.205,
+        -1.35,
+        -1.853,
+        0.801,
+        2.693,
+        -2.94
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          -0.26,
-          -0.473,
-          0.198
+          -0.492,
+          -0.475,
+          -0.467
         ],
         "orientation": [
-          0.381,
-          -0.015,
-          -0.041,
-          -0.477
+          0.963,
+          0.701,
+          0.419,
+          -0.711
         ]
       }
     },
-    "timestep": 39
+    "timestep": 30
   },
   "action_sequence": [
     {
-      "type": "close_gripper"
+      "type": "plan_trajectory"
     },
     {
-      "type": "visual_scan"
+      "type": "execute_trajectory",
+      "target": [
+        -0.254,
+        -0.461,
+        0.372
+      ]
     },
     {
       "type": "grasp_object",
-      "object": "box",
-      "force": 5.3
+      "object": "plate",
+      "force": 7.5
     },
     {
-      "type": "close_gripper"
-    },
-    {
-      "type": "visual_scan"
+      "type": "open_gripper"
     },
     {
       "type": "rotate_wrist",
-      "angle": 149.7
+      "angle": -91.7
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        -0.094,
+        0.31,
+        0.471
+      ]
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Emergency stop triggered by safety system",
-  "created_at": "2025-10-27T14:15:20.539116",
+  "actual_outcome": "Failure at step 6: Action execute_trajectory exceeded timeout (30s)",
+  "created_at": "2025-10-27T14:21:29.398494",
   "source_failures": [
-    "run_00144"
+    "run_00269"
   ],
-  "difficulty": "medium"
+  "difficulty": "hard"
 }

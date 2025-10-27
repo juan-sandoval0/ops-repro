@@ -1,67 +1,76 @@
 {
   "bundle_id": "bundle_cluster_29",
   "cluster_id": 29,
-  "error_type": "emergency_stop",
-  "error_message": "Emergency stop triggered by safety system",
-  "failure_run_id": "run_00088",
+  "error_type": "timeout",
+  "error_message": "Action rotate_wrist exceeded timeout (30s)",
+  "failure_run_id": "run_00148",
   "initial_state": {
     "detected_objects": [
-      "book",
-      "box",
-      "towel"
+      "fork"
     ],
     "robot_state": {
       "joint_positions": [
-        0.333,
-        -1.734,
-        2.844,
-        -1.908,
-        1.323,
-        -0.386,
-        -2.298
+        2.074,
+        0.937,
+        1.448,
+        -2.826,
+        1.694,
+        1.056,
+        -3.011
       ],
       "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.426,
-          0.238,
-          -0.282
+          -0.087,
+          -0.36,
+          -0.237
         ],
         "orientation": [
-          -0.095,
-          0.091,
-          -0.27,
-          0.879
+          -0.188,
+          0.338,
+          0.396,
+          -0.469
         ]
       }
     },
-    "timestep": 44
+    "timestep": 36
   },
   "action_sequence": [
     {
-      "type": "open_gripper"
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "visual_scan"
-    },
-    {
-      "type": "visual_scan"
+      "type": "execute_trajectory",
+      "target": [
+        0.266,
+        0.178,
+        -0.036
+      ]
     },
     {
       "type": "plan_trajectory"
     },
     {
-      "type": "open_gripper"
+      "type": "execute_trajectory",
+      "target": [
+        -0.488,
+        0.09,
+        -0.21
+      ]
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": 55.8
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Emergency stop triggered by safety system",
-  "created_at": "2025-10-27T14:15:20.537797",
+  "actual_outcome": "Failure at step 6: Action rotate_wrist exceeded timeout (30s)",
+  "created_at": "2025-10-27T14:21:29.387614",
   "source_failures": [
-    "run_00088"
+    "run_00148"
   ],
   "difficulty": "hard"
 }

@@ -1,79 +1,77 @@
 {
   "bundle_id": "bundle_cluster_33",
   "cluster_id": 33,
-  "error_type": "execution_error",
-  "error_message": "Trajectory execution deviated from plan",
-  "failure_run_id": "run_00125",
+  "error_type": "motor_overheating",
+  "error_message": "Motor 3 temperature exceeded 74\u00b0C",
+  "failure_run_id": "run_00249",
   "initial_state": {
     "detected_objects": [
-      "can",
-      "fork",
-      "knife",
-      "box"
+      "cup"
     ],
     "robot_state": {
       "joint_positions": [
-        1.278,
-        -0.836,
-        1.776,
-        -0.598,
-        -2.0,
-        2.197,
-        0.546
+        1.216,
+        2.031,
+        -0.626,
+        1.142,
+        -0.68,
+        -0.481,
+        -1.09
       ],
-      "gripper_open": false,
+      "gripper_open": true,
       "end_effector_pose": {
         "position": [
-          0.45,
-          -0.485,
-          0.299
+          0.274,
+          -0.446,
+          0.453
         ],
         "orientation": [
-          -0.565,
-          -0.33,
-          0.043,
-          -0.998
+          -0.912,
+          0.314,
+          -0.04,
+          0.972
         ]
       }
     },
-    "timestep": 27
+    "timestep": 26
   },
   "action_sequence": [
     {
-      "type": "release_object"
-    },
-    {
-      "type": "release_object"
-    },
-    {
-      "type": "close_gripper"
-    },
-    {
-      "type": "move_to_position",
+      "type": "execute_trajectory",
       "target": [
-        -0.368,
-        0.374,
-        -0.338
+        -0.202,
+        -0.063,
+        -0.333
       ]
     },
     {
-      "type": "move_to_position",
-      "target": [
-        0.209,
-        -0.117,
-        -0.024
-      ]
+      "type": "rotate_wrist",
+      "angle": -7.8
     },
     {
       "type": "visual_scan"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": 115.8
+    },
+    {
+      "type": "execute_trajectory",
+      "target": [
+        -0.094,
+        0.171,
+        -0.064
+      ]
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Trajectory execution deviated from plan",
-  "created_at": "2025-10-27T14:15:20.538565",
+  "actual_outcome": "Failure at step 6: Motor 3 temperature exceeded 74\u00b0C",
+  "created_at": "2025-10-27T14:21:29.397872",
   "source_failures": [
-    "run_00125",
-    "run_00241"
+    "run_00249"
   ],
-  "difficulty": "hard"
+  "difficulty": "medium"
 }

@@ -1,78 +1,80 @@
 {
   "bundle_id": "bundle_cluster_31",
   "cluster_id": 31,
-  "error_type": "calibration_error",
-  "error_message": "Robot calibration out of tolerance",
-  "failure_run_id": "run_00106",
+  "error_type": "emergency_stop",
+  "error_message": "Emergency stop triggered by safety system",
+  "failure_run_id": "run_00200",
   "initial_state": {
     "detected_objects": [
-      "towel",
-      "plate",
-      "knife"
+      "apple"
     ],
     "robot_state": {
       "joint_positions": [
-        -1.064,
-        -0.856,
-        2.309,
-        1.676,
-        1.041,
-        -1.238,
-        -0.68
+        2.08,
+        -0.246,
+        0.189,
+        0.188,
+        1.226,
+        2.462,
+        2.839
       ],
       "gripper_open": false,
       "end_effector_pose": {
         "position": [
-          0.271,
-          -0.16,
-          -0.451
+          -0.482,
+          -0.466,
+          0.473
         ],
         "orientation": [
-          0.329,
-          0.286,
-          -0.98,
-          0.662
+          0.749,
+          0.409,
+          0.199,
+          -0.924
         ]
       }
     },
-    "timestep": 32
+    "timestep": 42
   },
   "action_sequence": [
     {
-      "type": "rotate_wrist",
-      "angle": 64.7
-    },
-    {
-      "type": "open_gripper"
-    },
-    {
-      "type": "execute_trajectory",
+      "type": "move_to_position",
       "target": [
-        0.151,
-        0.448,
-        -0.028
+        0.186,
+        0.485,
+        -0.305
       ]
     },
     {
-      "type": "open_gripper"
+      "type": "move_to_position",
+      "target": [
+        -0.348,
+        -0.393,
+        -0.32
+      ]
     },
     {
       "type": "release_object"
     },
     {
+      "type": "plan_trajectory"
+    },
+    {
       "type": "execute_trajectory",
       "target": [
-        -0.199,
-        0.354,
-        0.189
+        0.215,
+        0.392,
+        -0.096
       ]
+    },
+    {
+      "type": "open_gripper"
     }
   ],
   "expected_outcome": "Action sequence completes successfully",
-  "actual_outcome": "Failure at step 6: Robot calibration out of tolerance",
-  "created_at": "2025-10-27T14:15:20.538166",
+  "actual_outcome": "Failure at step 6: Emergency stop triggered by safety system",
+  "created_at": "2025-10-27T14:21:29.392367",
   "source_failures": [
-    "run_00106"
+    "run_00200"
   ],
-  "difficulty": "hard"
+  "difficulty": "medium"
 }
