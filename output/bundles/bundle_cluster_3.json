@@ -1,0 +1,68 @@
+{
+  "bundle_id": "bundle_cluster_3",
+  "cluster_id": 3,
+  "error_type": "joint_limit_exceeded",
+  "error_message": "Joint 5 exceeded limit",
+  "failure_run_id": "run_00012",
+  "initial_state": {
+    "detected_objects": [
+      "cup",
+      "box"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        -1.91,
+        -1.827,
+        -2.307,
+        -0.246,
+        1.015,
+        -1.723,
+        -2.295
+      ],
+      "gripper_open": true,
+      "end_effector_pose": {
+        "position": [
+          0.226,
+          0.224,
+          -0.133
+        ],
+        "orientation": [
+          0.513,
+          0.522,
+          0.669,
+          -0.136
+        ]
+      }
+    },
+    "timestep": 41
+  },
+  "action_sequence": [
+    {
+      "type": "grasp_object",
+      "object": "fork",
+      "force": 17.9
+    },
+    {
+      "type": "open_gripper"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "release_object"
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Joint 5 exceeded limit",
+  "created_at": "2025-10-27T13:58:41.850946",
+  "source_failures": [
+    "run_00012"
+  ],
+  "difficulty": "medium"
+}

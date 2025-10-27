@@ -1,0 +1,67 @@
+{
+  "bundle_id": "bundle_cluster_8",
+  "cluster_id": 8,
+  "error_type": "timeout",
+  "error_message": "Action close_gripper exceeded timeout (30s)",
+  "failure_run_id": "run_00022",
+  "initial_state": {
+    "detected_objects": [
+      "fork"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        0.795,
+        -2.095,
+        2.303,
+        1.916,
+        -2.621,
+        -2.46,
+        -0.068
+      ],
+      "gripper_open": true,
+      "end_effector_pose": {
+        "position": [
+          0.343,
+          0.31,
+          0.365
+        ],
+        "orientation": [
+          -0.211,
+          0.516,
+          -0.363,
+          0.928
+        ]
+      }
+    },
+    "timestep": 30
+  },
+  "action_sequence": [
+    {
+      "type": "grasp_object",
+      "object": "cup",
+      "force": 6.2
+    },
+    {
+      "type": "visual_scan"
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "close_gripper"
+    },
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "close_gripper"
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Action close_gripper exceeded timeout (30s)",
+  "created_at": "2025-10-27T13:58:41.851700",
+  "source_failures": [
+    "run_00022"
+  ],
+  "difficulty": "medium"
+}

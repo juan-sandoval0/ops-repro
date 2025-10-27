@@ -1,0 +1,70 @@
+{
+  "bundle_id": "bundle_cluster_11",
+  "cluster_id": 11,
+  "error_type": "timeout",
+  "error_message": "Action grasp_object exceeded timeout (30s)",
+  "failure_run_id": "run_00032",
+  "initial_state": {
+    "detected_objects": [
+      "towel",
+      "box"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        0.907,
+        -1.324,
+        1.516,
+        1.887,
+        -0.036,
+        -3.025,
+        2.874
+      ],
+      "gripper_open": true,
+      "end_effector_pose": {
+        "position": [
+          -0.022,
+          0.166,
+          0.174
+        ],
+        "orientation": [
+          -0.045,
+          0.606,
+          0.707,
+          -0.06
+        ]
+      }
+    },
+    "timestep": 44
+  },
+  "action_sequence": [
+    {
+      "type": "release_object"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": -140.8
+    },
+    {
+      "type": "plan_trajectory"
+    },
+    {
+      "type": "rotate_wrist",
+      "angle": 131.0
+    },
+    {
+      "type": "visual_scan"
+    },
+    {
+      "type": "grasp_object",
+      "object": "can",
+      "force": 11.8
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Action grasp_object exceeded timeout (30s)",
+  "created_at": "2025-10-27T13:58:41.852124",
+  "source_failures": [
+    "run_00032"
+  ],
+  "difficulty": "hard"
+}

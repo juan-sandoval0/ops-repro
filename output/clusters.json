@@ -1,54 +1,250 @@
 {
-  "total_clusters": 1,
+  "total_clusters": 15,
   "total_failures_clustered": 16,
-  "avg_cluster_size": 16.0,
-  "median_cluster_size": 16.0,
-  "max_cluster_size": 16,
-  "min_cluster_size": 16,
+  "avg_cluster_size": 1.0666666666666667,
+  "median_cluster_size": 1.0,
+  "max_cluster_size": 2,
+  "min_cluster_size": 1,
   "clusters": [
     {
       "cluster_id": 0,
-      "signature": "vision_failure::grasp_object",
+      "signature": "vision_failure::visual_scan",
+      "subcluster_id": 0,
       "failure_ids": [
-        "run_00002",
-        "run_00005",
-        "run_00007",
-        "run_00012",
-        "run_00013",
-        "run_00015",
-        "run_00020",
-        "run_00021",
-        "run_00022",
-        "run_00024",
-        "run_00028",
-        "run_00032",
-        "run_00035",
-        "run_00038",
-        "run_00040",
-        "run_00047"
+        "run_00002"
       ],
       "exemplar_id": "run_00002",
-      "size": 16,
+      "size": 1,
       "error_types": [
-        "joint_limit_exceeded",
-        "grasp_failure",
-        "planning_timeout",
-        "force_threshold_exceeded",
-        "timeout",
-        "execution_error",
-        "vision_failure",
+        "vision_failure"
+      ],
+      "action_types": [
+        "visual_scan"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "signature": "execution_error::rotate_wrist",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00005"
+      ],
+      "exemplar_id": "run_00005",
+      "size": 1,
+      "error_types": [
+        "execution_error"
+      ],
+      "action_types": [
+        "rotate_wrist"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "signature": "execution_error::grasp_object",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00007"
+      ],
+      "exemplar_id": "run_00007",
+      "size": 1,
+      "error_types": [
+        "execution_error"
+      ],
+      "action_types": [
+        "grasp_object"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "signature": "joint_limit_exceeded::release_object",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00012"
+      ],
+      "exemplar_id": "run_00012",
+      "size": 1,
+      "error_types": [
+        "joint_limit_exceeded"
+      ],
+      "action_types": [
+        "release_object"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "signature": "timeout::release_object",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00013"
+      ],
+      "exemplar_id": "run_00013",
+      "size": 1,
+      "error_types": [
+        "timeout"
+      ],
+      "action_types": [
+        "release_object"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "signature": "joint_limit_exceeded::move_to_position",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00015"
+      ],
+      "exemplar_id": "run_00015",
+      "size": 1,
+      "error_types": [
+        "joint_limit_exceeded"
+      ],
+      "action_types": [
+        "move_to_position"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "signature": "grasp_failure::execute_trajectory",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00020"
+      ],
+      "exemplar_id": "run_00020",
+      "size": 1,
+      "error_types": [
+        "grasp_failure"
+      ],
+      "action_types": [
+        "execute_trajectory"
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "signature": "execution_error::close_gripper",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00021"
+      ],
+      "exemplar_id": "run_00021",
+      "size": 1,
+      "error_types": [
+        "execution_error"
+      ],
+      "action_types": [
+        "close_gripper"
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "signature": "timeout::close_gripper",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00022"
+      ],
+      "exemplar_id": "run_00022",
+      "size": 1,
+      "error_types": [
+        "timeout"
+      ],
+      "action_types": [
+        "close_gripper"
+      ]
+    },
+    {
+      "cluster_id": 9,
+      "signature": "force_threshold_exceeded::open_gripper",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00024"
+      ],
+      "exemplar_id": "run_00024",
+      "size": 1,
+      "error_types": [
+        "force_threshold_exceeded"
+      ],
+      "action_types": [
+        "open_gripper"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "signature": "object_not_found::visual_scan",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00028"
+      ],
+      "exemplar_id": "run_00028",
+      "size": 1,
+      "error_types": [
         "object_not_found"
       ],
       "action_types": [
-        "close_gripper",
-        "plan_trajectory",
-        "rotate_wrist",
-        "execute_trajectory",
-        "open_gripper",
-        "move_to_position",
-        "visual_scan",
-        "grasp_object",
-        "release_object"
+        "visual_scan"
+      ]
+    },
+    {
+      "cluster_id": 11,
+      "signature": "timeout::grasp_object",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00032"
+      ],
+      "exemplar_id": "run_00032",
+      "size": 1,
+      "error_types": [
+        "timeout"
+      ],
+      "action_types": [
+        "grasp_object"
+      ]
+    },
+    {
+      "cluster_id": 12,
+      "signature": "planning_timeout::rotate_wrist",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00035"
+      ],
+      "exemplar_id": "run_00035",
+      "size": 1,
+      "error_types": [
+        "planning_timeout"
+      ],
+      "action_types": [
+        "rotate_wrist"
+      ]
+    },
+    {
+      "cluster_id": 13,
+      "signature": "vision_failure::grasp_object",
+      "subcluster_id": -1,
+      "failure_ids": [
+        "run_00038",
+        "run_00047"
+      ],
+      "exemplar_id": "run_00038",
+      "size": 2,
+      "error_types": [
+        "vision_failure"
+      ],
+      "action_types": [
+        "grasp_object"
+      ]
+    },
+    {
+      "cluster_id": 14,
+      "signature": "planning_timeout::plan_trajectory",
+      "subcluster_id": 0,
+      "failure_ids": [
+        "run_00040"
+      ],
+      "exemplar_id": "run_00040",
+      "size": 1,
+      "error_types": [
+        "planning_timeout"
+      ],
+      "action_types": [
+        "plan_trajectory"
       ]
     }
   ]

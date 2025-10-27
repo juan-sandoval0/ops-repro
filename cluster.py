@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Clustering module for grouping similar failures using error signatures and embeddings.
+Two-stage clustering: first by signature, then HDBSCAN within each signature group.
 """
 
 import json
@@ -10,7 +11,7 @@ from typing import List, Dict, Any, Optional
 from collections import defaultdict
 from dataclasses import dataclass
 
-from sklearn.cluster import DBSCAN
+import hdbscan
 from sklearn.preprocessing import StandardScaler
 from sentence_transformers import SentenceTransformer
 
@@ -22,6 +23,7 @@ class FailureCluster:
     """Represents a cluster of similar failures."""
     cluster_id: int
     signature: str
+    subcluster_id: int  # Subcluster ID within signature group
     failure_ids: List[str]
     exemplar_id: str  # Representative failure for this cluster
     size: int
@@ -32,6 +34,7 @@ class FailureCluster:
         return {
             "cluster_id": self.cluster_id,
             "signature": self.signature,
+            "subcluster_id": int(self.subcluster_id) if isinstance(self.subcluster_id, (np.integer, np.int64)) else self.subcluster_id,
             "failure_ids": self.failure_ids,
             "exemplar_id": self.exemplar_id,
             "size": self.size,
@@ -111,67 +114,147 @@ class FailureClusterer:
 
         return signature_clusters
 
-    def cluster_by_embedding(self, eps: float = 0.5, min_samples: int = 2) -> List[FailureCluster]:
-        """Cluster failures using semantic embeddings and DBSCAN."""
-        print("Generating embeddings for failures...")
+    def _extract_numeric_features(self, failure: RunFailure) -> np.ndarray:
+        """Extract numeric features from a failure for clustering."""
+        features = []
 
-        # Create text representations
-        failure_texts = [self._create_failure_text(f) for f in self.failures]
+        # Timestep features
+        features.append(failure.failure_timestep)
+        features.append(failure.total_timesteps)
+        features.append(failure.failure_timestep / max(failure.total_timesteps, 1))  # normalized position
 
-        # Generate embeddings
-        embeddings = self.model.encode(failure_texts, show_progress_bar=True)
+        # Action sequence length
+        features.append(len(failure.preceding_actions))
 
-        # Normalize embeddings
-        scaler = StandardScaler()
-        embeddings_scaled = scaler.fit_transform(embeddings)
+        # Robot state features (if available)
+        robot_state = failure.observation_at_failure.get("robot_state", {})
+        if "gripper_open" in robot_state:
+            features.append(1.0 if robot_state["gripper_open"] else 0.0)
 
-        print(f"Clustering with DBSCAN (eps={eps}, min_samples={min_samples})...")
+        # Force/torque magnitude (if available)
+        force_torque = failure.observation_at_failure.get("force_torque", [])
+        if force_torque:
+            features.append(np.linalg.norm(force_torque))
+        else:
+            features.append(0.0)
 
-        # Cluster with DBSCAN
-        clustering = DBSCAN(eps=eps, min_samples=min_samples, metric='cosine')
-        labels = clustering.fit_predict(embeddings)
+        # Number of detected objects
+        detected_objects = failure.observation_at_failure.get("camera", {}).get("detected_objects", [])
+        features.append(len(detected_objects))
 
-        # Group failures by cluster
-        cluster_groups = defaultdict(list)
-        for idx, label in enumerate(labels):
-            cluster_groups[label].append(idx)
+        return np.array(features)
 
-        print(f"Found {len([l for l in cluster_groups.keys() if l != -1])} clusters")
-        print(f"Outliers (unclustered): {len(cluster_groups.get(-1, []))}")
+    def cluster_two_stage(self, min_cluster_size: int = 2, min_samples: int = 1) -> List[FailureCluster]:
+        """
+        Two-stage clustering:
+        1. Group by signature (error_type::action_type)
+        2. Within each signature group, run HDBSCAN on embeddings + numeric features
 
-        # Create FailureCluster objects
-        clusters = []
-        cluster_id = 0
+        Args:
+            min_cluster_size: Minimum cluster size for HDBSCAN
+            min_samples: Minimum samples for HDBSCAN core points
+        """
+        print("Starting two-stage clustering...")
 
-        for label, indices in cluster_groups.items():
-            if label == -1:  # Skip outliers
+        # Stage 1: Group by signature
+        print("\nStage 1: Grouping by signature (error_type::action_type)...")
+        signature_groups = self.cluster_by_signature()
+
+        print(f"\nFound {len(signature_groups)} signature groups:")
+        for sig, failures in sorted(signature_groups.items(), key=lambda x: -len(x[1])):
+            print(f"  {sig}: {len(failures)} failures")
+
+        # Stage 2: HDBSCAN within each signature group
+        print("\nStage 2: Running HDBSCAN within each signature group...")
+
+        all_clusters = []
+        global_cluster_id = 0
+
+        for signature, sig_failures in signature_groups.items():
+            if len(sig_failures) < min_cluster_size:
+                # Too few failures - create single cluster
+                print(f"\n  {signature}: {len(sig_failures)} failures (too few, creating single cluster)")
+
+                cluster = FailureCluster(
+                    cluster_id=global_cluster_id,
+                    signature=signature,
+                    subcluster_id=0,
+                    failure_ids=[f.run_id for f in sig_failures],
+                    exemplar_id=sig_failures[0].run_id,
+                    size=len(sig_failures),
+                    error_types=[f.error_type for f in sig_failures],
+                    action_types=[f.action_at_failure.get("type", "unknown") for f in sig_failures]
+                )
+                all_clusters.append(cluster)
+                global_cluster_id += 1
                 continue
 
-            failures_in_cluster = [self.failures[i] for i in indices]
+            print(f"\n  {signature}: {len(sig_failures)} failures")
 
-            # Determine most common signature
-            signatures = [f.get_signature() for f in failures_in_cluster]
-            most_common_sig = max(set(signatures), key=signatures.count)
+            # Generate embeddings for this signature group
+            failure_texts = [self._create_failure_text(f) for f in sig_failures]
+            embeddings = self.model.encode(failure_texts, show_progress_bar=False)
 
-            # Select exemplar (first failure in cluster for simplicity)
-            exemplar = failures_in_cluster[0]
+            # Extract numeric features
+            numeric_features = np.array([self._extract_numeric_features(f) for f in sig_failures])
 
-            cluster = FailureCluster(
-                cluster_id=cluster_id,
-                signature=most_common_sig,
-                failure_ids=[f.run_id for f in failures_in_cluster],
-                exemplar_id=exemplar.run_id,
-                size=len(failures_in_cluster),
-                error_types=[f.error_type for f in failures_in_cluster],
-                action_types=[f.action_at_failure.get("type", "unknown")
-                             for f in failures_in_cluster]
+            # Normalize both feature sets
+            scaler_emb = StandardScaler()
+            scaler_num = StandardScaler()
+
+            embeddings_scaled = scaler_emb.fit_transform(embeddings)
+            numeric_scaled = scaler_num.fit_transform(numeric_features)
+
+            # Combine embeddings and numeric features
+            combined_features = np.hstack([embeddings_scaled, numeric_scaled])
+
+            # Run HDBSCAN
+            clusterer = hdbscan.HDBSCAN(
+                min_cluster_size=min_cluster_size,
+                min_samples=min_samples,
+                metric='euclidean'
             )
+            labels = clusterer.fit_predict(combined_features)
 
-            clusters.append(cluster)
-            cluster_id += 1
+            # Count clusters (excluding noise)
+            unique_labels = set(labels)
+            n_clusters = len([l for l in unique_labels if l != -1])
+            n_noise = sum(1 for l in labels if l == -1)
 
-        self.clusters = clusters
-        return clusters
+            print(f"    → {n_clusters} subclusters, {n_noise} noise points")
+
+            # Create FailureCluster objects for each subcluster
+            subcluster_groups = defaultdict(list)
+            for idx, label in enumerate(labels):
+                subcluster_groups[label].append(idx)
+
+            for subcluster_label, indices in subcluster_groups.items():
+                failures_in_subcluster = [sig_failures[i] for i in indices]
+
+                cluster = FailureCluster(
+                    cluster_id=global_cluster_id,
+                    signature=signature,
+                    subcluster_id=subcluster_label,
+                    failure_ids=[f.run_id for f in failures_in_subcluster],
+                    exemplar_id=failures_in_subcluster[0].run_id,
+                    size=len(failures_in_subcluster),
+                    error_types=[f.error_type for f in failures_in_subcluster],
+                    action_types=[f.action_at_failure.get("type", "unknown") for f in failures_in_subcluster]
+                )
+                all_clusters.append(cluster)
+                global_cluster_id += 1
+
+        self.clusters = all_clusters
+
+        # Print summary
+        total_subclusters = len(all_clusters)
+        noise_clusters = len([c for c in all_clusters if c.subcluster_id == -1])
+
+        print(f"\n✓ Two-stage clustering complete:")
+        print(f"  Stage 1: {len(signature_groups)} signature groups")
+        print(f"  Stage 2: {total_subclusters} total clusters ({noise_clusters} noise clusters)")
+
+        return all_clusters
 
     def get_cluster_summary(self) -> Dict[str, Any]:
         """Get summary statistics of clusters."""
@@ -183,10 +266,10 @@ class FailureClusterer:
         return {
             "total_clusters": len(self.clusters),
             "total_failures_clustered": sum(cluster_sizes),
-            "avg_cluster_size": np.mean(cluster_sizes),
-            "median_cluster_size": np.median(cluster_sizes),
-            "max_cluster_size": max(cluster_sizes),
-            "min_cluster_size": min(cluster_sizes),
+            "avg_cluster_size": float(np.mean(cluster_sizes)),
+            "median_cluster_size": float(np.median(cluster_sizes)),
+            "max_cluster_size": int(max(cluster_sizes)),
+            "min_cluster_size": int(min(cluster_sizes)),
             "clusters": [c.to_dict() for c in self.clusters]
         }
 
@@ -219,26 +302,29 @@ def main():
     parser.add_argument("input", help="Input failures JSON file")
     parser.add_argument("--output", default="output/clusters.json",
                        help="Output JSON file for clusters")
-    parser.add_argument("--method", choices=["signature", "embedding", "both"],
-                       default="embedding", help="Clustering method")
-    parser.add_argument("--eps", type=float, default=0.5,
-                       help="DBSCAN eps parameter")
-    parser.add_argument("--min-samples", type=int, default=2,
-                       help="DBSCAN min_samples parameter")
+    parser.add_argument("--method", choices=["signature", "two-stage"],
+                       default="two-stage", help="Clustering method")
+    parser.add_argument("--min-cluster-size", type=int, default=2,
+                       help="HDBSCAN min_cluster_size parameter")
+    parser.add_argument("--min-samples", type=int, default=1,
+                       help="HDBSCAN min_samples parameter")
 
     args = parser.parse_args()
 
     clusterer = FailureClusterer()
     clusterer.load_failures(args.input)
 
-    if args.method in ["signature", "both"]:
+    if args.method == "signature":
         sig_clusters = clusterer.cluster_by_signature()
         print("\nSignature-based clusters:")
         for sig, failures in sorted(sig_clusters.items(), key=lambda x: -len(x[1]))[:10]:
             print(f"  {sig}: {len(failures)} failures")
-
-    if args.method in ["embedding", "both"]:
-        clusterer.cluster_by_embedding(eps=args.eps, min_samples=args.min_samples)
+    else:
+        # Two-stage clustering
+        clusterer.cluster_two_stage(
+            min_cluster_size=args.min_cluster_size,
+            min_samples=args.min_samples
+        )
         clusterer.save_clusters(args.output)
 
         summary = clusterer.get_cluster_summary()

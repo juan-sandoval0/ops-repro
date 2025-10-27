@@ -69,25 +69,28 @@ def ingest(input_file, output, context_window):
 @cli.command()
 @click.argument('failures_file')
 @click.option('--output', default='output/clusters.json', help='Output clusters file')
-@click.option('--method', type=click.Choice(['signature', 'embedding', 'both']),
-              default='embedding', help='Clustering method')
-@click.option('--eps', default=0.5, help='DBSCAN eps parameter')
-@click.option('--min-samples', default=2, help='DBSCAN min_samples parameter')
-def cluster(failures_file, output, method, eps, min_samples):
-    """Cluster similar failures."""
+@click.option('--method', type=click.Choice(['signature', 'two-stage']),
+              default='two-stage', help='Clustering method')
+@click.option('--min-cluster-size', default=2, help='HDBSCAN min_cluster_size parameter')
+@click.option('--min-samples', default=1, help='HDBSCAN min_samples parameter')
+def cluster(failures_file, output, method, min_cluster_size, min_samples):
+    """Cluster similar failures using two-stage clustering."""
     click.echo(click.style("Clustering failures...", fg='cyan', bold=True))
 
     clusterer = FailureClusterer()
     clusterer.load_failures(failures_file)
 
-    if method in ['signature', 'both']:
+    if method == 'signature':
         sig_clusters = clusterer.cluster_by_signature()
-        click.echo("\nTop signature-based clusters:")
+        click.echo("\nSignature-based clusters:")
         for sig, failures in sorted(sig_clusters.items(), key=lambda x: -len(x[1]))[:10]:
             click.echo(f"  {sig}: {len(failures)} failures")
-
-    if method in ['embedding', 'both']:
-        clusterer.cluster_by_embedding(eps=eps, min_samples=min_samples)
+    else:
+        # Two-stage clustering
+        clusterer.cluster_two_stage(
+            min_cluster_size=min_cluster_size,
+            min_samples=min_samples
+        )
         clusterer.save_clusters(output)
 
         summary = clusterer.get_cluster_summary()
@@ -215,7 +218,7 @@ def pipeline(num_runs, seed):
     click.echo(click.style("\n3/5: Clustering failures...", fg='yellow', bold=True))
     clusterer = FailureClusterer()
     clusterer.load_failures('output/failures.json')
-    clusterer.cluster_by_embedding(eps=0.5, min_samples=2)
+    clusterer.cluster_two_stage(min_cluster_size=2, min_samples=1)
     clusterer.save_clusters('output/clusters.json')
 
     # Step 4: Bundle

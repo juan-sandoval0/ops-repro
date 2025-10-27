@@ -1,0 +1,80 @@
+{
+  "bundle_id": "bundle_cluster_14",
+  "cluster_id": 14,
+  "error_type": "planning_timeout",
+  "error_message": "Motion planning failed to find valid path",
+  "failure_run_id": "run_00040",
+  "initial_state": {
+    "detected_objects": [
+      "cup",
+      "plate",
+      "towel",
+      "fork"
+    ],
+    "robot_state": {
+      "joint_positions": [
+        -2.032,
+        2.567,
+        1.758,
+        1.411,
+        -2.779,
+        -0.662,
+        -2.173
+      ],
+      "gripper_open": true,
+      "end_effector_pose": {
+        "position": [
+          -0.092,
+          0.131,
+          -0.315
+        ],
+        "orientation": [
+          -0.824,
+          -0.887,
+          -0.192,
+          -0.086
+        ]
+      }
+    },
+    "timestep": 47
+  },
+  "action_sequence": [
+    {
+      "type": "visual_scan"
+    },
+    {
+      "type": "grasp_object",
+      "object": "box",
+      "force": 7.5
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.356,
+        -0.184,
+        0.273
+      ]
+    },
+    {
+      "type": "close_gripper"
+    },
+    {
+      "type": "move_to_position",
+      "target": [
+        -0.123,
+        0.016,
+        0.424
+      ]
+    },
+    {
+      "type": "plan_trajectory"
+    }
+  ],
+  "expected_outcome": "Action sequence completes successfully",
+  "actual_outcome": "Failure at step 6: Motion planning failed to find valid path",
+  "created_at": "2025-10-27T13:58:41.852576",
+  "source_failures": [
+    "run_00040"
+  ],
+  "difficulty": "medium"
+}
