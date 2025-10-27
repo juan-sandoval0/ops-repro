@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-piops-repro: CLI tool for incident triage.
+ops-repro: CLI tool for incident triage.
 
 Ingests robot run logs, clusters similar failures, and creates
 minimal repros for evaluation.

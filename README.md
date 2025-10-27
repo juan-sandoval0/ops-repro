@@ -1,4 +1,4 @@
-# piops-repro
+# ops-repro
 
 CLI tool for incident triage. Helps ingest robot run logs, cluster similar failures, extract minimal reproducible examples, and evaluate policies.
 
@@ -93,7 +93,7 @@ Options:
 ## Project Structure
 
 ```
-piops-repro/
+ops-repro/
 ├── cli.py              # Main CLI entry point
 ├── ingest.py           # Log parsing and failure extraction
 ├── cluster.py          # Failure clustering logic
