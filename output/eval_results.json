@@ -1,0 +1,32 @@
+{
+  "evaluated_at": "2025-10-23T18:03:52.259801",
+  "total_bundles": 1,
+  "total_evaluations": 2,
+  "results": [
+    {
+      "bundle_id": "bundle_cluster_0",
+      "policy_name": "baseline",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.011,
+      "metadata": {
+        "success_rate": 0.5
+      }
+    },
+    {
+      "bundle_id": "bundle_cluster_0",
+      "policy_name": "improved",
+      "success": false,
+      "steps_executed": 2,
+      "failure_step": 1,
+      "error_encountered": "Policy failed at action: open_gripper",
+      "execution_time_ms": 0.005,
+      "metadata": {
+        "success_rate": 0.7,
+        "handled_error": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "total_clusters": 1,
+  "total_failures_clustered": 16,
+  "avg_cluster_size": 16.0,
+  "median_cluster_size": 16.0,
+  "max_cluster_size": 16,
+  "min_cluster_size": 16,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "signature": "vision_failure::grasp_object",
+      "failure_ids": [
+        "run_00002",
+        "run_00005",
+        "run_00007",
+        "run_00012",
+        "run_00013",
+        "run_00015",
+        "run_00020",
+        "run_00021",
+        "run_00022",
+        "run_00024",
+        "run_00028",
+        "run_00032",
+        "run_00035",
+        "run_00038",
+        "run_00040",
+        "run_00047"
+      ],
+      "exemplar_id": "run_00002",
+      "size": 16,
+      "error_types": [
+        "joint_limit_exceeded",
+        "grasp_failure",
+        "planning_timeout",
+        "force_threshold_exceeded",
+        "timeout",
+        "execution_error",
+        "vision_failure",
+        "object_not_found"
+      ],
+      "action_types": [
+        "close_gripper",
+        "plan_trajectory",
+        "rotate_wrist",
+        "execute_trajectory",
+        "open_gripper",
+        "move_to_position",
+        "visual_scan",
+        "grasp_object",
+        "release_object"
+      ]
+    }
+  ]
+}

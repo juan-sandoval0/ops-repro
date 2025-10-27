@@ -1,0 +1,13 @@
+{
+  "created_at": "2025-10-23T18:03:52.259236",
+  "total_bundles": 1,
+  "bundles": [
+    {
+      "bundle_id": "bundle_cluster_0",
+      "error_type": "vision_failure",
+      "difficulty": "medium",
+      "num_actions": 6,
+      "source_failures_count": 16
+    }
+  ]
+}
