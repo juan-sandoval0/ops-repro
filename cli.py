@@ -184,13 +184,14 @@ def evaluate(bundles_dir, output, compare, seed):
 
 
 @cli.command()
-@click.option('--num-runs', default=100, help='Number of runs to generate')
+@click.option('--num-runs', default=300, help='Number of runs to generate')
 @click.option('--seed', default=42, help='Random seed')
 def pipeline(num_runs, seed):
     """
     Run the full pipeline: generate -> ingest -> cluster -> bundle -> evaluate.
 
     This is a convenience command that runs all steps in sequence.
+    Default: 300 runs for meaningful clustering results.
     """
     click.echo(click.style("Running full pipeline...\n", fg='cyan', bold=True))
 

@@ -26,15 +26,17 @@ pip install -r requirements.txt
 Run the full pipeline with one command:
 
 ```bash
-python cli.py pipeline --num-runs 100
+python cli.py pipeline
 ```
 
 This will:
-1. Generate 100 mock robot runs with ~30% failure rate
+1. Generate 300 mock robot runs with ~30% failure rate (~90 failures)
 2. Ingest logs and extract failures
-3. Cluster similar failures using embeddings
+3. Cluster similar failures using two-stage clustering (signature + embeddings)
 4. Create reproducible bundles
 5. Evaluate baseline vs improved policies
+
+The pipeline uses 300 runs by default for meaningful clustering results.
 
 ## CLI Commands
 
@@ -120,7 +122,7 @@ from mockdata.generate import RobotLogGenerator
 
 generator = RobotLogGenerator(seed=42)
 generator.generate_dataset(
-    num_runs=100,
+    num_runs=300,
     run_length=50,
     failure_prob=0.3,
     output_file="robot_logs.jsonl"
@@ -145,7 +147,8 @@ from cluster import FailureClusterer
 
 clusterer = FailureClusterer()
 clusterer.load_failures("failures.json")
-clusters = clusterer.cluster_by_embedding(eps=0.5, min_samples=2)
+# Use two-stage clustering (signature + HDBSCAN)
+clusters = clusterer.cluster_two_stage(min_cluster_size=2, min_samples=1)
 clusterer.save_clusters("clusters.json")
 ```
 
@@ -237,14 +240,19 @@ Each bundle contains a minimal reproducible example:
 ## Example Workflow
 
 ```bash
-# 1. Generate 200 robot runs
-python cli.py generate --num-runs 200 --failure-prob 0.4
+# Quick: Run the full pipeline (recommended)
+python cli.py pipeline
+
+# Or run individual steps with custom parameters:
+
+# 1. Generate 300 robot runs
+python cli.py generate --num-runs 300 --failure-prob 0.3
 
 # 2. Ingest and extract failures
 python cli.py ingest mockdata/robot_logs.jsonl
 
-# 3. Cluster failures by embedding similarity
-python cli.py cluster output/failures.json --method embedding --eps 0.4
+# 3. Cluster failures with two-stage clustering
+python cli.py cluster output/failures.json --method two-stage
 
 # 4. Create minimal reproducible bundles
 python cli.py bundle output/failures.json --clusters output/clusters.json
